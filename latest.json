@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T11:20:00Z",
+  "updated": "2026-09-18T16:10:00Z",
   "launcher": {
     "tag": "launcher-v2.4.1",
     "version": "2.4.1",
@@ -9,10 +9,11 @@
     "notes": "Auto-updater fixed: both update checks now pick the genuinely highest release, the installed client is compared numerically, a quota-free sha256-verified release manifest backs the checks up when the GitHub API is rate-limited, and the launcher ships Kinetrix Client v2.9.11 bundled."
   },
   "client": {
-    "tag": "mod-v2.9.11",
-    "version": "2.9.11",
-    "asset": "kinetrix-2.9.11.jar",
-    "size": 21187373,
-    "sha256": "927a772600ca16c692b9e9b90585f54fa54b254eb749997588b5474486118c9d"
-  }
+    "tag": "mod-v2.9.13",
+    "version": "2.9.13",
+    "asset": "kinetrix-2.9.13.jar",
+    "size": 21206513,
+    "sha256": "962d2f0cfd6eabd8bd713e12e7fefecfaab6e8bb1b03ee0276e0cfbc5eab64d9"
+  },
+  "notes": "Client v2.9.13: skins always apply (no more Steve on cracked servers), skin tab login gate + database skin card, more intense ultra-smooth wavy cape that can never clip into the player model, slider drag fix, account chip with real skin head."
 }
