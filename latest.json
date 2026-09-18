@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-18T16:25:00Z",
+  "updated": "2026-09-18T16:35:00Z",
   "launcher": {
     "tag": "launcher-v2.4.2",
     "version": "2.4.2",
     "asset": "KinetrixLauncher-Setup-2.4.2.exe",
-    "size": 104939834,
-    "sha256": "6200fd6a2943a8480f0a11fdfed8c3314a4d7935bccc1241e59cdbc74bd4e969",
+    "size": 104939865,
+    "sha256": "58848fb8cbf0adeed6c5ad7b30dac31ff3b8d3657414dbd570e5132ab1d25883",
     "notes": "Auto-updater: quota-free releases/latest redirect probe, downgrade guards, 100-release pagination; ships Kinetrix Client v2.9.13 bundled."
   },
   "client": {
