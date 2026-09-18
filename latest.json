@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-18T16:10:00Z",
+  "updated": "2026-09-18T16:25:00Z",
   "launcher": {
-    "tag": "launcher-v2.4.1",
-    "version": "2.4.1",
-    "asset": "KinetrixLauncher-Setup-2.4.1.exe",
-    "size": 104920902,
-    "sha256": "690855ed0a5771370843d1a9b59201639ae4cdfef193a4f8478f3c8588a51971",
-    "notes": "Auto-updater fixed: both update checks now pick the genuinely highest release, the installed client is compared numerically, a quota-free sha256-verified release manifest backs the checks up when the GitHub API is rate-limited, and the launcher ships Kinetrix Client v2.9.11 bundled."
+    "tag": "launcher-v2.4.2",
+    "version": "2.4.2",
+    "asset": "KinetrixLauncher-Setup-2.4.2.exe",
+    "size": 104939834,
+    "sha256": "6200fd6a2943a8480f0a11fdfed8c3314a4d7935bccc1241e59cdbc74bd4e969",
+    "notes": "Auto-updater: quota-free releases/latest redirect probe, downgrade guards, 100-release pagination; ships Kinetrix Client v2.9.13 bundled."
   },
   "client": {
     "tag": "mod-v2.9.13",
