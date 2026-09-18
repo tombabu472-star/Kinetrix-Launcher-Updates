@@ -18,9 +18,39 @@ Official **release downloads** for the Kinetrix Launcher and the Kinetrix Client
 
 ## Direct links (always newest release)
 
-- Launcher installer: `https://github.com/tombabu472-star/Kinetrix-Launcher-Updates/releases/latest/download/KinetrixLauncher-Setup-2.3.1.exe`
-- Client mod: `https://github.com/tombabu472-star/Kinetrix-Launcher-Updates/releases/latest/download/kinetrix-2.9.1.jar`
+- Launcher installer: `https://github.com/tombabu472-star/Kinetrix-Launcher-Updates/releases/latest/download/KinetrixLauncher-Setup-2.4.1.exe`
+- Client mod: `https://github.com/tombabu472-star/Kinetrix-Launcher-Updates/releases/latest/download/kinetrix-2.9.11.jar`
 - All releases: https://github.com/tombabu472-star/Kinetrix-Launcher-Updates/releases
+
+## `latest.json` — the update manifest (IMPORTANT, release playbook)
+
+`latest.json` in this repo is the **primary quota-free update source** for the
+launcher's auto-updater and the client-mod updater (raw.githubusercontent.com
+has no rate limit — the GitHub REST API is capped at 60 requests/hour per IP
+and the `releases.atom` feed only lists the 10 newest entries, which is what
+silently killed the auto-updater before).
+
+**Every release (launcher OR client) MUST refresh `latest.json` in the same
+push that mirrors the release assets here**, otherwise rate-limited installs
+stop seeing the newest version:
+
+```json
+{
+  "updated": "<ISO date>",
+  "launcher": { "tag": "launcher-v<ver>", "version": "<ver>", "asset": "KinetrixLauncher-Setup-<ver>.exe",
+                "size": <exact bytes>, "sha256": "<sha256 of the exe>", "notes": "<one-paragraph changelog>" },
+  "client":   { "tag": "mod-v<ver>", "version": "<ver>", "asset": "kinetrix-<ver>.jar",
+                "size": <exact bytes>, "sha256": "<sha256 of the jar>" }
+}
+```
+
+- Only ever point an entry at a release that already EXISTS here.
+- `size` must be the exact asset byte size and `sha256` the real digest —
+  the launcher verifies both before installing anything.
+- The launcher updater order: REST API (per_page=50, highest launcher release
+  wins) → this manifest → atom-feed scrape. The client updater order:
+  REST API (per_page=50, highest `kinetrix-*.jar` wins) → this manifest →
+  atom-feed scrape.
 
 ## Website
 

@@ -1,0 +1,18 @@
+{
+  "updated": "2026-09-18T11:20:00Z",
+  "launcher": {
+    "tag": "launcher-v2.4.0",
+    "version": "2.4.0",
+    "asset": "KinetrixLauncher-Setup-2.4.0.exe",
+    "size": 100790222,
+    "sha256": "",
+    "notes": "Account linking rebuilt on the PrismarineJS prismarine-auth engine: device-code sign-in at www.microsoft.com/link, silent session refresh with token rotation, and the live Minecraft session is published to the shared account store so the client adopts it instantly."
+  },
+  "client": {
+    "tag": "mod-v2.9.11",
+    "version": "2.9.11",
+    "asset": "kinetrix-2.9.11.jar",
+    "size": 21187373,
+    "sha256": "927a772600ca16c692b9e9b90585f54fa54b254eb749997588b5474486118c9d"
+  }
+}
