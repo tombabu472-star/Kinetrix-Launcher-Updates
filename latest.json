@@ -1,12 +1,12 @@
 {
   "updated": "2026-09-18T11:20:00Z",
   "launcher": {
-    "tag": "launcher-v2.4.0",
-    "version": "2.4.0",
-    "asset": "KinetrixLauncher-Setup-2.4.0.exe",
-    "size": 100790222,
-    "sha256": "",
-    "notes": "Account linking rebuilt on the PrismarineJS prismarine-auth engine: device-code sign-in at www.microsoft.com/link, silent session refresh with token rotation, and the live Minecraft session is published to the shared account store so the client adopts it instantly."
+    "tag": "launcher-v2.4.1",
+    "version": "2.4.1",
+    "asset": "KinetrixLauncher-Setup-2.4.1.exe",
+    "size": 104920902,
+    "sha256": "690855ed0a5771370843d1a9b59201639ae4cdfef193a4f8478f3c8588a51971",
+    "notes": "Auto-updater fixed: both update checks now pick the genuinely highest release, the installed client is compared numerically, a quota-free sha256-verified release manifest backs the checks up when the GitHub API is rate-limited, and the launcher ships Kinetrix Client v2.9.11 bundled."
   },
   "client": {
     "tag": "mod-v2.9.11",
