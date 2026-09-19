@@ -1,19 +1,19 @@
 {
-  "updated": "2026-09-19T08:40:00Z",
+  "updated": "2026-09-19T21:22:57Z",
   "launcher": {
-    "tag": "launcher-v2.4.5",
-    "version": "2.4.5",
-    "asset": "KinetrixLauncher-Setup-2.4.5.exe",
-    "size": 104508761,
-    "sha256": "04bd8bd80ef52ba4698264572288d73f7cd7060216ff68371aa86c6119287f8b",
-    "notes": "Microsoft sign-in re-verified against the real msmc 5.0.5 engine + hardened: 40-check harness drives the real login code end-to-end (all pass, 0 unhandled rejections), flow proven against the live Microsoft endpoints, and the uuid-fallback bug the harness caught is fixed (empty auth_uuid on the fallback path -> premium joins rejected; now correct on every path). Ships Kinetrix Client v2.9.16 bundled."
+    "tag": "launcher-v2.4.6",
+    "version": "2.4.6",
+    "asset": "KinetrixLauncher-Setup-2.4.6.exe",
+    "size": 104523140,
+    "sha256": "c85b597cee7c0ad87b4e6fb24bd45575285cd991593130543f2db7810edf5395",
+    "notes": "Bundles Kinetrix Client v2.9.17: PojavLauncher mod-menu crash fixed (UI textures decode off the game thread + GUI crash canary + -Xss8m guidance) and world selector buttons polished with the PolyUI design system."
   },
   "client": {
-    "tag": "mod-v2.9.16",
-    "version": "2.9.16",
-    "asset": "kinetrix-2.9.16.jar",
-    "size": 21252720,
-    "sha256": "62a98d7bb5cac2453e4ff59e58e52fc75477939d55082a5a1a36a8696b068a14"
+    "tag": "mod-v2.9.17",
+    "version": "2.9.17",
+    "asset": "kinetrix-2.9.17.jar",
+    "size": 21265679,
+    "sha256": "c399e57c21908f53bbc6a67f489d61c34af57252a85862138119e8e5ecf85e3a"
   },
-  "notes": "Launcher v2.4.5: msmc sign-in re-verified + uuid-fallback fix. Client v2.9.16 bundled (AutoGG on all servers/modes + PolyPatcher fixes)."
+  "notes": "Launcher v2.4.6 + Client v2.9.17: Pojav mod-menu crash fix + world selector PolyUI button polish."
 }
