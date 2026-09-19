@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-19T04:00:00Z",
+  "updated": "2026-09-19T04:45:00Z",
   "launcher": {
-    "tag": "launcher-v2.4.2",
-    "version": "2.4.2",
-    "asset": "KinetrixLauncher-Setup-2.4.2.exe",
-    "size": 104939865,
-    "sha256": "58848fb8cbf0adeed6c5ad7b30dac31ff3b8d3657414dbd570e5132ab1d25883",
-    "notes": "Auto-updater: quota-free releases/latest redirect probe, downgrade guards, 100-release pagination; ships Kinetrix Client v2.9.13 bundled."
+    "tag": "launcher-v2.4.3",
+    "version": "2.4.3",
+    "asset": "KinetrixLauncher-Setup-2.4.3.exe",
+    "size": 104970841,
+    "sha256": "16efdf56e22a71944cfe56bda65f5b0d05e68ec507e1353c776e43f3232ba9e8",
+    "notes": "Client auto-updater now REALLY replaces the old mod: only the real jar on disk counts (stale meta can never freeze updates), staged download + old-jar-first swap (lock retries) so mods/ never holds duplicates, corrupt downloads auto-repaired, offline launches never downgrade. Ships Kinetrix Client v2.9.15 bundled."
   },
   "client": {
     "tag": "mod-v2.9.15",
