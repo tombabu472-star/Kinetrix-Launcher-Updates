@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-19T06:10:00Z",
+  "updated": "2026-09-19T08:05:00Z",
   "launcher": {
-    "tag": "launcher-v2.4.3",
-    "version": "2.4.3",
-    "asset": "KinetrixLauncher-Setup-2.4.3.exe",
-    "size": 104970841,
-    "sha256": "16efdf56e22a71944cfe56bda65f5b0d05e68ec507e1353c776e43f3232ba9e8",
-    "notes": "Client auto-updater now REALLY replaces the old mod: only the real jar on disk counts (stale meta can never freeze updates), staged download + old-jar-first swap (lock retries) so mods/ never holds duplicates, corrupt downloads auto-repaired, offline launches never downgrade. Ships Kinetrix Client v2.9.15 bundled."
+    "tag": "launcher-v2.4.4",
+    "version": "2.4.4",
+    "asset": "KinetrixLauncher-Setup-2.4.4.exe",
+    "size": 104508005,
+    "sha256": "3d0cbcb0c894e4cca241a656fc86727072de4815cc6dcbf53c5895c71e13eac6",
+    "notes": "Microsoft sign-in rebuilt on msmc: a REAL Microsoft sign-in window like a normal launcher (code linking at microsoft.com/link removed, official Minecraft Launcher app id reused, refresh tokens stay interchangeable with the client). Silent session renewal on start + before launch, cancel closes the actual window, closed window = cancel, dead sessions fail fast with a re-login prompt, latent crash on failed sign-ins fixed. Ships Kinetrix Client v2.9.16 bundled."
   },
   "client": {
     "tag": "mod-v2.9.16",
@@ -15,5 +15,5 @@
     "size": 21252720,
     "sha256": "62a98d7bb5cac2453e4ff59e58e52fc75477939d55082a5a1a36a8696b068a14"
   },
-  "notes": "Client v2.9.16: AutoGG fixed for real (community trigger dictionary bundled + live refresh, universal keyword detection, instant fire - works on all servers and game modes) + PolyPatcher fixes ported: real Fullbright, Remove Water FOV, Unfocused FPS, Better Keybinds, Log Optimizer."
+  "notes": "Launcher v2.4.4: msmc Microsoft sign-in (real Microsoft window, code linking removed, no app id needed) + Client v2.9.16 bundled (AutoGG on all servers/modes + PolyPatcher fixes)."
 }
