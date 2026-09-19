@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T04:45:00Z",
+  "updated": "2026-09-19T06:10:00Z",
   "launcher": {
     "tag": "launcher-v2.4.3",
     "version": "2.4.3",
@@ -9,11 +9,11 @@
     "notes": "Client auto-updater now REALLY replaces the old mod: only the real jar on disk counts (stale meta can never freeze updates), staged download + old-jar-first swap (lock retries) so mods/ never holds duplicates, corrupt downloads auto-repaired, offline launches never downgrade. Ships Kinetrix Client v2.9.15 bundled."
   },
   "client": {
-    "tag": "mod-v2.9.15",
-    "version": "2.9.15",
-    "asset": "kinetrix-2.9.15.jar",
-    "size": 21238526,
-    "sha256": "b223f9e6735dd0525ddedb3ac47ca901d5fa5ba486734f6b5c595121e60ccc19"
+    "tag": "mod-v2.9.16",
+    "version": "2.9.16",
+    "asset": "kinetrix-2.9.16.jar",
+    "size": 21252720,
+    "sha256": "62a98d7bb5cac2453e4ff59e58e52fc75477939d55082a5a1a36a8696b068a14"
   },
-  "notes": "Client v2.9.15: wavy cape rebuilt on LegacyWaveyCapes physics (real 16-part verlet cloth, natural jump wave, exact vanilla cape size, never clips the player model); singleplayer world selector rebuilt on the PolyUI dark design system with animated pill buttons."
+  "notes": "Client v2.9.16: AutoGG fixed for real (community trigger dictionary bundled + live refresh, universal keyword detection, instant fire - works on all servers and game modes) + PolyPatcher fixes ported: real Fullbright, Remove Water FOV, Unfocused FPS, Better Keybinds, Log Optimizer."
 }
