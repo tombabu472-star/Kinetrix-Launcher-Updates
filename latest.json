@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T20:35:00Z",
+  "updated": "2026-09-19T04:00:00Z",
   "launcher": {
     "tag": "launcher-v2.4.2",
     "version": "2.4.2",
@@ -9,11 +9,11 @@
     "notes": "Auto-updater: quota-free releases/latest redirect probe, downgrade guards, 100-release pagination; ships Kinetrix Client v2.9.13 bundled."
   },
   "client": {
-    "tag": "mod-v2.9.14",
-    "version": "2.9.14",
-    "asset": "kinetrix-2.9.14.jar",
-    "size": 21220096,
-    "sha256": "e3c230faa1d08389ea0ed700d60e8e359312674c24cfbc914e1791864250616a"
+    "tag": "mod-v2.9.15",
+    "version": "2.9.15",
+    "asset": "kinetrix-2.9.15.jar",
+    "size": 21238526,
+    "sha256": "b223f9e6735dd0525ddedb3ac47ca901d5fa5ba486734f6b5c595121e60ccc19"
   },
-  "notes": "Client v2.9.14: production reflection fix (skins + sliders actually work in the released jar now), full identity persistence (skin, cape, cosmetics, emotes, nametag per username), other Kinetrix users auto-synced by their MC username without login, cloth-rewrite wavy cape (spring settle, 3-column wave, intense jump ripple, can never clip the player model)."
+  "notes": "Client v2.9.15: wavy cape rebuilt on LegacyWaveyCapes physics (real 16-part verlet cloth, natural jump wave, exact vanilla cape size, never clips the player model); singleplayer world selector rebuilt on the PolyUI dark design system with animated pill buttons."
 }
