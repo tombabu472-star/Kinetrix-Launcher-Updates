@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-20T03:40:32Z",
+  "updated": "2026-09-20T11:50:00Z",
   "launcher": {
-    "tag": "launcher-v2.4.7",
-    "version": "2.4.7",
-    "asset": "KinetrixLauncher-Setup-2.4.7.exe",
-    "size": 104849764,
-    "sha256": "885550df86042b722e4f9837f94344348c293371cec466062637bf93c544bce3",
-    "notes": "Bundles Kinetrix Client v2.9.18: Pojav mod-menu crash hardening (GUI class prewarm off-thread + jar self-check + canonical zip jar), slider drag fix, deferred skin retry."
+    "tag": "launcher-v2.4.8",
+    "version": "2.4.8",
+    "asset": "KinetrixLauncher-Setup-2.4.8.exe",
+    "size": 104853238,
+    "sha256": "30fc4d3ffb5ea2a6414311dae967fd6976c97a2c1ea335e311a5ac4a94886b26",
+    "notes": "Heap reservation fix: Java bitness detection (32-bit = 1 GB cap), 64-bit Java preferred, memory clamped to system RAM, automatic heap halving retry instead of 'Could not reserve enough space' exit. New Lunar-style account manager on the home screen top-right."
   },
   "client": {
     "tag": "mod-v2.9.18",
@@ -15,5 +15,5 @@
     "size": 21492315,
     "sha256": "540eec5c83d26898e82548518645ee0b899e9bfa6d79f7e2f3a6a48b7a5b4580"
   },
-  "notes": "Launcher v2.4.7 + Client v2.9.18: Pojav crash hardening + slider drag fix + skin retry."
+  "notes": "Launcher v2.4.8: heap fix (32-bit Java cap + auto-retry) + Lunar-style home account manager. Client v2.9.18 unchanged."
 }
