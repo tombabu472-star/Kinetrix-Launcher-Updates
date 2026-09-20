@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-20T11:50:00Z",
+  "updated": "2026-09-20T14:30:00Z",
   "launcher": {
-    "tag": "launcher-v2.4.8",
-    "version": "2.4.8",
-    "asset": "KinetrixLauncher-Setup-2.4.8.exe",
-    "size": 104853238,
-    "sha256": "30fc4d3ffb5ea2a6414311dae967fd6976c97a2c1ea335e311a5ac4a94886b26",
-    "notes": "Heap reservation fix: Java bitness detection (32-bit = 1 GB cap), 64-bit Java preferred, memory clamped to system RAM, automatic heap halving retry instead of 'Could not reserve enough space' exit. New Lunar-style account manager on the home screen top-right."
+    "tag": "launcher-v2.4.9",
+    "version": "2.4.9",
+    "asset": "KinetrixLauncher-Setup-2.4.9.exe",
+    "size": 104860998,
+    "sha256": "2fe6a1a7bf0c7f3c9ad48eb5874d823be5f0b923a0bdd3c6ff1c64c4401c10bc",
+    "notes": "Crash Intelligence: when the game crashes, the launcher reads the crash report it wrote, shows the real cause in plain language on the home screen, and auto-fixes known crash classes (heap up, direct buffer memory, duplicate mods, OptiFine/client parked to safe mode, natives relink, audio/GL) with up to 3 smart restarts. Crash protection card in Settings; diagnosis survives launcher restarts."
   },
   "client": {
     "tag": "mod-v2.9.18",
@@ -15,5 +15,5 @@
     "size": 21492315,
     "sha256": "540eec5c83d26898e82548518645ee0b899e9bfa6d79f7e2f3a6a48b7a5b4580"
   },
-  "notes": "Launcher v2.4.8: heap fix (32-bit Java cap + auto-retry) + Lunar-style home account manager. Client v2.9.18 unchanged."
+  "notes": "Launcher v2.4.9: Crash Intelligence — real crash causes + auto-fix + safe mode. Client v2.9.18 unchanged."
 }
