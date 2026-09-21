@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-21T10:20:00Z",
+  "updated": "2026-09-21T15:58:00Z",
   "launcher": {
-    "tag": "launcher-v2.4.11",
-    "version": "2.4.11",
-    "asset": "KinetrixLauncher-Setup-2.4.11.exe",
-    "size": 104969071,
-    "sha256": "2aac5dcc8cc94edfe4e24c1664661c65348912100e09ade1a4ff7af866e37398",
-    "notes": "64-bit Java, guaranteed: a 64-bit PC with only a 32-bit Java 8 no longer launches with it (the exact java.lang.OutOfMemoryError from the latest crash report \u2014 HotSpot Client VM, 1 GB ceiling). The launcher now downloads the official 64-bit Temurin JRE 8 automatically (one time, ~45 MB) and only falls back to the capped 32-bit JVM if the download fails. The desktop shortcut logo is fixed at every layer: the installer pins the desktop tile icon explicitly, the build byte-verifies the icon inside the exe, and every silent update repairs the desktop shortcut (retarget + explicit icon) before flushing the Windows icon cache. Bundles Client v2.9.20 (AutoGG universal detection)."
+    "tag": "launcher-v2.4.12",
+    "version": "2.4.12",
+    "asset": "KinetrixLauncher-Setup-2.4.12.exe",
+    "size": 105272562,
+    "sha256": "57166eeb742663b89d858d4bd15424d8928689374b65b1d94bb5bbacffe7f8d0",
+    "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
     "tag": "mod-v3.0.0",
@@ -15,5 +15,5 @@
     "size": 21838407,
     "sha256": "5c2a598cc7de29bb5bf2e3569a7b971f0f5d55f13ab49452c89e6207e068a0a2"
   },
-  "notes": "Client v3.0.0 (KUI release): native Java/OpenGL UI framework - new main menu, world selector, multiplayer, ClickGUI and more; Microsoft account switch fixed; FPS regression fixed (Unlock FPS restored); client cosmetic changes now save to your Kinetrix account. Launcher v2.4.12 incoming - bundles this client for fresh installs."
+  "notes": "Launcher v2.4.12: crash card only for NEW crashes, close-after-launch really closes, game fully detached from the launcher (Task-Manager-proof). Client v3.0.0: KUI native Java/OpenGL UI framework (new main menu, world selector, multiplayer, ClickGUI + more), Microsoft account switch fixed, FPS regression fixed (Unlock FPS restored + config repair), client cosmetics now persist to your Kinetrix account."
 }
