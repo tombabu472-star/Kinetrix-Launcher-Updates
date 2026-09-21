@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T17:30:00Z",
+  "updated": "2026-09-21T19:20:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.1.0",
-    "version": "3.1.0",
-    "asset": "kinetrix-3.1.0.jar",
-    "size": 21838976,
-    "sha256": "f69fbcbd761b2e115cdf3e9f4f70566d66875f91f89e284c9b3277d460634bc9"
+    "tag": "mod-v3.1.1",
+    "version": "3.1.1",
+    "asset": "kinetrix-3.1.1.jar",
+    "size": 21850223,
+    "sha256": "7d8168b715db18d01aef6e823e242eef89e16897306d647090e4b6a6b022ca25"
   },
-  "notes": "Client v3.1.0 \"Slate\": full UI redesign inspired by the Badlion look - the mod menu is now a translucent navy slideout over the live world with search, module tiles and in-panel settings pages; teal/red state colors, steel-blue selection, flat dark buttons. Also fixes the bugged layouts: invisible header back buttons, text overflow at high GUI scales, crushed About/Create World pages, ClickGUI drawer geometry."
+  "notes": "Client v3.1.1: input + overlay bugfix pack - home screen buttons no longer go dead after navigating, the Multiplayer Add Server / Direct Connect dialogs now open centered and visible, right-click menus stay in place. New Badlion-style home screen (navy sidebar, account chip), light-blue colour design, and Singleplayer / Multiplayer / Accounts / Cosmetics render in centered size-capped windows so fullscreen and 4K never stretch the UI. The non-classic mod menu gains a Settings tab with the Classic Mod Menu switch (classic stays the default)."
 }
