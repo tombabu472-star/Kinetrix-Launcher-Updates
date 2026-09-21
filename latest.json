@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T14:30:00Z",
+  "updated": "2026-09-21T06:20:00Z",
   "launcher": {
     "tag": "launcher-v2.4.9",
     "version": "2.4.9",
@@ -9,11 +9,11 @@
     "notes": "Crash Intelligence: when the game crashes, the launcher reads the crash report it wrote, shows the real cause in plain language on the home screen, and auto-fixes known crash classes (heap up, direct buffer memory, duplicate mods, OptiFine/client parked to safe mode, natives relink, audio/GL) with up to 3 smart restarts. Crash protection card in Settings; diagnosis survives launcher restarts."
   },
   "client": {
-    "tag": "mod-v2.9.18",
-    "version": "2.9.18",
-    "asset": "kinetrix-2.9.18.jar",
-    "size": 21492315,
-    "sha256": "540eec5c83d26898e82548518645ee0b899e9bfa6d79f7e2f3a6a48b7a5b4580"
+    "tag": "mod-v2.9.19",
+    "version": "2.9.19",
+    "asset": "kinetrix-2.9.19.jar",
+    "size": 21499870,
+    "sha256": "2f6a0abff7a4046d5a668a0485568b92449b63d04202822040620b286ce1c5b0"
   },
-  "notes": "Launcher v2.4.9: Crash Intelligence — real crash causes + auto-fix + safe mode. Client v2.9.18 unchanged."
+  "notes": "Client v2.9.19: the mod-menu crash (gson StackOverflowError on config save) is fixed for good - reflection-free config io. Launcher v2.4.9 unchanged."
 }
