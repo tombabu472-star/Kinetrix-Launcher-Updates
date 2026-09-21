@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T15:58:00Z",
+  "updated": "2026-09-21T17:30:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.0.0",
-    "version": "3.0.0",
-    "asset": "kinetrix-3.0.0.jar",
-    "size": 21838407,
-    "sha256": "5c2a598cc7de29bb5bf2e3569a7b971f0f5d55f13ab49452c89e6207e068a0a2"
+    "tag": "mod-v3.1.0",
+    "version": "3.1.0",
+    "asset": "kinetrix-3.1.0.jar",
+    "size": 21838976,
+    "sha256": "f69fbcbd761b2e115cdf3e9f4f70566d66875f91f89e284c9b3277d460634bc9"
   },
-  "notes": "Launcher v2.4.12: crash card only for NEW crashes, close-after-launch really closes, game fully detached from the launcher (Task-Manager-proof). Client v3.0.0: KUI native Java/OpenGL UI framework (new main menu, world selector, multiplayer, ClickGUI + more), Microsoft account switch fixed, FPS regression fixed (Unlock FPS restored + config repair), client cosmetics now persist to your Kinetrix account."
+  "notes": "Client v3.1.0 \"Slate\": full UI redesign inspired by the Badlion look - the mod menu is now a translucent navy slideout over the live world with search, module tiles and in-panel settings pages; teal/red state colors, steel-blue selection, flat dark buttons. Also fixes the bugged layouts: invisible header back buttons, text overflow at high GUI scales, crushed About/Create World pages, ClickGUI drawer geometry."
 }
