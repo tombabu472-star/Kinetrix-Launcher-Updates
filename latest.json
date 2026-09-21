@@ -1,19 +1,19 @@
 {
-  "updated": "2026-09-21T08:05:00Z",
+  "updated": "2026-09-21T10:20:00Z",
   "launcher": {
     "tag": "launcher-v2.4.11",
     "version": "2.4.11",
     "asset": "KinetrixLauncher-Setup-2.4.11.exe",
     "size": 104969071,
     "sha256": "2aac5dcc8cc94edfe4e24c1664661c65348912100e09ade1a4ff7af866e37398",
-    "notes": "64-bit Java, guaranteed: a 64-bit PC with only a 32-bit Java 8 no longer launches with it (the exact java.lang.OutOfMemoryError from the latest crash report — HotSpot Client VM, 1 GB ceiling). The launcher now downloads the official 64-bit Temurin JRE 8 automatically (one time, ~45 MB) and only falls back to the capped 32-bit JVM if the download fails. The desktop shortcut logo is fixed at every layer: the installer pins the desktop tile icon explicitly, the build byte-verifies the icon inside the exe, and every silent update repairs the desktop shortcut (retarget + explicit icon) before flushing the Windows icon cache. Bundles Client v2.9.20 (AutoGG universal detection)."
+    "notes": "64-bit Java, guaranteed: a 64-bit PC with only a 32-bit Java 8 no longer launches with it (the exact java.lang.OutOfMemoryError from the latest crash report \u2014 HotSpot Client VM, 1 GB ceiling). The launcher now downloads the official 64-bit Temurin JRE 8 automatically (one time, ~45 MB) and only falls back to the capped 32-bit JVM if the download fails. The desktop shortcut logo is fixed at every layer: the installer pins the desktop tile icon explicitly, the build byte-verifies the icon inside the exe, and every silent update repairs the desktop shortcut (retarget + explicit icon) before flushing the Windows icon cache. Bundles Client v2.9.20 (AutoGG universal detection)."
   },
   "client": {
-    "tag": "mod-v2.9.20",
-    "version": "2.9.20",
-    "asset": "kinetrix-2.9.20.jar",
-    "size": 21501886,
-    "sha256": "d208f74afe0c70d3330a182de41bde51b6eef7700779b63769694b3c6a2f1d34"
+    "tag": "mod-v3.0.0",
+    "version": "3.0.0",
+    "asset": "kinetrix-3.0.0.jar",
+    "size": 21838407,
+    "sha256": "5c2a598cc7de29bb5bf2e3569a7b971f0f5d55f13ab49452c89e6207e068a0a2"
   },
-  "notes": "Launcher v2.4.11: 64-bit Java enforcement with auto-download (fixes the OutOfMemoryError startup crash) + desktop shortcut icon fixed at every layer (pinned NSIS icon, byte-verified exe icon injection, self-repairing shortcut on every update). Client stays v2.9.20 (AutoGG universal detection rewrite)."
+  "notes": "Client v3.0.0 (KUI release): native Java/OpenGL UI framework - new main menu, world selector, multiplayer, ClickGUI and more; Microsoft account switch fixed; FPS regression fixed (Unlock FPS restored); client cosmetic changes now save to your Kinetrix account. Launcher v2.4.12 incoming - bundles this client for fresh installs."
 }
