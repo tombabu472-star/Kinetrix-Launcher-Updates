@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T19:20:00Z",
+  "updated": "2026-09-21T21:40:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.1.1",
-    "version": "3.1.1",
-    "asset": "kinetrix-3.1.1.jar",
-    "size": 21850223,
-    "sha256": "7d8168b715db18d01aef6e823e242eef89e16897306d647090e4b6a6b022ca25"
+    "tag": "mod-v3.2.0",
+    "version": "3.2.0",
+    "asset": "kinetrix-3.2.0.jar",
+    "size": 21877065,
+    "sha256": "c4c4a0f4a4f2c85c234adfc2f9a1dd201fcfc3a5a2c513455568b2805dc76505"
   },
-  "notes": "Client v3.1.1: input + overlay bugfix pack - home screen buttons no longer go dead after navigating, the Multiplayer Add Server / Direct Connect dialogs now open centered and visible, right-click menus stay in place. New Badlion-style home screen (navy sidebar, account chip), light-blue colour design, and Singleplayer / Multiplayer / Accounts / Cosmetics render in centered size-capped windows so fullscreen and 4K never stretch the UI. The non-classic mod menu gains a Settings tab with the Classic Mod Menu switch (classic stays the default)."
+  "notes": "Client v3.2.0 'Silk': the whole UI is now analytic anti-aliased - every panel, button, stroke and shadow is a signed-distance field with a true 1-pixel smooth edge at any GUI scale and resolution (the pixelated look is gone). The real Kinetrix logo now leads the home screen, About and Accounts with a soft glow, and player-face avatars appear on the account chip and rows. Home screen restyled (labeled sidebar nav with hover glide, ambient hero glows, gradient Singleplayer button, pro redrawn icon set). Account Manager fixed: blank/white rows with 3+ accounts are gone (5 accounts render scrolled and complete) and header buttons no longer truncate at GUI scale 3."
 }
