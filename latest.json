@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T06:15:00Z",
+  "updated": "2026-09-21T07:20:00Z",
   "launcher": {
     "tag": "launcher-v2.4.10",
     "version": "2.4.10",
@@ -9,11 +9,11 @@
     "notes": "The self-updater really works: failed downloads no longer block retries (latch released in finally), downloads RESUME via HTTP Range with 5 attempts + MB progress + sha256, failed updates show the real error in the dialog, and the update check re-runs every 30 minutes while open. Bundles Client v2.9.19: the mod-menu gson StackOverflowError is fixed for good (reflection-free config io + Throwable-safe JSON paths + GuiGuard on menu click/close)."
   },
   "client": {
-    "tag": "mod-v2.9.19",
-    "version": "2.9.19",
-    "asset": "kinetrix-2.9.19.jar",
-    "size": 21499870,
-    "sha256": "2f6a0abff7a4046d5a668a0485568b92449b63d04202822040620b286ce1c5b0"
+    "tag": "mod-v2.9.20",
+    "version": "2.9.20",
+    "asset": "kinetrix-2.9.20.jar",
+    "size": 21501886,
+    "sha256": "d208f74afe0c70d3330a182de41bde51b6eef7700779b63769694b3c6a2f1d34"
   },
-  "notes": "Launcher v2.4.10: updater fixed (resume, visible errors, periodic re-check) + Client v2.9.19 (mod-menu crash fixed for good)."
+  "notes": "Client v2.9.20: AutoGG detection rewritten - universal end-of-game phrase library (match over, has won, thanks for playing, victory/defeat, placement...) fires on every server and game mode, channel/player chat never triggers it, Hypixel mid-game eliminations no longer cause premature gg's."
 }
