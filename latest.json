@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T03:20:00Z",
+  "updated": "2026-09-22T05:10:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.2.2",
-    "version": "3.2.2",
-    "asset": "kinetrix-3.2.2.jar",
-    "size": 21889772,
-    "sha256": "1dad1695e740c6ae4236965349621924ab11ea8b82d7b332ed996a8946d7c874"
+    "tag": "mod-v3.2.3",
+    "version": "3.2.3",
+    "asset": "kinetrix-3.2.3.jar",
+    "size": 21896215,
+    "sha256": "8bf8d736c5969c91ffb89ac6975b9f544ec7efed1e6bfff5be12c78645f2365a"
   },
-  "notes": "Client v3.2.2 'Anchor': the PojavLauncher startup SIGSEGV is fixed at its true root. Device evidence proved the crash was the logo's custom glTexImage2D(ByteBuffer) upload (the only raw pixel path in the mod), not the AA renderer - which demonstrably drew 7 shapes successfully in the crashing frame. The logo now uses only vanilla-proven mechanics: DynamicTexture upload, glTexParameteri filtering, Tessellator quads. Also now testable from 3.2.1: typing '@' no longer opens the Twitch broadcast screen, the non-classic mod menu is a centered Badlion-style window with a Settings tab listing every client setting, and the Centered Mod Menu / Classic Menu / Smooth UI switches are all live."
+  "notes": "Client v3.2.3 'SafeType': the PojavLauncher startup SIGSEGV is fixed at its REAL root. v3.2.1 and v3.2.2 crashed byte-identically even though the logo upload path changed, which proved the crash was the FIRST custom-font text draw: Font.createFont -> Graphics2D.drawString - the freetype glyph rasterizer of PojavLauncher's OpenJDK (a native memcpy that never throws, so it could never be caught). v3.2.3 detects PojavLauncher-class runtimes and quarantines every AWT-native path: custom fonts are replaced by the proven vanilla FontRenderer, all image ops (skin normalize, cape copies, favicons, rounded icons) are now pure-Java pixel pipelines on every platform, and the AWT font-manager boot is skipped entirely. Desktop is untouched (full TTF fonts). Also now testable: '@' no longer opens Twitch, the non-classic mod menu is a centered Badlion-style window with a full Settings tab, and the SDF smooth-UI renderer is GLES2-safe."
 }
