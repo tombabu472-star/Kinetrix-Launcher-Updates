@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T15:30:00Z",
+  "updated": "2026-09-22T18:45:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.2.4",
-    "version": "3.2.4",
-    "asset": "kinetrix-3.2.4.jar",
-    "size": 21898844,
-    "sha256": "10b708d0423478d9b8dab1d4ca91e9b2b7fbc3891714cf3cc92638bfde8a79a7"
+    "tag": "mod-v3.2.5",
+    "version": "3.2.5",
+    "asset": "kinetrix-3.2.5.jar",
+    "size": 21533327,
+    "sha256": "7f54318c62ce0c6508427bb8ccef7af4eb9774bad2fbb6bca3c76952b6ee9e3b"
   },
-  "notes": "Client v3.2.4 'Lighthouse': the boot now prints an unambiguous identity line ('[Kinetrix] Client v3.2.4 boot | mobile-safe mode ON (markers: ...)') and the first UI frame traces every render step via [Kinetrix][boot-trace] lines - the previous crash report could not prove WHICH jar the phone was running because PojavLauncher launches skip the auto-updater and old jars logged identically. Everything in the crash window (hero logo quad -> first text draw -> SDF underline) is either the already-shipped mobile-safe path (vanilla font instead of AWT freetype natives) or proven-on-device vanilla mechanics. Also: Graphics2D-parity clipping fix in the pure-Java skin converter, verified by a 21-case JDK8 test battery plus a device-env simulation."
+  "notes": "Client v3.2.5 'Quarantine': the fifth byte-identical Pojav SIGSEGV (libc __memcpy_aarch64_simd right after the logo upload log) is root-caused - gl4es/GLES2 corrupts its vertex collection when vanilla fixed-pipeline draws follow the SDF shader renderer's generic-attribute draws in the same frame, so the menu's first Tessellator quad (the logo) died. Fix: on Pojav-class devices the client now renders 100% through the vanilla Tessellator client-array path - the exact mechanics of Gui.drawRect/FontRenderer, the only vertex feed that ran crash-free for the whole 40s boot on the affected device. NEW Imm shim ports every glBegin block 1:1; the SDF shader renderer is hard-quarantined on mobile (no shaders/VBOs/attribs); the logo upload->draw window is untouched vanilla; blur (FBO) is desktop-only on mobile. Desktop rendering unchanged (SDF smooth UI intact). New [Kinetrix][boot-trace] lines bracket every step of the first frame."
 }
