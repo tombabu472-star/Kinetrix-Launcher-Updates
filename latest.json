@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T05:10:00Z",
+  "updated": "2026-09-22T15:30:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.2.3",
-    "version": "3.2.3",
-    "asset": "kinetrix-3.2.3.jar",
-    "size": 21896215,
-    "sha256": "8bf8d736c5969c91ffb89ac6975b9f544ec7efed1e6bfff5be12c78645f2365a"
+    "tag": "mod-v3.2.4",
+    "version": "3.2.4",
+    "asset": "kinetrix-3.2.4.jar",
+    "size": 21898844,
+    "sha256": "10b708d0423478d9b8dab1d4ca91e9b2b7fbc3891714cf3cc92638bfde8a79a7"
   },
-  "notes": "Client v3.2.3 'SafeType': the PojavLauncher startup SIGSEGV is fixed at its REAL root. v3.2.1 and v3.2.2 crashed byte-identically even though the logo upload path changed, which proved the crash was the FIRST custom-font text draw: Font.createFont -> Graphics2D.drawString - the freetype glyph rasterizer of PojavLauncher's OpenJDK (a native memcpy that never throws, so it could never be caught). v3.2.3 detects PojavLauncher-class runtimes and quarantines every AWT-native path: custom fonts are replaced by the proven vanilla FontRenderer, all image ops (skin normalize, cape copies, favicons, rounded icons) are now pure-Java pixel pipelines on every platform, and the AWT font-manager boot is skipped entirely. Desktop is untouched (full TTF fonts). Also now testable: '@' no longer opens Twitch, the non-classic mod menu is a centered Badlion-style window with a full Settings tab, and the SDF smooth-UI renderer is GLES2-safe."
+  "notes": "Client v3.2.4 'Lighthouse': the boot now prints an unambiguous identity line ('[Kinetrix] Client v3.2.4 boot | mobile-safe mode ON (markers: ...)') and the first UI frame traces every render step via [Kinetrix][boot-trace] lines - the previous crash report could not prove WHICH jar the phone was running because PojavLauncher launches skip the auto-updater and old jars logged identically. Everything in the crash window (hero logo quad -> first text draw -> SDF underline) is either the already-shipped mobile-safe path (vanilla font instead of AWT freetype natives) or proven-on-device vanilla mechanics. Also: Graphics2D-parity clipping fix in the pure-Java skin converter, verified by a 21-case JDK8 test battery plus a device-env simulation."
 }
