@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21T21:40:00Z",
+  "updated": "2026-09-22T02:40:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.2.0",
-    "version": "3.2.0",
-    "asset": "kinetrix-3.2.0.jar",
-    "size": 21877065,
-    "sha256": "c4c4a0f4a4f2c85c234adfc2f9a1dd201fcfc3a5a2c513455568b2805dc76505"
+    "tag": "mod-v3.2.1",
+    "version": "3.2.1",
+    "asset": "kinetrix-3.2.1.jar",
+    "size": 21889500,
+    "sha256": "b497dcc5d585cc91a20a758c6987b3afbd0c0742f482f952a4e0912ee126f369"
   },
-  "notes": "Client v3.2.0 'Silk': the whole UI is now analytic anti-aliased - every panel, button, stroke and shadow is a signed-distance field with a true 1-pixel smooth edge at any GUI scale and resolution (the pixelated look is gone). The real Kinetrix logo now leads the home screen, About and Accounts with a soft glow, and player-face avatars appear on the account chip and rows. Home screen restyled (labeled sidebar nav with hover glide, ambient hero glows, gradient Singleplayer button, pro redrawn icon set). Account Manager fixed: blank/white rows with 3+ accounts are gone (5 accounts render scrolled and complete) and header buttons no longer truncate at GUI scale 3."
+  "notes": "Client v3.2.1 'Glide': fixes the PojavLauncher startup crash (the AA renderer is now written GLES2-safe, mobile GL renders the same silky UI without crashing) and fixes typing '@' in any input field opening a broadcast/unavailable screen (the vanilla 1.8.9 Twitch keybinds are neutralized - their default was literally keycode 64 = '@'). The non-classic mod menu Settings tab now lists EVERY client setting grouped by category (Style/Misc/Performance/Controls) with checkbox, slider, dropdown, color and keybind widgets, plus a new 'Centered Mod Menu' option (ON by default) that opens the menu as a Badlion-style centered window, and a 'Smooth UI' switch as a safe fallback for exotic drivers."
 }
