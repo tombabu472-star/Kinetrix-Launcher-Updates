@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T02:40:00Z",
+  "updated": "2026-09-22T03:20:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.2.1",
-    "version": "3.2.1",
-    "asset": "kinetrix-3.2.1.jar",
-    "size": 21889500,
-    "sha256": "b497dcc5d585cc91a20a758c6987b3afbd0c0742f482f952a4e0912ee126f369"
+    "tag": "mod-v3.2.2",
+    "version": "3.2.2",
+    "asset": "kinetrix-3.2.2.jar",
+    "size": 21889772,
+    "sha256": "1dad1695e740c6ae4236965349621924ab11ea8b82d7b332ed996a8946d7c874"
   },
-  "notes": "Client v3.2.1 'Glide': fixes the PojavLauncher startup crash (the AA renderer is now written GLES2-safe, mobile GL renders the same silky UI without crashing) and fixes typing '@' in any input field opening a broadcast/unavailable screen (the vanilla 1.8.9 Twitch keybinds are neutralized - their default was literally keycode 64 = '@'). The non-classic mod menu Settings tab now lists EVERY client setting grouped by category (Style/Misc/Performance/Controls) with checkbox, slider, dropdown, color and keybind widgets, plus a new 'Centered Mod Menu' option (ON by default) that opens the menu as a Badlion-style centered window, and a 'Smooth UI' switch as a safe fallback for exotic drivers."
+  "notes": "Client v3.2.2 'Anchor': the PojavLauncher startup SIGSEGV is fixed at its true root. Device evidence proved the crash was the logo's custom glTexImage2D(ByteBuffer) upload (the only raw pixel path in the mod), not the AA renderer - which demonstrably drew 7 shapes successfully in the crashing frame. The logo now uses only vanilla-proven mechanics: DynamicTexture upload, glTexParameteri filtering, Tessellator quads. Also now testable from 3.2.1: typing '@' no longer opens the Twitch broadcast screen, the non-classic mod menu is a centered Badlion-style window with a Settings tab listing every client setting, and the Centered Mod Menu / Classic Menu / Smooth UI switches are all live."
 }
