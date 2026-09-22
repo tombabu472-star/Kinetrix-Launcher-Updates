@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T18:45:00Z",
+  "updated": "2026-09-22T19:59:36Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.2.5",
-    "version": "3.2.5",
-    "asset": "kinetrix-3.2.5.jar",
-    "size": 21533327,
-    "sha256": "7f54318c62ce0c6508427bb8ccef7af4eb9774bad2fbb6bca3c76952b6ee9e3b"
+    "tag": "mod-v3.3.0",
+    "version": "3.3.0",
+    "asset": "kinetrix-3.3.0.jar",
+    "size": 21912478,
+    "sha256": "e2b16dab4a047e8e2f3eff656ec01b43d2ca54364c8db42cd5140e534a613576"
   },
-  "notes": "Client v3.2.5 'Quarantine': the fifth byte-identical Pojav SIGSEGV (libc __memcpy_aarch64_simd right after the logo upload log) is root-caused - gl4es/GLES2 corrupts its vertex collection when vanilla fixed-pipeline draws follow the SDF shader renderer's generic-attribute draws in the same frame, so the menu's first Tessellator quad (the logo) died. Fix: on Pojav-class devices the client now renders 100% through the vanilla Tessellator client-array path - the exact mechanics of Gui.drawRect/FontRenderer, the only vertex feed that ran crash-free for the whole 40s boot on the affected device. NEW Imm shim ports every glBegin block 1:1; the SDF shader renderer is hard-quarantined on mobile (no shaders/VBOs/attribs); the logo upload->draw window is untouched vanilla; blur (FBO) is desktop-only on mobile. Desktop rendering unchanged (SDF smooth UI intact). New [Kinetrix][boot-trace] lines bracket every step of the first frame."
+  "notes": "Client v3.3.0 'Bastion': the UI is now dark EVERYWHERE - the white-backgrounds bug is root-caused (menu-level overlay screens composited their translucent scrims over the raw clear buffer, which is WHITE on gl4es/GLES2; now every menu frame paints an explicit dark clear + a 3-stop panorama gradient with block grid + vignette first). The UI was designed as a web page first (HTML) and converted 1:1 into a new KuiWeb kit (bevel buttons/cards/windows, inset wells, badges, segmented tabs, toggles, glow dots) - all drawn through the mobile-safe Tessellator path. The non-classic mod menu is boxy-beveled and its setting switches ACT instantly (flipping 'Classic Module Menu' now swaps to the classic menu on the spot; a missing option can no longer blank the settings page). Cosmetics got segmented tabs, bevel cards, REAL cape art previews and animated capes that cycle their frames on the card. GLES2 fix: every uploaded UI texture is padded to power-of-two on mobile with a logical UV window - non-POT uploads rendered blank/white on Pojav (why capes/previews were missing). Desktop rendering keeps the SDF smooth UI."
 }
