@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T16:10:00Z",
+  "updated": "2026-09-23T17:35:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.3.4",
-    "version": "3.3.4",
-    "asset": "kinetrix-3.3.4.jar",
-    "size": 21928539,
-    "sha256": "2a7c59f71070fe0bb9c0ddb9f62250899bbfff1f8d17ca3d0a0c1d961ef28e52"
+    "tag": "mod-v3.3.5",
+    "version": "3.3.5",
+    "asset": "kinetrix-3.3.5.jar",
+    "size": 21938003,
+    "sha256": "01ac43f51e5210633017be9a343f541fc58a980bc99506d72ca54d6f1a22898e"
   },
-  "notes": "Client v3.3.4 Signal: Discord Rich Presence (new Discord RPC module - shows Kinetrix as your Discord activity with server/world/menu + elapsed time; paste your Discord Application ID into the auto-created kinetrix/discord.json, no restart needed). Multiplayer server selector: always-visible refresh button, two-row header, overflow-proof search field with clipped text and clean ellipsis, professional NAME/ADDRESS modal forms. Module toggle re-application at boot made idempotent."
+  "notes": "Client v3.3.5 Showcase: the cosmetics picker now shows REAL rendered previews - vanilla pet models on a slow turntable (bunny/chick/piggy/kitty/puppy/slime/mini-me/star), animated aura glows + the ore ring, and capes as gently swaying cloth. Every scroll list (cosmetics, multiplayer, mod menu, settings, worlds) now supports drag-to-scroll with momentum - fixes scrolling on touch/Pojav devices. Discord Rich Presence is zero-setup (the Kinetrix app id ships in the client; the secret is never embedded)."
 }
