@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T19:59:36Z",
+  "updated": "2026-09-23T01:24:31Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.3.0",
-    "version": "3.3.0",
-    "asset": "kinetrix-3.3.0.jar",
-    "size": 21912478,
-    "sha256": "e2b16dab4a047e8e2f3eff656ec01b43d2ca54364c8db42cd5140e534a613576"
+    "tag": "mod-v3.3.1",
+    "version": "3.3.1",
+    "asset": "kinetrix-3.3.1.jar",
+    "size": 21914816,
+    "sha256": "0e63589723a7389e93c114caf52f95b210ecceae6a2ee0aa67c546311e2c6e8e"
   },
-  "notes": "Client v3.3.0 'Bastion': the UI is now dark EVERYWHERE - the white-backgrounds bug is root-caused (menu-level overlay screens composited their translucent scrims over the raw clear buffer, which is WHITE on gl4es/GLES2; now every menu frame paints an explicit dark clear + a 3-stop panorama gradient with block grid + vignette first). The UI was designed as a web page first (HTML) and converted 1:1 into a new KuiWeb kit (bevel buttons/cards/windows, inset wells, badges, segmented tabs, toggles, glow dots) - all drawn through the mobile-safe Tessellator path. The non-classic mod menu is boxy-beveled and its setting switches ACT instantly (flipping 'Classic Module Menu' now swaps to the classic menu on the spot; a missing option can no longer blank the settings page). Cosmetics got segmented tabs, bevel cards, REAL cape art previews and animated capes that cycle their frames on the card. GLES2 fix: every uploaded UI texture is padded to power-of-two on mobile with a logical UV window - non-POT uploads rendered blank/white on Pojav (why capes/previews were missing). Desktop rendering keeps the SDF smooth UI."
+  "notes": "Client v3.3.1 Nightfall: the home screen is now a real Minecraft NIGHT SCENE (Lunar/Badlion style) - deep-blue sky, twinkling stars, glowing blocky moon, drifting blocky clouds, misty horizon and pine-silhouette terrain; the black-grid backdrop is gone. Every OTHER menu renders the DEFAULT Minecraft dirt background like vanilla screens - the mixed white/dark bug is dead for good (classic menu, HUD editor and legacy screens drew translucent dims over the uncleared white gl4es buffer). Mod-menu switches now work in BOTH directions: Classic Module Menu OFF inside the classic menu instantly swaps back to the new panel (previously dead), and Centered Mod Menu keeps you on the Settings page while the window re-lays-out."
 }
