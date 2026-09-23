@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T01:24:31Z",
+  "updated": "2026-09-23T03:57:28Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.3.1",
-    "version": "3.3.1",
-    "asset": "kinetrix-3.3.1.jar",
-    "size": 21914816,
-    "sha256": "0e63589723a7389e93c114caf52f95b210ecceae6a2ee0aa67c546311e2c6e8e"
+    "tag": "mod-v3.3.2",
+    "version": "3.3.2",
+    "asset": "kinetrix-3.3.2.jar",
+    "size": 21915128,
+    "sha256": "413e329c2bd862b4345849fc8c8a3b0487395cb032035c755ff40b3032f0796b"
   },
-  "notes": "Client v3.3.1 Nightfall: the home screen is now a real Minecraft NIGHT SCENE (Lunar/Badlion style) - deep-blue sky, twinkling stars, glowing blocky moon, drifting blocky clouds, misty horizon and pine-silhouette terrain; the black-grid backdrop is gone. Every OTHER menu renders the DEFAULT Minecraft dirt background like vanilla screens - the mixed white/dark bug is dead for good (classic menu, HUD editor and legacy screens drew translucent dims over the uncleared white gl4es buffer). Mod-menu switches now work in BOTH directions: Classic Module Menu OFF inside the classic menu instantly swaps back to the new panel (previously dead), and Centered Mod Menu keeps you on the Settings page while the window re-lays-out."
+  "notes": "Client v3.3.2 True Colours: the 'fully colour bugged' release. Root cause: the mobile renderer's batch shim reset its current color to WHITE every draw, so every solid shape (sidebar, chip, terrain silhouettes, moon halo, clouds, buttons) painted white while gradients stayed correct - the mixed white/dark signature. Now fixed at the source; the night scene shows its real colours, the moon sits clear of the account chip, the hero uses the approved dark halo + tagline, sidebar nav is stacked, tooltips stay on-screen."
 }
