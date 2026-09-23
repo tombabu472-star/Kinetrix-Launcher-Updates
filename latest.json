@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T03:57:28Z",
+  "updated": "2026-09-23T09:05:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.3.2",
-    "version": "3.3.2",
-    "asset": "kinetrix-3.3.2.jar",
-    "size": 21915128,
-    "sha256": "413e329c2bd862b4345849fc8c8a3b0487395cb032035c755ff40b3032f0796b"
+    "tag": "mod-v3.3.3",
+    "version": "3.3.3",
+    "asset": "kinetrix-3.3.3.jar",
+    "size": 21918751,
+    "sha256": "9a192ecee47f022f97cea236b0ac98129f37dcc1f36a8c4df1e033dc146096b8"
   },
-  "notes": "Client v3.3.2 True Colours: the 'fully colour bugged' release. Root cause: the mobile renderer's batch shim reset its current color to WHITE every draw, so every solid shape (sidebar, chip, terrain silhouettes, moon halo, clouds, buttons) painted white while gradients stayed correct - the mixed white/dark signature. Now fixed at the source; the night scene shows its real colours, the moon sits clear of the account chip, the hero uses the approved dark halo + tagline, sidebar nav is stacked, tooltips stay on-screen."
+  "notes": "Client v3.3.3 Nightfall polish: dark themed backdrop over the vanilla dirt (input dialogs on Multiplayer and every other menu no longer sit on a light grey background), HUD-editor wordmark moved clear of the K logo, boxy mod menu gains category tabs (All/HUD/Mechanic/Visual/Tweaks), per-module settings gear always opens the config, right-click/long-press on a module tile opens its configuration, friendlier settings pages."
 }
