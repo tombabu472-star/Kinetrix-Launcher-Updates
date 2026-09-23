@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T09:05:00Z",
+  "updated": "2026-09-23T16:10:00Z",
   "launcher": {
     "tag": "launcher-v2.4.12",
     "version": "2.4.12",
@@ -9,11 +9,11 @@
     "notes": "Crash-card freshness gate (old crash logs never re-show), real close-after-launch, and a fully detached game process - closing or even Task-Manager-ending the launcher can no longer crash Minecraft. Bundles Client v3.0.0 (the KUI release)."
   },
   "client": {
-    "tag": "mod-v3.3.3",
-    "version": "3.3.3",
-    "asset": "kinetrix-3.3.3.jar",
-    "size": 21918751,
-    "sha256": "9a192ecee47f022f97cea236b0ac98129f37dcc1f36a8c4df1e033dc146096b8"
+    "tag": "mod-v3.3.4",
+    "version": "3.3.4",
+    "asset": "kinetrix-3.3.4.jar",
+    "size": 21928539,
+    "sha256": "2a7c59f71070fe0bb9c0ddb9f62250899bbfff1f8d17ca3d0a0c1d961ef28e52"
   },
-  "notes": "Client v3.3.3 Nightfall polish: dark themed backdrop over the vanilla dirt (input dialogs on Multiplayer and every other menu no longer sit on a light grey background), HUD-editor wordmark moved clear of the K logo, boxy mod menu gains category tabs (All/HUD/Mechanic/Visual/Tweaks), per-module settings gear always opens the config, right-click/long-press on a module tile opens its configuration, friendlier settings pages."
+  "notes": "Client v3.3.4 Signal: Discord Rich Presence (new Discord RPC module - shows Kinetrix as your Discord activity with server/world/menu + elapsed time; paste your Discord Application ID into the auto-created kinetrix/discord.json, no restart needed). Multiplayer server selector: always-visible refresh button, two-row header, overflow-proof search field with clipped text and clean ellipsis, professional NAME/ADDRESS modal forms. Module toggle re-application at boot made idempotent."
 }
