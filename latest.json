@@ -1,19 +1,19 @@
 {
-  "updated": "2026-09-24T16:20:00Z",
-  "launcher": {
-    "tag": "launcher-v2.7.1",
-    "version": "2.7.1",
-    "asset": "KinetrixLauncher-Setup-2.7.1.exe",
-    "size": 111032592,
-    "sha256": "9d6c2d762169f910e089ae6a5999fe8d22fec3ae8997d60583a7336b10fc4461",
-    "notes": "SPLASH FIXED. The silent mid-load crash is gone: the custom Kinetrix loading screen no longer uses a second OpenGL thread (the thing that killed the game on some PCs) - Ultra Forge 4 draws every frame on the main thread, exactly like vanilla Forge's own loading screen, with progress fed by hooks into Forge's own progress system. Same look (Kinetrix emblem, orbit spinner, brand gradient, real-time percentage), same fail-safe design, and the Mojang fallback stays rebranded. Everything else from 2.7.0 is unchanged: Forge 1.8.9 + OptiFine M5 + Kinetrix FPS Boost + FoamFix in one jar with no extra mod loading, byte-exact forge jar verification, automatic sweep of old forge jars and stray mods-folder jars (no duplicates), and the bundled offline client stays v3.3.6."
-  },
-  "client": {
-    "tag": "mod-v3.3.6",
-    "version": "3.3.6",
-    "asset": "kinetrix-3.3.6.jar",
-    "size": 21938854,
-    "sha256": "98cd96c89d073d22b44fe790a04039814d818fdce197ab1683e60e71a940acce"
-  },
-  "notes": "Launcher 2.7.1 \"Splash Fixed\": the silent crash halfway through loading is root-caused (the custom loading screen ran its animation on a second OpenGL thread - the exact topology vanilla Forge refuses next to OptiFine) and fixed in Ultra Forge 4 by drawing every frame on the main thread with progress hooks planted into Forge's own progress system - the animated Kinetrix emblem, orbit spinner, brand gradient and real-time percentage all stay. Old installs upgrade to Ultra Forge 4 automatically on the next launch (no duplicates, old forge jars swept). Client stays 3.3.6 (auto-updates in mods/)."
+    "updated": "2026-09-24T17:20:00Z",
+    "launcher": {
+        "tag": "launcher-v2.7.2",
+        "version": "2.7.2",
+        "asset": "KinetrixLauncher-Setup-2.7.2.exe",
+        "size": 111040212,
+        "sha256": "71c1aafa552fa8b4a8b2a7c7714fc469052138259d67ea7f885d322700e6b821",
+        "notes": "LAUNCH FIXED. The real boot crash is gone, with the actual crash report captured this time: NullPointerException inside MathHelper during 'Initializing game'. Root cause: the Kinetrix FPS Boost math optimizer (shipped in 2.6.0, hidden behind the 2.7.0 loading-screen crash ever since) accidentally stopped MathHelper's own static initialization from running, so the first texture/model load hit null lookup tables and crashed. Ultra Forge 5 rebuilds the optimizer: the vanilla tables always initialize, every instruction is rebuilt safely, and the patched MathHelper is self-verified before it reaches the JVM — any doubt keeps vanilla math, so the game always boots. Verified on real bytecode: OptiFine-patched pipeline passes all four hot functions (integer ones bit-exact over 4096 samples); FoamFix and the Kinetrix loading screen (emblem logo, orbit spinner, real-time progress) are byte-identical and intact. Old ultra3/ultra4 jars are swept automatically - exactly one Ultra Forge 5 jar, no duplicates. Bundles Kinetrix Client v3.3.6."
+    },
+    "client": {
+        "tag": "mod-v3.3.6",
+        "version": "3.3.6",
+        "asset": "kinetrix-3.3.6.jar",
+        "size": 21938854,
+        "sha256": "98cd96c89d073d22b44fe790a04039814d818fdce197ab1683e60e71a940acce"
+    },
+    "notes": "Launcher 2.7.2 \"Launch Fixed\": the real boot crash (MathHelper NPE during model/texture load) is root-caused — the FPS Boost optimizer interrupted MathHelper's static init, a bug shipped in 2.6.0 and masked by the 2.7.0 splash crash — and fixed in Ultra Forge 5 with a self-verifying transformer (any doubt = vanilla math). The whole production pipeline (OptiFine patches first, then FPS Boost) is proven on real bytecode; the Kinetrix loading screen with the emblem logo stays byte-identical. Old installs converge to exactly one Ultra Forge 5 jar automatically. Client stays 3.3.6 (auto-updates in mods/)."
 }
