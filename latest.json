@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-24T13:20:00Z",
+  "updated": "2026-09-24T16:20:00Z",
   "launcher": {
-    "tag": "launcher-v2.7.0",
-    "version": "2.7.0",
-    "asset": "KinetrixLauncher-Setup-2.7.0.exe",
-    "size": 111229573,
-    "sha256": "cca6f68eb21a9287fbc0bf186db49728e79c644d89aa5ac2dbd2368c28053113",
-    "notes": "KINETRIX SPLASH. Ultra Forge 3 = Ultra Forge 2 (Forge 1.8.9 + OptiFine M5 + Kinetrix FPS Boost math coremod + FoamFix Anarchy) + a custom Forge loading screen: dark animated Kinetrix backdrop with breathing glow, the Kinetrix emblem with a rotating orbit spinner, wordmark + loaded stack, and real-time progress driven by Forge's own ProgressManager (stage name, step counter, live percentage, brand-gradient fill + sweeping shimmer). GLES2-safe (POT textures, RGBA uploads, fixed-function GL) for desktop and Pojav/Android, fail-safe (any splash error silently disables it; the Mojang screen is rebranded to Kinetrix for the fallback path). UPDATES WITHOUT DUPLICATES: the active ultra jar is byte-exact verified, every other forge jar in the game folder is swept automatically, stray forge jars in mods/ are removed, partial downloads are cleaned at startup, and the bundled offline client is 3.3.6."
+    "tag": "launcher-v2.7.1",
+    "version": "2.7.1",
+    "asset": "KinetrixLauncher-Setup-2.7.1.exe",
+    "size": 111032592,
+    "sha256": "9d6c2d762169f910e089ae6a5999fe8d22fec3ae8997d60583a7336b10fc4461",
+    "notes": "SPLASH FIXED. The silent mid-load crash is gone: the custom Kinetrix loading screen no longer uses a second OpenGL thread (the thing that killed the game on some PCs) - Ultra Forge 4 draws every frame on the main thread, exactly like vanilla Forge's own loading screen, with progress fed by hooks into Forge's own progress system. Same look (Kinetrix emblem, orbit spinner, brand gradient, real-time percentage), same fail-safe design, and the Mojang fallback stays rebranded. Everything else from 2.7.0 is unchanged: Forge 1.8.9 + OptiFine M5 + Kinetrix FPS Boost + FoamFix in one jar with no extra mod loading, byte-exact forge jar verification, automatic sweep of old forge jars and stray mods-folder jars (no duplicates), and the bundled offline client stays v3.3.6."
   },
   "client": {
     "tag": "mod-v3.3.6",
@@ -15,5 +15,5 @@
     "size": 21938854,
     "sha256": "98cd96c89d073d22b44fe790a04039814d818fdce197ab1683e60e71a940acce"
   },
-  "notes": "Launcher 2.7.0 \"Kinetrix Splash\": the game now loads on a custom animated Kinetrix screen with real-time Forge progress bars (Ultra Forge 3, built into the forge jar - zero mod loading), plus the no-duplicates guarantee: the launcher byte-exact verifies the active Ultra Forge jar, sweeps every other forge jar out of the game folder and any stray forge jars out of mods/, and cleans leftover partial downloads - old installs upgrade to Ultra Forge 3 automatically on the next launch. Client stays 3.3.6 (auto-updates in mods/)."
+  "notes": "Launcher 2.7.1 \"Splash Fixed\": the silent crash halfway through loading is root-caused (the custom loading screen ran its animation on a second OpenGL thread - the exact topology vanilla Forge refuses next to OptiFine) and fixed in Ultra Forge 4 by drawing every frame on the main thread with progress hooks planted into Forge's own progress system - the animated Kinetrix emblem, orbit spinner, brand gradient and real-time percentage all stay. Old installs upgrade to Ultra Forge 4 automatically on the next launch (no duplicates, old forge jars swept). Client stays 3.3.6 (auto-updates in mods/)."
 }
