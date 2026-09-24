@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-24T01:40:00Z",
+  "updated": "2026-09-24T04:00:00Z",
   "launcher": {
-    "tag": "launcher-v2.5.0",
-    "version": "2.5.0",
-    "asset": "KinetrixLauncher-Setup-2.5.0.exe",
-    "size": 110853489,
-    "sha256": "ff62e5198af43598308b50bd405fbe611097a8ea90fbe5ede49959f50b76f801",
-    "notes": "ULTRA PERFORMANCE. Kinetrix Ultra Forge: OptiFine HD U M5 is merged directly INTO the Forge 1.8.9 jar - OptiFine loads as a tweaker from the forge jar itself, no mods-folder loading at all (boot-tested). Benchmark-tuned GC set: -Xms = -Xmx (no heap-growth pauses), AlwaysPreTouch, 40 ms pause target (was 200 ms), survivor/region tuning, string deduplication removed - fixes the 4 GB-runs-slower-than-2 GB paradox. Bundled offline client refreshed to 3.3.5."
+    "tag": "launcher-v2.6.0",
+    "version": "2.6.0",
+    "asset": "KinetrixLauncher-Setup-2.6.0.exe",
+    "size": 110940840,
+    "sha256": "adea9b95755480a5cb46e94a661c3ba50f85bf2507ea05bc8c055f3cd215208c",
+    "notes": "KINETRIX FPS BOOST INTEGRATED. Ultra Forge 2 = Forge 1.8.9 + OptiFine M5 + the Kinetrix FPS Boost coremod (MathHelper sin/cos lookup-table optimizer, 7 algorithms ported from BetterFps, targets verified against official MCP 1.8.9 mappings) + FoamFix Anarchy memory optimizations - ALL inside the forge jar, loaded by Forge itself via fml.coreMods.load, zero mods-folder scanning and zero additional mod loading. Launcher plants config/betterfps.json (rivens-half) and upgrades old ultra installs automatically. Offline-verified: the shipped patcher was run on the real vanilla MathHelper and its sin/cos compared against Math.sin/cos across 6000+ angles."
   },
   "client": {
     "tag": "mod-v3.3.5",
@@ -15,5 +15,5 @@
     "size": 21938003,
     "sha256": "01ac43f51e5210633017be9a343f541fc58a980bc99506d72ca54d6f1a22898e"
   },
-  "notes": "Launcher 2.5.0 Ultra Performance: OptiFine is now built directly into Forge (Kinetrix Ultra Forge jar - no additional mod loading), and the JVM runs a Lunar-class benchmark-tuned garbage collector set (-Xms=-Xmx, AlwaysPreTouch, 40ms GC pause target, survivor tuning) that fixes RAM allocation behaving backwards (4 GB slower than 2 GB was heap-growth churn + a 200ms GC pause target; both gone). The client mod itself loads once at boot and costs zero FPS, so it stays auto-updatable in mods/. Tip for max FPS: 2-4 GB RAM is the sweet spot for 1.8.9."
+  "notes": "Launcher 2.6.0 FPS Boost integrated: BetterFps math optimizer + FoamFix memory optimizations are now part of the Forge jar itself (Ultra Forge 2) - nothing extra to load, it ships with Forge. Existing installs upgrade automatically on next play. Keep the v2.5.0 GC tuning (Xms=Xmx, AlwaysPreTouch, 40ms GC pause target). Tip: config/betterfps.json lets you switch algorithms (libgdx is the most aggressive LUT; rivens-half is the balanced default)."
 }
