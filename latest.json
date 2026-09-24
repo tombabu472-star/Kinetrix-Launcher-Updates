@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-24T10:10:00Z",
+  "updated": "2026-09-24T13:20:00Z",
   "launcher": {
-    "tag": "launcher-v2.6.0",
-    "version": "2.6.0",
-    "asset": "KinetrixLauncher-Setup-2.6.0.exe",
-    "size": 110940840,
-    "sha256": "adea9b95755480a5cb46e94a661c3ba50f85bf2507ea05bc8c055f3cd215208c",
-    "notes": "KINETRIX FPS BOOST INTEGRATED. Ultra Forge 2 = Forge 1.8.9 + OptiFine M5 + the Kinetrix FPS Boost coremod (MathHelper sin/cos lookup-table optimizer, 7 algorithms ported from BetterFps, targets verified against official MCP 1.8.9 mappings) + FoamFix Anarchy memory optimizations - ALL inside the forge jar, loaded by Forge itself via fml.coreMods.load, zero mods-folder scanning and zero additional mod loading. Launcher plants config/betterfps.json (rivens-half) and upgrades old ultra installs automatically. Offline-verified: the shipped patcher was run on the real vanilla MathHelper and its sin/cos compared against Math.sin/cos across 6000+ angles."
+    "tag": "launcher-v2.7.0",
+    "version": "2.7.0",
+    "asset": "KinetrixLauncher-Setup-2.7.0.exe",
+    "size": 111229573,
+    "sha256": "cca6f68eb21a9287fbc0bf186db49728e79c644d89aa5ac2dbd2368c28053113",
+    "notes": "KINETRIX SPLASH. Ultra Forge 3 = Ultra Forge 2 (Forge 1.8.9 + OptiFine M5 + Kinetrix FPS Boost math coremod + FoamFix Anarchy) + a custom Forge loading screen: dark animated Kinetrix backdrop with breathing glow, the Kinetrix emblem with a rotating orbit spinner, wordmark + loaded stack, and real-time progress driven by Forge's own ProgressManager (stage name, step counter, live percentage, brand-gradient fill + sweeping shimmer). GLES2-safe (POT textures, RGBA uploads, fixed-function GL) for desktop and Pojav/Android, fail-safe (any splash error silently disables it; the Mojang screen is rebranded to Kinetrix for the fallback path). UPDATES WITHOUT DUPLICATES: the active ultra jar is byte-exact verified, every other forge jar in the game folder is swept automatically, stray forge jars in mods/ are removed, partial downloads are cleaned at startup, and the bundled offline client is 3.3.6."
   },
   "client": {
     "tag": "mod-v3.3.6",
@@ -15,5 +15,5 @@
     "size": 21938854,
     "sha256": "98cd96c89d073d22b44fe790a04039814d818fdce197ab1683e60e71a940acce"
   },
-  "notes": "Client 3.3.6 \"Hands-On\": Edit is now ON the lists. Every singleplayer world card has visible Edit/Delete icon buttons (one tap = rename modal for that world), and every multiplayer server row gets Edit/Del buttons on hover or selection plus right-click-to-edit. Touch-safe, no hidden menus. Launcher 2.6.0 keeps shipping Ultra Forge 2 (OptiFine + FPS Boost math LUT + FoamFix inside the Forge jar) and the v2.5.0 GC tuning (Xms=Xmx, AlwaysPreTouch, 40ms pause target)."
+  "notes": "Launcher 2.7.0 \"Kinetrix Splash\": the game now loads on a custom animated Kinetrix screen with real-time Forge progress bars (Ultra Forge 3, built into the forge jar - zero mod loading), plus the no-duplicates guarantee: the launcher byte-exact verifies the active Ultra Forge jar, sweeps every other forge jar out of the game folder and any stray forge jars out of mods/, and cleans leftover partial downloads - old installs upgrade to Ultra Forge 3 automatically on the next launch. Client stays 3.3.6 (auto-updates in mods/)."
 }
