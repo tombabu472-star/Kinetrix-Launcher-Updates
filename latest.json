@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24T04:00:00Z",
+  "updated": "2026-09-24T10:10:00Z",
   "launcher": {
     "tag": "launcher-v2.6.0",
     "version": "2.6.0",
@@ -9,11 +9,11 @@
     "notes": "KINETRIX FPS BOOST INTEGRATED. Ultra Forge 2 = Forge 1.8.9 + OptiFine M5 + the Kinetrix FPS Boost coremod (MathHelper sin/cos lookup-table optimizer, 7 algorithms ported from BetterFps, targets verified against official MCP 1.8.9 mappings) + FoamFix Anarchy memory optimizations - ALL inside the forge jar, loaded by Forge itself via fml.coreMods.load, zero mods-folder scanning and zero additional mod loading. Launcher plants config/betterfps.json (rivens-half) and upgrades old ultra installs automatically. Offline-verified: the shipped patcher was run on the real vanilla MathHelper and its sin/cos compared against Math.sin/cos across 6000+ angles."
   },
   "client": {
-    "tag": "mod-v3.3.5",
-    "version": "3.3.5",
-    "asset": "kinetrix-3.3.5.jar",
-    "size": 21938003,
-    "sha256": "01ac43f51e5210633017be9a343f541fc58a980bc99506d72ca54d6f1a22898e"
+    "tag": "mod-v3.3.6",
+    "version": "3.3.6",
+    "asset": "kinetrix-3.3.6.jar",
+    "size": 21938854,
+    "sha256": "98cd96c89d073d22b44fe790a04039814d818fdce197ab1683e60e71a940acce"
   },
-  "notes": "Launcher 2.6.0 FPS Boost integrated: BetterFps math optimizer + FoamFix memory optimizations are now part of the Forge jar itself (Ultra Forge 2) - nothing extra to load, it ships with Forge. Existing installs upgrade automatically on next play. Keep the v2.5.0 GC tuning (Xms=Xmx, AlwaysPreTouch, 40ms GC pause target). Tip: config/betterfps.json lets you switch algorithms (libgdx is the most aggressive LUT; rivens-half is the balanced default)."
+  "notes": "Client 3.3.6 \"Hands-On\": Edit is now ON the lists. Every singleplayer world card has visible Edit/Delete icon buttons (one tap = rename modal for that world), and every multiplayer server row gets Edit/Del buttons on hover or selection plus right-click-to-edit. Touch-safe, no hidden menus. Launcher 2.6.0 keeps shipping Ultra Forge 2 (OptiFine + FPS Boost math LUT + FoamFix inside the Forge jar) and the v2.5.0 GC tuning (Xms=Xmx, AlwaysPreTouch, 40ms pause target)."
 }
