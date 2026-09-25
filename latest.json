@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-25T08:55:00.000Z",
+  "updated": "2026-09-25T09:50:00.000Z",
   "launcher": {
-    "tag": "launcher-v2.7.6",
-    "version": "2.7.6",
-    "asset": "KinetrixLauncher-Setup-2.7.6.exe",
-    "size": 111061070,
-    "sha256": "3916a8884635dbf5d5a2b7d81551371e1ab6102c118642dcc4dbcab1b341edb6",
-    "notes": "CRASH FIX for every machine: the game died at 'Initializing game' with java.lang.IllegalAccessError (RendererLivingEntity.field_77045_g from LayerMooshroomMushroom) right after OptiFine loaded. Root cause: the launcher passed OptiFine's tweaker BEFORE the Forge/FML tweaker, so OptiFine rewrote the vanilla renderer classes first and FML then skipped Forge's binary patches for them (checksum mismatch) - the field Forge makes public stayed protected and OptiFine's patched mooshroom layer hit it cross-package. The launch order is now Forge first, OptiFine second - the exact order every stock Forge 1.8.9 + OptiFine HD U M5 install uses. A/B verified on the real stack: old order dies at RenderManager init, new order reaches the main menu and keeps running. NO jars changed - Ultra Forge (ultra5) and Kinetrix Client (3.3.8) are byte-identical to 2.7.5; worlds, servers and settings untouched. Update the launcher and PLAY."
+    "tag": "launcher-v2.7.7",
+    "version": "2.7.7",
+    "asset": "KinetrixLauncher-Setup-2.7.7.exe",
+    "size": 109036680,
+    "sha256": "dcf52a46806b663fcac8d3035d58709e5c727a3531576e44ab47a057808e07f2",
+    "notes": "DEFAULT FORGE, OPTIMIZATIONS ONLY. Chunks not loading in worlds/servers and altered animations were caused by OptiFine's render rewrites. Ultra Forge 6 removes OptiFine COMPLETELY: the forge jar is now Forge 11.15.1.2318 + Kinetrix FPS Boost (MathHelper optimizer) + FoamFix memory + the crash-proof loading screen - nothing else. Chunk loading and all animations are exactly vanilla again while the FPS/memory optimizations stay. The old Ultra Forge jar in mods/ is replaced in place (size + sha256 verified, never deleted-first), the launcher no longer passes OptiFine's tweak class, and a no-op stub keeps older launchers boot-safe. Boot-verified both ways: new launcher = main menu with zero OptiFine classes; older launcher + new jar = clean boot too."
   },
   "client": {
     "tag": "mod-v3.3.8",
@@ -17,11 +17,11 @@
   },
   "notes": "Client 3.3.8 \"Mirror\": the cosmetics update. Scrolling no longer wrecks the cosmetics menu (grid layout root cause fixed); Capes tab shows every real cape including the animated ones; Pets show the REAL pets with their REAL names; Auras render the real ore ring / animated glows and the Spark/Storm name mix-up is fixed. The hub now uses the module menu window proportions (no more near-fullscreen). New \"Customize Cosmetics\" button on the pause screen for in-world/server customization. Remember-me keeps you signed in between launches and a logout button sits top-right. Launcher 2.7.3 (next) bundles it.",
   "forge": {
-    "tag": "launcher-v2.7.5",
-    "version": "ultra5",
-    "asset": "kinetrix-forge-1.8.9-11.15.1.2318-1.8.9-ultra5.jar",
-    "size": 6477841,
-    "sha256": "5ed154e0cfaa063b2434fc32d26e92aa7e41abc1df01d3efbf05ad3d89414c7b",
-    "notes": "Kinetrix Ultra Forge 5 (Forge 11.15.1.2318 + OptiFine M5 + FPS Boost + FoamFix + crash-proof loading screen). The launcher auto-replaces this jar in mods/ when a newer ultra ships. Hosted on the launcher release assets."
+    "tag": "launcher-v2.7.7",
+    "version": "ultra6",
+    "asset": "kinetrix-forge-1.8.9-11.15.1.2318-1.8.9-ultra6.jar",
+    "size": 3922441,
+    "sha256": "adcc65e58f05ff8e08daa6958034b1041879f7407d1e57e54c45bb835a0e018b",
+    "notes": "Kinetrix Ultra Forge 6 'Default Forge' (Forge 11.15.1.2318 + FPS Boost + FoamFix + loading screen; OptiFine REMOVED - vanilla chunk loading and animations). Replaces ultra5 in mods/ automatically. Hosted on the launcher release assets."
   }
 }
