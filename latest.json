@@ -1,12 +1,12 @@
 {
-    "updated": "2026-09-25T06:30:42.658Z",
+    "updated": "2026-09-25T07:24:23.948Z",
     "launcher": {
-        "tag": "launcher-v2.7.4",
-        "version": "2.7.4",
-        "asset": "KinetrixLauncher-Setup-2.7.4.exe",
-        "size": 111057855,
-        "sha256": "21b21b56668bd349361325c6595ce2944b83f5262bdbc58b25bff6eeceb53204",
-        "notes": "ALWAYS ASKED. The update prompt is now automatic: three redundant sources raced in parallel (quota-free latest.json on raw.githubusercontent + its jsDelivr CDN mirror + the GitHub API with a soft timeout, releases feed as last resort), boot checks retry with backoff (20s/1m/3m/8m/15m) until the first success then re-check every 10 minutes, a found release is REMEMBERED and its prompt replays on every start until the installed version catches up, prompts are only sent once the UI is listening (renderer-ready gate), failed checks are logged with the reason, and Settings > Maintenance gains a Check for launcher updates button. Bundles Kinetrix Client v3.3.8 Mirror."
+        "tag": "launcher-v2.7.5",
+        "version": "2.7.5",
+        "asset": "KinetrixLauncher-Setup-2.7.5.exe",
+        "size": 111060161,
+        "sha256": "13ed1b2c4d961397ed38d3937aa95381401f0257da602804abfa1c9e94eab856",
+        "notes": "VISIBLE FORGE. The Ultra Forge jar now lives IN the mods folder next to the client mod (mods/kinetrix-forge-...-ultra5.jar) - open mods/ and you see BOTH jars, and the launch classpath points directly at that file. The launcher can NEVER delete a forge jar you place in mods/ again: the active ultra jar IS the install, other forge jars are left untouched and harmless, and only an OUTDATED ultra is replaced by the newer version after the new one is verified on disk. Forge now auto-updates ALONGSIDE the client: a future Ultra Forge 6/7 downloads itself and replaces the jar in mods/ with size + sha256 verification. Existing libraries/ installs migrate into mods/ automatically (moved, not deleted). Boot-proven: FML, OptiFine, the FPS Boost coremods and the client mod all load with the forge jar living in mods/."
     },
     "client": {
         "tag": "mod-v3.3.8",
@@ -15,5 +15,13 @@
         "size": 21953808,
         "sha256": "340be7b95d413d2bed3ffd093c3088ac27c17d4066a036bf8a8929d2ae60565b"
     },
-    "notes": "Client 3.3.8 \"Mirror\": the cosmetics update. Scrolling no longer wrecks the cosmetics menu (grid layout root cause fixed); Capes tab shows every real cape including the animated ones; Pets show the REAL pets with their REAL names; Auras render the real ore ring / animated glows and the Spark/Storm name mix-up is fixed. The hub now uses the module menu window proportions (no more near-fullscreen). New \"Customize Cosmetics\" button on the pause screen for in-world/server customization. Remember-me keeps you signed in between launches and a logout button sits top-right. Launcher 2.7.3 (next) bundles it."
+    "notes": "Client 3.3.8 \"Mirror\": the cosmetics update. Scrolling no longer wrecks the cosmetics menu (grid layout root cause fixed); Capes tab shows every real cape including the animated ones; Pets show the REAL pets with their REAL names; Auras render the real ore ring / animated glows and the Spark/Storm name mix-up is fixed. The hub now uses the module menu window proportions (no more near-fullscreen). New \"Customize Cosmetics\" button on the pause screen for in-world/server customization. Remember-me keeps you signed in between launches and a logout button sits top-right. Launcher 2.7.3 (next) bundles it.",
+    "forge": {
+        "tag": "launcher-v2.7.5",
+        "version": "ultra5",
+        "asset": "kinetrix-forge-1.8.9-11.15.1.2318-1.8.9-ultra5.jar",
+        "size": 6477841,
+        "sha256": "5ed154e0cfaa063b2434fc32d26e92aa7e41abc1df01d3efbf05ad3d89414c7b",
+        "notes": "Kinetrix Ultra Forge 5 (Forge 11.15.1.2318 + OptiFine M5 + FPS Boost + FoamFix + crash-proof loading screen). The launcher auto-replaces this jar in mods/ when a newer ultra ships. Hosted on the launcher release assets."
+    }
 }
