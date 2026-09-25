@@ -1,12 +1,12 @@
 {
-    "updated": "2026-09-25T05:45:00Z",
+    "updated": "2026-09-25T06:30:42.658Z",
     "launcher": {
-        "tag": "launcher-v2.7.3",
-        "version": "2.7.3",
-        "asset": "KinetrixLauncher-Setup-2.7.3.exe",
-        "size": 111055320,
-        "sha256": "bfa2424460eb2163a665b99509f3610802b46b12f0859c7062d2a86cff06e127",
-        "notes": "LAUNCH SELF-HEAL. The game-not-launching bug is fixed two ways: a valid Kinetrix Ultra Forge jar found in mods/ is now MOVED to its proper libraries/ location instead of deleted (the old sweep could leave the game with NO Forge classes - instant crash with only the client mod left), and when the Ultra Forge jar is unavailable for any reason the launcher restores the plain Forge universal jar before launch, so the classpath can never point at a jar that does not exist. Every launch now preflights the critical files (launchwrapper, the active Forge jar, the 1.8.9 jar and version JSON): anything missing triggers one automatic repair pass, and if something still cannot be restored the launcher says exactly what is missing instead of crashing silently. The version stamped into the game now matches the real launcher version. Bundles Kinetrix Client v3.3.8 Mirror: cosmetics overhaul - scroll fix, every real cape incl. animated, real pets with real names, real aura previews, module-menu window proportions, pause-screen 'Customize Cosmetics' button, remember-me + top-right logout."
+        "tag": "launcher-v2.7.4",
+        "version": "2.7.4",
+        "asset": "KinetrixLauncher-Setup-2.7.4.exe",
+        "size": 111057855,
+        "sha256": "21b21b56668bd349361325c6595ce2944b83f5262bdbc58b25bff6eeceb53204",
+        "notes": "ALWAYS ASKED. The update prompt is now automatic: three redundant sources raced in parallel (quota-free latest.json on raw.githubusercontent + its jsDelivr CDN mirror + the GitHub API with a soft timeout, releases feed as last resort), boot checks retry with backoff (20s/1m/3m/8m/15m) until the first success then re-check every 10 minutes, a found release is REMEMBERED and its prompt replays on every start until the installed version catches up, prompts are only sent once the UI is listening (renderer-ready gate), failed checks are logged with the reason, and Settings > Maintenance gains a Check for launcher updates button. Bundles Kinetrix Client v3.3.8 Mirror."
     },
     "client": {
         "tag": "mod-v3.3.8",
