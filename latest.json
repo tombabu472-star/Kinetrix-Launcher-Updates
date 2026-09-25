@@ -1,12 +1,12 @@
 {
-    "updated": "2026-09-25T06:00:00Z",
+    "updated": "2026-09-25T05:45:00Z",
     "launcher": {
-        "tag": "launcher-v2.7.2",
-        "version": "2.7.2",
-        "asset": "KinetrixLauncher-Setup-2.7.2.exe",
-        "size": 111040212,
-        "sha256": "71c1aafa552fa8b4a8b2a7c7714fc469052138259d67ea7f885d322700e6b821",
-        "notes": "LAUNCH FIXED. The real boot crash is gone, with the actual crash report captured this time: NullPointerException inside MathHelper during 'Initializing game'. Root cause: the Kinetrix FPS Boost math optimizer (shipped in 2.6.0, hidden behind the 2.7.0 loading-screen crash ever since) accidentally stopped MathHelper's own static initialization from running, so the first texture/model load hit null lookup tables and crashed. Ultra Forge 5 rebuilds the optimizer: the vanilla tables always initialize, every instruction is rebuilt safely, and the patched MathHelper is self-verified before it reaches the JVM — any doubt keeps vanilla math, so the game always boots. Verified on real bytecode: OptiFine-patched pipeline passes all four hot functions (integer ones bit-exact over 4096 samples); FoamFix and the Kinetrix loading screen (emblem logo, orbit spinner, real-time progress) are byte-identical and intact. Old ultra3/ultra4 jars are swept automatically - exactly one Ultra Forge 5 jar, no duplicates. Bundles Kinetrix Client v3.3.6."
+        "tag": "launcher-v2.7.3",
+        "version": "2.7.3",
+        "asset": "KinetrixLauncher-Setup-2.7.3.exe",
+        "size": 111055320,
+        "sha256": "bfa2424460eb2163a665b99509f3610802b46b12f0859c7062d2a86cff06e127",
+        "notes": "LAUNCH SELF-HEAL. The game-not-launching bug is fixed two ways: a valid Kinetrix Ultra Forge jar found in mods/ is now MOVED to its proper libraries/ location instead of deleted (the old sweep could leave the game with NO Forge classes - instant crash with only the client mod left), and when the Ultra Forge jar is unavailable for any reason the launcher restores the plain Forge universal jar before launch, so the classpath can never point at a jar that does not exist. Every launch now preflights the critical files (launchwrapper, the active Forge jar, the 1.8.9 jar and version JSON): anything missing triggers one automatic repair pass, and if something still cannot be restored the launcher says exactly what is missing instead of crashing silently. The version stamped into the game now matches the real launcher version. Bundles Kinetrix Client v3.3.8 Mirror: cosmetics overhaul - scroll fix, every real cape incl. animated, real pets with real names, real aura previews, module-menu window proportions, pause-screen 'Customize Cosmetics' button, remember-me + top-right logout."
     },
     "client": {
         "tag": "mod-v3.3.8",
