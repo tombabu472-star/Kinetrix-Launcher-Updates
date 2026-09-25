@@ -1,19 +1,19 @@
 {
-    "updated": "2026-09-24T18:20:00Z",
+    "updated": "2026-09-25T06:00:00Z",
     "launcher": {
         "tag": "launcher-v2.7.2",
         "version": "2.7.2",
         "asset": "KinetrixLauncher-Setup-2.7.2.exe",
         "size": 111040212,
         "sha256": "71c1aafa552fa8b4a8b2a7c7714fc469052138259d67ea7f885d322700e6b821",
-        "notes": "LAUNCH FIXED. The real boot crash is gone, with the actual crash report captured this time: NullPointerException inside MathHelper during 'Initializing game'. Root cause: the Kinetrix FPS Boost math optimizer (shipped in 2.6.0, hidden behind the 2.7.0 loading-screen crash ever since) accidentally stopped MathHelper's own static initialization from running, so the first texture/model load hit null lookup tables and crashed. Ultra Forge 5 rebuilds the optimizer: the vanilla tables always initialize, every instruction is rebuilt safely, and the patched MathHelper is self-verified before it reaches the JVM \u2014 any doubt keeps vanilla math, so the game always boots. Verified on real bytecode: OptiFine-patched pipeline passes all four hot functions (integer ones bit-exact over 4096 samples); FoamFix and the Kinetrix loading screen (emblem logo, orbit spinner, real-time progress) are byte-identical and intact. Old ultra3/ultra4 jars are swept automatically - exactly one Ultra Forge 5 jar, no duplicates. Bundles Kinetrix Client v3.3.6."
+        "notes": "LAUNCH FIXED. The real boot crash is gone, with the actual crash report captured this time: NullPointerException inside MathHelper during 'Initializing game'. Root cause: the Kinetrix FPS Boost math optimizer (shipped in 2.6.0, hidden behind the 2.7.0 loading-screen crash ever since) accidentally stopped MathHelper's own static initialization from running, so the first texture/model load hit null lookup tables and crashed. Ultra Forge 5 rebuilds the optimizer: the vanilla tables always initialize, every instruction is rebuilt safely, and the patched MathHelper is self-verified before it reaches the JVM — any doubt keeps vanilla math, so the game always boots. Verified on real bytecode: OptiFine-patched pipeline passes all four hot functions (integer ones bit-exact over 4096 samples); FoamFix and the Kinetrix loading screen (emblem logo, orbit spinner, real-time progress) are byte-identical and intact. Old ultra3/ultra4 jars are swept automatically - exactly one Ultra Forge 5 jar, no duplicates. Bundles Kinetrix Client v3.3.6."
     },
     "client": {
-        "tag": "mod-v3.3.7",
-        "version": "3.3.7",
-        "asset": "kinetrix-3.3.7.jar",
-        "size": 21944369,
-        "sha256": "9772c7eb91c3b5c8daff63a2a218385be1cd4dc1cd353cfac9459bac0f8c47c1"
+        "tag": "mod-v3.3.8",
+        "version": "3.3.8",
+        "asset": "kinetrix-3.3.8.jar",
+        "size": 21953808,
+        "sha256": "340be7b95d413d2bed3ffd093c3088ac27c17d4066a036bf8a8929d2ae60565b"
     },
-    "notes": "Client 3.3.7 \"Glyph\": the non-classic mod menu now shows REAL module icons - the classic menu asset set re-colored to blend with the dark theme (muted blue-grey while OFF, teal accent while ON, brighter on hover; violet accent in the navy card grid). Root cause of the old first-letter monograms: icon files with spaces (armor status.png, ...) crash the 1.8.9 ResourceLocation validator - icons now load straight off the classpath with a safe loader. New Discord RPC icon completes the set (59/59). Launcher stays 2.7.2 (Ultra Forge 5)."
+    "notes": "Client 3.3.8 \"Mirror\": the cosmetics update. Scrolling no longer wrecks the cosmetics menu (grid layout root cause fixed); Capes tab shows every real cape including the animated ones; Pets show the REAL pets with their REAL names; Auras render the real ore ring / animated glows and the Spark/Storm name mix-up is fixed. The hub now uses the module menu window proportions (no more near-fullscreen). New \"Customize Cosmetics\" button on the pause screen for in-world/server customization. Remember-me keeps you signed in between launches and a logout button sits top-right. Launcher 2.7.3 (next) bundles it."
 }
