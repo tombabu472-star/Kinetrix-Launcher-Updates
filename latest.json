@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-25T09:50:00.000Z",
+  "updated": "2026-09-26T07:00:00.000Z",
   "launcher": {
-    "tag": "launcher-v2.7.7",
-    "version": "2.7.7",
-    "asset": "KinetrixLauncher-Setup-2.7.7.exe",
-    "size": 109036680,
-    "sha256": "dcf52a46806b663fcac8d3035d58709e5c727a3531576e44ab47a057808e07f2",
-    "notes": "DEFAULT FORGE, OPTIMIZATIONS ONLY. Chunks not loading in worlds/servers and altered animations were caused by OptiFine's render rewrites. Ultra Forge 6 removes OptiFine COMPLETELY: the forge jar is now Forge 11.15.1.2318 + Kinetrix FPS Boost (MathHelper optimizer) + FoamFix memory + the crash-proof loading screen - nothing else. Chunk loading and all animations are exactly vanilla again while the FPS/memory optimizations stay. The old Ultra Forge jar in mods/ is replaced in place (size + sha256 verified, never deleted-first), the launcher no longer passes OptiFine's tweak class, and a no-op stub keeps older launchers boot-safe. Boot-verified both ways: new launcher = main menu with zero OptiFine classes; older launcher + new jar = clean boot too."
+    "tag": "launcher-v2.7.8",
+    "version": "2.7.8",
+    "asset": "KinetrixLauncher-Setup-2.7.8.exe",
+    "size": 110941852,
+    "sha256": "8a5f0861d55b72090f56d008e97c4bae3317e92135e0d77026fbe8e15ed398d1",
+    "notes": "FORGE OPTIFINE 1.8.9 — YOUR FORGE, OUR JAR. The hand-modified forge jars kept feeling bugged, so the forge jar is now exactly the classic combined ForgeOptiFine 1.8.9: Forge 11.15.1.2318 + OptiFine HD U M5 in ONE jar and NOTHING else (no FoamFix, no FPS boost, no custom loading screen — every file byte-identical to the official jars, merged with the same rules a normal 'OptiFine in mods' install uses; the earlier merge's wrong class-collision choice was the most plausible cause of the broken chunks and changed animations). The launcher detects OptiFine inside the jar automatically and launches with the stock Forge-first/OptiFine-second tweak order, and it pins the six OptiFine render-path options (Smooth World, Lazy Chunk Loading, Fast Render, Smooth FPS, Render Regions, Dynamic Chunk Updates) back to vanilla behavior in optionsof.txt because those cause exactly the 'chunks not loading / animations changed' symptoms on weaker PCs — re-enable any of them in Video Settings; zoom, CTM, HD textures and shaders are untouched. The old Ultra Forge jar is replaced in place, never deleted first. Boot-verified in a real world: chunks generate and render (terrain, water, sky, clouds, entities) with OptiFine active."
   },
   "client": {
     "tag": "mod-v3.3.8",
@@ -17,11 +17,11 @@
   },
   "notes": "Client 3.3.8 \"Mirror\": the cosmetics update. Scrolling no longer wrecks the cosmetics menu (grid layout root cause fixed); Capes tab shows every real cape including the animated ones; Pets show the REAL pets with their REAL names; Auras render the real ore ring / animated glows and the Spark/Storm name mix-up is fixed. The hub now uses the module menu window proportions (no more near-fullscreen). New \"Customize Cosmetics\" button on the pause screen for in-world/server customization. Remember-me keeps you signed in between launches and a logout button sits top-right. Launcher 2.7.3 (next) bundles it.",
   "forge": {
-    "tag": "launcher-v2.7.7",
-    "version": "ultra6",
-    "asset": "kinetrix-forge-1.8.9-11.15.1.2318-1.8.9-ultra6.jar",
-    "size": 3922441,
-    "sha256": "adcc65e58f05ff8e08daa6958034b1041879f7407d1e57e54c45bb835a0e018b",
-    "notes": "Kinetrix Ultra Forge 6 'Default Forge' (Forge 11.15.1.2318 + FPS Boost + FoamFix + loading screen; OptiFine REMOVED - vanilla chunk loading and animations). Replaces ultra5 in mods/ automatically. Hosted on the launcher release assets."
+    "tag": "launcher-v2.7.8",
+    "version": "ultra7",
+    "asset": "kinetrix-forge-1.8.9-11.15.1.2318-1.8.9-ultra7.jar",
+    "size": 6266304,
+    "sha256": "026c4604883f6155e7262e4a9841679d0a7a517f27213f610addb9f21e0a276e",
+    "notes": "Kinetrix ForgeOptiFine 1.8.9 (Ultra Forge 7): Forge 11.15.1.2318 + OptiFine HD U M5, byte-pure official pair — nothing else. Replaces ultra6/ultra5 in mods/ automatically (size + sha256 verified, in place). Hosted on the launcher release assets."
   }
 }
