@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-26T07:00:00.000Z",
+  "updated": "2026-09-26T09:00:00.000Z",
   "launcher": {
-    "tag": "launcher-v2.7.8",
-    "version": "2.7.8",
-    "asset": "KinetrixLauncher-Setup-2.7.8.exe",
-    "size": 110941852,
-    "sha256": "8a5f0861d55b72090f56d008e97c4bae3317e92135e0d77026fbe8e15ed398d1",
-    "notes": "FORGE OPTIFINE 1.8.9 — YOUR FORGE, OUR JAR. The hand-modified forge jars kept feeling bugged, so the forge jar is now exactly the classic combined ForgeOptiFine 1.8.9: Forge 11.15.1.2318 + OptiFine HD U M5 in ONE jar and NOTHING else (no FoamFix, no FPS boost, no custom loading screen — every file byte-identical to the official jars, merged with the same rules a normal 'OptiFine in mods' install uses; the earlier merge's wrong class-collision choice was the most plausible cause of the broken chunks and changed animations). The launcher detects OptiFine inside the jar automatically and launches with the stock Forge-first/OptiFine-second tweak order, and it pins the six OptiFine render-path options (Smooth World, Lazy Chunk Loading, Fast Render, Smooth FPS, Render Regions, Dynamic Chunk Updates) back to vanilla behavior in optionsof.txt because those cause exactly the 'chunks not loading / animations changed' symptoms on weaker PCs — re-enable any of them in Video Settings; zoom, CTM, HD textures and shaders are untouched. The old Ultra Forge jar is replaced in place, never deleted first. Boot-verified in a real world: chunks generate and render (terrain, water, sky, clouds, entities) with OptiFine active."
+    "tag": "launcher-v2.7.9",
+    "version": "2.7.9",
+    "asset": "KinetrixLauncher-Setup-2.7.9.exe",
+    "size": 105329412,
+    "sha256": "7fd3b2fd1300bdedf0d613e6f66ec410238fb6b60da4794d8330ea977137f47f",
+    "notes": "TLAUNCHER PARITY — THE EXACT STACK YOUR 260 FPS RUNS ON. TLauncher's 'ForgeOptiFine 1.8.9.jar' is actually the untouched vanilla client jar; the stack is the official Forge 11.15.1.1764 universal + the byte-exact OptiFine HD U M5 jar TLauncher ships (sha1 d1f454ec…, declared in their TLauncherAdditional.json) as two classpath libraries, OptiFine last, FMLTweaker first / OptiFineForgeTweaker second. v2.7.9 installs and launches exactly that — nothing TLauncher does not do: no custom coremods, no FoamFix, no FPS-boost hacks, no loading-screen hooks, no forced optionsof.txt tweaks. The hand-merged Ultra jars are retired (parked into mods/.disabled, never deleted). Worlds, servers and settings untouched. Boot-verified in a live world: chunks render, sheep graze, water animates, HUD draws."
   },
   "client": {
     "tag": "mod-v3.3.8",
@@ -17,11 +17,16 @@
   },
   "notes": "Client 3.3.8 \"Mirror\": the cosmetics update. Scrolling no longer wrecks the cosmetics menu (grid layout root cause fixed); Capes tab shows every real cape including the animated ones; Pets show the REAL pets with their REAL names; Auras render the real ore ring / animated glows and the Spark/Storm name mix-up is fixed. The hub now uses the module menu window proportions (no more near-fullscreen). New \"Customize Cosmetics\" button on the pause screen for in-world/server customization. Remember-me keeps you signed in between launches and a logout button sits top-right. Launcher 2.7.3 (next) bundles it.",
   "forge": {
-    "tag": "launcher-v2.7.8",
-    "version": "ultra7",
-    "asset": "kinetrix-forge-1.8.9-11.15.1.2318-1.8.9-ultra7.jar",
-    "size": 6266304,
-    "sha256": "026c4604883f6155e7262e4a9841679d0a7a517f27213f610addb9f21e0a276e",
-    "notes": "Kinetrix ForgeOptiFine 1.8.9 (Ultra Forge 7): Forge 11.15.1.2318 + OptiFine HD U M5, byte-pure official pair — nothing else. Replaces ultra6/ultra5 in mods/ automatically (size + sha256 verified, in place). Hosted on the launcher release assets."
+    "tag": "launcher-v2.7.9",
+    "version": "11.15.1.1764+OptiFine_M5",
+    "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
+    "size": 3726026,
+    "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
+    "optifine": {
+      "asset": "OptiFine-1.8.9_HD_U_M5.jar",
+      "size": 2367088,
+      "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
+    },
+    "notes": "TLauncher-parity classpath pair: the OFFICIAL Forge 11.15.1.1764 universal jar (TLauncher's pinned build, from the official Forge maven, sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde) + the official OptiFine 1.8.9 HD U M5 mod jar (byte-exact TLauncher artifact, sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8). Both install into libraries/ and load on the classpath exactly like TLauncher's combined version: forge first, OptiFine last, vanilla client jar untouched. Old Ultra jars in mods/ are parked into mods/.disabled automatically."
   }
 }
