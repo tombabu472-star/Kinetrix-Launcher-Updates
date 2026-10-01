@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T11:00:00.000Z",
+  "updated": "2026-10-01T17:05:00.000Z",
   "launcher": {
     "tag": "launcher-v2.7.11",
     "version": "2.7.11",
@@ -9,13 +9,13 @@
     "notes": "ANY NETWORK — fix for 'fail to download the forge universal jar': the two TLauncher-stack classpath jars are now ALSO committed to this repo (hosted/) and download through 5 independent mirrors (raw.githubusercontent → jsDelivr .pack alias → github.com/raw → release asset → official maven/TLauncher origin), every hop sha1-gated (dc0e4003… / d1f454ec…); corrupt jars auto-deleted and re-downloaded; bundled copy itself sha1-checked before use. Launch stack unchanged: byte-pure vanilla 1.8.9 client + official Forge 11.15.1.1764 universal + OptiFine HD U M5 (TLauncher's exact artifacts, token-exact args). Bundle: Kinetrix Client v3.3.8."
   },
   "client": {
-    "tag": "mod-v3.3.8",
-    "version": "3.3.8",
-    "asset": "kinetrix-3.3.8.jar",
-    "size": 21953808,
-    "sha256": "340be7b95d413d2bed3ffd093c3088ac27c17d4066a036bf8a8929d2ae60565b"
+    "tag": "mod-v3.3.9",
+    "version": "3.3.9",
+    "asset": "kinetrix-3.3.9.jar",
+    "size": 21954529,
+    "sha256": "a2bf017e0a31420b2c0e54c4f275921c98a15c5cbd2bcc3af828836adf1c368c"
   },
-  "notes": "Client 3.3.8 \"Mirror\": the cosmetics update. Scrolling no longer wrecks the cosmetics menu (grid layout root cause fixed); Capes tab shows every real cape including the animated ones; Pets show the REAL pets with their REAL names; Auras render the real ore ring / animated glows and the Spark/Storm name mix-up is fixed. The hub now uses the module menu window proportions (no more near-fullscreen). New \"Customize Cosmetics\" button on the pause screen for in-world/server customization. Remember-me keeps you signed in between launches and a logout button sits top-right. Launcher 2.7.3 (next) bundles it.",
+  "notes": "Client 3.3.9 \"Fix Round\": multiplayer repaired end-to-end - (1) scrolling no longer breaks the server list (nested clip escape fixed: the server icon can never paint over the search bar again, stray edge glyphs gone), (2) Join works again right after leaving a server (stale join-latch reset) and taps survive finger jitter / scrolling glide (8px tap slop + press-pins-scroll), (3) header buttons equalized. AutoGG no longer says gg at game start on PikaNetwork (how-to-play tip blacklist + round warm-up gate; real \"last player standing\" results still fire). Launcher/forge sections unchanged.",
   "forge": {
     "tag": "launcher-v2.7.11",
     "version": "11.15.1.1764+OptiFine_M5",
