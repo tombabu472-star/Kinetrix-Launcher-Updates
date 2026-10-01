@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-26T09:00:00.000Z",
+  "updated": "2026-10-01T09:00:00.000Z",
   "launcher": {
-    "tag": "launcher-v2.7.9",
-    "version": "2.7.9",
-    "asset": "KinetrixLauncher-Setup-2.7.9.exe",
-    "size": 105329412,
-    "sha256": "7fd3b2fd1300bdedf0d613e6f66ec410238fb6b60da4794d8330ea977137f47f",
-    "notes": "TLAUNCHER PARITY — THE EXACT STACK YOUR 260 FPS RUNS ON. TLauncher's 'ForgeOptiFine 1.8.9.jar' is actually the untouched vanilla client jar; the stack is the official Forge 11.15.1.1764 universal + the byte-exact OptiFine HD U M5 jar TLauncher ships (sha1 d1f454ec…, declared in their TLauncherAdditional.json) as two classpath libraries, OptiFine last, FMLTweaker first / OptiFineForgeTweaker second. v2.7.9 installs and launches exactly that — nothing TLauncher does not do: no custom coremods, no FoamFix, no FPS-boost hacks, no loading-screen hooks, no forced optionsof.txt tweaks. The hand-merged Ultra jars are retired (parked into mods/.disabled, never deleted). Worlds, servers and settings untouched. Boot-verified in a live world: chunks render, sheep graze, water animates, HUD draws."
+    "tag": "launcher-v2.7.10",
+    "version": "2.7.10",
+    "asset": "KinetrixLauncher-Setup-2.7.10.exe",
+    "size": 105331597,
+    "sha256": "f3d78fd75c324dc6698e39643761cc0768225d4e560b352cab7b4eee73cc5948",
+    "notes": "YOUR FILES, OUR CONTRACT — the user's real .tlauncher/versions/ForgeOptiFine 1.8.9/ capture (ForgeOptiFine_1.8.9.zip) is now the launcher's launch-parity contract, byte-verified: their jar IS the untouched vanilla 1.8.9 client (sha1 3870888a6c3d349d… = Mojang official), their OptiFine = HD U M5 sha1 d1f454ec…, their Forge = pinned 11.15.1.1764. minecraftArguments are now TOKEN-EXACT with their version JSON (--versionType dropped, --userProperties added); the only extra token is the OptiFineForgeTweaker TLauncher also passes. Their two JSONs ship inside the launcher test suite unmodified (58-check suite) so every future version is proven to launch the same command as TLauncher. Boot-verified in a world with their jar: chunks render, entities animate, OptiFine active from the classpath."
   },
   "client": {
     "tag": "mod-v3.3.8",
@@ -17,7 +17,7 @@
   },
   "notes": "Client 3.3.8 \"Mirror\": the cosmetics update. Scrolling no longer wrecks the cosmetics menu (grid layout root cause fixed); Capes tab shows every real cape including the animated ones; Pets show the REAL pets with their REAL names; Auras render the real ore ring / animated glows and the Spark/Storm name mix-up is fixed. The hub now uses the module menu window proportions (no more near-fullscreen). New \"Customize Cosmetics\" button on the pause screen for in-world/server customization. Remember-me keeps you signed in between launches and a logout button sits top-right. Launcher 2.7.3 (next) bundles it.",
   "forge": {
-    "tag": "launcher-v2.7.9",
+    "tag": "launcher-v2.7.10",
     "version": "11.15.1.1764+OptiFine_M5",
     "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
     "size": 3726026,
@@ -27,6 +27,6 @@
       "size": 2367088,
       "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
     },
-    "notes": "TLauncher-parity classpath pair: the OFFICIAL Forge 11.15.1.1764 universal jar (TLauncher's pinned build, from the official Forge maven, sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde) + the official OptiFine 1.8.9 HD U M5 mod jar (byte-exact TLauncher artifact, sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8). Both install into libraries/ and load on the classpath exactly like TLauncher's combined version: forge first, OptiFine last, vanilla client jar untouched. Old Ultra jars in mods/ are parked into mods/.disabled automatically."
+    "notes": "Unchanged bytes, now user-pinned: the OFFICIAL Forge 11.15.1.1764 universal (sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde — lib[0] of the user's own ForgeOptiFine 1.8.9.json) + the official OptiFine 1.8.9 HD U M5 mod jar (sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8 — declared in the user's own TLauncherAdditional.json). Classpath order: forge first, OptiFine last, vanilla client jar untouched."
   }
 }
