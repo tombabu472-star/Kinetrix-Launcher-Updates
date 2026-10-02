@@ -1,32 +1,32 @@
 {
-  "updated": "2026-10-02",
-  "launcher": {
-    "tag": "launcher-v2.7.13",
-    "version": "2.7.13",
-    "asset": "KinetrixLauncher-Setup-2.7.13.exe",
-    "size": 105337853,
-    "sha256": "ccc3eb24a338937c79932542d5db9a7e5773fd159bd002b9d5d8e33a46f16ee9",
-    "notes": "FORGE FROM GITHUB RELEASES - the fix for \"Cannot launch: missing the Forge 11.15.1.1764 universal jar / no source was reachable\". The Forge universal jar and OptiFine now download from a DEDICATED GitHub release asset first (the exact same download mechanism as the client updates, which works on every network we have seen), then fall back through raw.githubusercontent, FOUR separate jsDelivr CDNs, github.com/raw, the version release asset and the official Forge maven - 10 independent sources. Every download attempt is verified against the expected SIZE + SHA1 inside the downloader itself, so a captive portal or antivirus interception page can never again be mistaken for a real download (that was the bug that made 2.7.12 report \"no source was reachable\" while the network was up); a poisoned partial download is detected, cleaned and restarted automatically. Restart the launcher, accept the update prompt, then press PLAY - the game files install and the game launches."
+ "updated": "2026-10-02",
+ "launcher": {
+  "tag": "launcher-v2.7.14",
+  "version": "2.7.14",
+  "asset": "KinetrixLauncher-Setup-2.7.14.exe",
+  "size": 105339112,
+  "sha256": "eefe56969cb7fad1c840b3614eaaa9aa12f26451facd29be0316424dc30db939",
+  "notes": "THE ACTUAL BUG, FOUND AND KILLED - the fix for \"Cannot launch: missing the Forge 11.15.1.1764 universal jar / no source was reachable\". The launch preflight was checking for the Forge jar at libraries/net/minecraftforge/forge/11.15.1.1764/ (a folder that never exists) while the jar was downloaded, checksum-verified and sitting exactly where the game reads it: libraries/net/minecraftforge/forge/1.8.9-11.15.1.1764/. That is why the log said \"already installed\" and Play still refused to launch and blamed your internet - the network was never the problem. Now the pre-launch check reads the same single path definition the installer and the game classpath use, so they can never disagree again; it also rejects a wrong-size stub in the same step, and the error message states exactly which file is missing. Restart the launcher, accept the update prompt, press PLAY - the game starts from the files you already have."
+ },
+ "client": {
+  "tag": "mod-v3.6.0",
+  "version": "3.6.0",
+  "asset": "kinetrix-3.6.0.jar",
+  "size": 22728477,
+  "sha256": "65ec48fd15303df727ac4297e6ae9ca7fdbdf6888b66f8ef2ea60186c85d9e1e"
+ },
+ "notes": "Launcher 2.7.13 \"Forge from GitHub releases\": the missing-Forge-universal-jar repair now downloads the Forge 11.15.1.1764 universal + OptiFine M5 jars from a dedicated GitHub release asset FIRST (same mechanism as the client updates), through a 9-source all-public mirror chain, with size+sha1 verification on EVERY attempt and poisoned-partial self-heal. Client 3.6.0 unchanged. If the PLAY button ever still reports a missing file, just press PLAY again - the preflight repair re-runs with the new sources.",
+ "forge": {
+  "tag": "forge-1.8.9-11.15.1.1764",
+  "version": "11.15.1.1764+OptiFine_M5",
+  "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
+  "size": 3726026,
+  "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
+  "optifine": {
+   "asset": "OptiFine-1.8.9_HD_U_M5.jar",
+   "size": 2367088,
+   "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
   },
-  "client": {
-    "tag": "mod-v3.6.0",
-    "version": "3.6.0",
-    "asset": "kinetrix-3.6.0.jar",
-    "size": 22728477,
-    "sha256": "65ec48fd15303df727ac4297e6ae9ca7fdbdf6888b66f8ef2ea60186c85d9e1e"
-  },
-  "notes": "Launcher 2.7.13 \"Forge from GitHub releases\": the missing-Forge-universal-jar repair now downloads the Forge 11.15.1.1764 universal + OptiFine M5 jars from a dedicated GitHub release asset FIRST (same mechanism as the client updates), through a 9-source all-public mirror chain, with size+sha1 verification on EVERY attempt and poisoned-partial self-heal. Client 3.6.0 unchanged. If the PLAY button ever still reports a missing file, just press PLAY again - the preflight repair re-runs with the new sources.",
-  "forge": {
-    "tag": "forge-1.8.9-11.15.1.1764",
-    "version": "11.15.1.1764+OptiFine_M5",
-    "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
-    "size": 3726026,
-    "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
-    "optifine": {
-      "asset": "OptiFine-1.8.9_HD_U_M5.jar",
-      "size": 2367088,
-      "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
-    },
-    "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
-  }
+  "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
+ }
 }
