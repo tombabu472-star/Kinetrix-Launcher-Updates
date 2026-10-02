@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T17:05:00.000Z",
+  "updated": "2026-10-02T04:05:00.000Z",
   "launcher": {
     "tag": "launcher-v2.7.11",
     "version": "2.7.11",
@@ -9,13 +9,13 @@
     "notes": "ANY NETWORK — fix for 'fail to download the forge universal jar': the two TLauncher-stack classpath jars are now ALSO committed to this repo (hosted/) and download through 5 independent mirrors (raw.githubusercontent → jsDelivr .pack alias → github.com/raw → release asset → official maven/TLauncher origin), every hop sha1-gated (dc0e4003… / d1f454ec…); corrupt jars auto-deleted and re-downloaded; bundled copy itself sha1-checked before use. Launch stack unchanged: byte-pure vanilla 1.8.9 client + official Forge 11.15.1.1764 universal + OptiFine HD U M5 (TLauncher's exact artifacts, token-exact args). Bundle: Kinetrix Client v3.3.8."
   },
   "client": {
-    "tag": "mod-v3.4.0",
-    "version": "3.4.0",
-    "asset": "kinetrix-3.4.0.jar",
-    "size": 21957737,
-    "sha256": "ed616bf057c3f53b57d1fb3999b6dd3568cade75385bd70da11a938ec4dd364e"
+    "tag": "mod-v3.5.0",
+    "version": "3.5.0",
+    "asset": "kinetrix-3.5.0.jar",
+    "size": 23115695,
+    "sha256": "17f5ff69037329cae76a06aca28546a38bc0f6ed100056b5c7a644a754f4fee1"
   },
-  "notes": "Client 3.4.0 \"Cosmetics Round\": (1) animated capes now play a REAL live animated preview in the cosmetics menu (both the in-game KUI screen and the title-screen screen) - they were frozen on frame 0, (2) Cape tab gained All / Normal / Animated filter buttons so capes are categorized, plus an ANIMATED badge on animated cards, (3) real-time cosmetics sync on account switching - the profile-sync identity caches (resolved name / revision / skin) are dropped the moment the MC session changes, so the NEW account's website cosmetics apply immediately instead of the old account's sticking forever, (4) Hitbox: new Show My Hitbox toggle (default OFF) and the own hitbox can never render in first-person POV anymore (only third-person), (5) fixed: AutoGG Message / Secondary Message (all TextBox settings) now persist across client restarts (the config loader had no TextBox branch). Launcher/forge sections unchanged.",
+  "notes": "Client 3.5.0 \"Top 30 Legendary Capes\": all 30 capes from the community Top-30 sheet added and EVERY one is a real 24-frame seamless animated loop - Kinetrix (our own logo crest replaces the Lunar slot), Astral, Dragon, Phoenix, Crown, Sakura, Spectre, Ice, Ender, Forest, Inferno, Ocean, Void, Hearts, Cyber, Shadow, Wings, Volcano, Neon, Storm, Galaxy, Blood, Rune, Demon, Snow, Sunset, Wolf, Toxic, Butterfly, Diamond. Each cape plays a live animated preview in the cosmetics menu (All / Normal / Animated filters) and the website dashboard now lists the full 72-cape catalogue. The five older capes that would collide by name (Phoenix, Sakura, Cyber, Inferno, Storm) are renamed with a Classic suffix. Launcher/forge sections unchanged - existing launchers auto-update the client on next start.",
   "forge": {
     "tag": "launcher-v2.7.11",
     "version": "11.15.1.1764+OptiFine_M5",
