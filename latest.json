@@ -6,14 +6,14 @@
     "asset": "KinetrixLauncher-Setup-2.7.11.exe",
     "size": 105333950,
     "sha256": "5cb76a1ac1d84dd157ca652b0c4739a7be78f3eba42a6a4b77cfba481c81f0aa",
-    "notes": "ANY NETWORK — fix for 'fail to download the forge universal jar': the two TLauncher-stack classpath jars are now ALSO committed to this repo (hosted/) and download through 5 independent mirrors (raw.githubusercontent → jsDelivr .pack alias → github.com/raw → release asset → official maven/TLauncher origin), every hop sha1-gated (dc0e4003… / d1f454ec…); corrupt jars auto-deleted and re-downloaded; bundled copy itself sha1-checked before use. Launch stack unchanged: byte-pure vanilla 1.8.9 client + official Forge 11.15.1.1764 universal + OptiFine HD U M5 (TLauncher's exact artifacts, token-exact args). Bundle: Kinetrix Client v3.3.8."
+    "notes": "ANY NETWORK \u2014 fix for 'fail to download the forge universal jar': the two TLauncher-stack classpath jars are now ALSO committed to this repo (hosted/) and download through 5 independent mirrors (raw.githubusercontent \u2192 jsDelivr .pack alias \u2192 github.com/raw \u2192 release asset \u2192 official maven/TLauncher origin), every hop sha1-gated (dc0e4003\u2026 / d1f454ec\u2026); corrupt jars auto-deleted and re-downloaded; bundled copy itself sha1-checked before use. Launch stack unchanged: byte-pure vanilla 1.8.9 client + official Forge 11.15.1.1764 universal + OptiFine HD U M5 (TLauncher's exact artifacts, token-exact args). Bundle: Kinetrix Client v3.3.8."
   },
   "client": {
-    "tag": "mod-v3.3.9",
-    "version": "3.3.9",
-    "asset": "kinetrix-3.3.9.jar",
-    "size": 21954529,
-    "sha256": "a2bf017e0a31420b2c0e54c4f275921c98a15c5cbd2bcc3af828836adf1c368c"
+    "tag": "mod-v3.4.0",
+    "version": "3.4.0",
+    "asset": "kinetrix-3.4.0.jar",
+    "size": 21957737,
+    "sha256": "ed616bf057c3f53b57d1fb3999b6dd3568cade75385bd70da11a938ec4dd364e"
   },
   "notes": "Client 3.3.9 \"Fix Round\": multiplayer repaired end-to-end - (1) scrolling no longer breaks the server list (nested clip escape fixed: the server icon can never paint over the search bar again, stray edge glyphs gone), (2) Join works again right after leaving a server (stale join-latch reset) and taps survive finger jitter / scrolling glide (8px tap slop + press-pins-scroll), (3) header buttons equalized. AutoGG no longer says gg at game start on PikaNetwork (how-to-play tip blacklist + round warm-up gate; real \"last player standing\" results still fire). Launcher/forge sections unchanged.",
   "forge": {
@@ -27,6 +27,6 @@
       "size": 2367088,
       "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
     },
-    "notes": "Unchanged bytes (official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde — lib[0] of the user's own ForgeOptiFine 1.8.9.json; OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8 — declared in the user's own TLauncherAdditional.json). Since launcher-v2.7.11 these jars are ALSO committed to this repo under hosted/ and download through 5 sha1-gated mirrors, version-independently. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
+    "notes": "Unchanged bytes (official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde \u2014 lib[0] of the user's own ForgeOptiFine 1.8.9.json; OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8 \u2014 declared in the user's own TLauncherAdditional.json). Since launcher-v2.7.11 these jars are ALSO committed to this repo under hosted/ and download through 5 sha1-gated mirrors, version-independently. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
   }
 }
