@@ -9,13 +9,13 @@
   "notes": "YOUR EXACT JAR, FROM OUR GITHUB - the client jar is now the byte-exact ForgeOptiFine 1.8.9.jar from your real TLauncher folder (= the official Minecraft 1.8.9 client, sha1 3870888a6c3d349d3771a3e9d16c9bf5e076b908, 8,461,484 bytes). The launcher downloads it from the dedicated minecraft-1.8.9 GitHub release FIRST (the same mechanism as every other game file), then raw + four jsDelivr CDNs + github raw, with Mojang CDN last; the jar is also bundled inside the launcher itself (checksum-gated) so installs work fully offline. Every attempt is size+sha1-verified and a corrupted jar self-heals. Your jar, the Forge universal jar, the OptiFine jar and the launch arguments are all now byte/token-identical to TLauncher - if FPS still feels lower, it is the game profile video settings (each launcher has its own options.txt): set render distance and the OptiFine Performance toggles once in Video Settings. Restart the launcher, accept the update prompt, press PLAY."
  },
  "client": {
-  "tag": "mod-v3.6.2",
-  "version": "3.6.2",
-  "asset": "kinetrix-3.6.2.jar",
-  "size": 22730813,
-  "sha256": "3358f9fb58caa1edb8409b9cabc5e0e9433dd9d41223100ea6ddf24e58d68856"
+  "tag": "mod-v3.6.3",
+  "version": "3.6.3",
+  "asset": "kinetrix-3.6.3.jar",
+  "size": 22730831,
+  "sha256": "0ed35cac0df3a40625df927743918d99bc221938b359422e658e2200def22418"
  },
- "notes": "Client 3.6.2 \"smooth Cosmetics + settings fixes\": the Cosmetics menu no longer drops frames - off-screen cards are skipped entirely instead of being fully painted and discarded every frame (same culling also speeds up Multiplayer and the mod menu), the animated cape/pet/aura previews stopped allocating memory per frame, and all Kinetrix menus render at a capped 60 fps (with Unlock FPS the menu was redrawing hundreds of times per second on phones - the direct cause of the drop). Video Settings \"View Bobbing\" is changeable again (the mod's \"Minimal View Bobbing\" no longer defaults ON forcing it OFF every tick), \"Use VBOs\" defaults OFF (was OptiFine's default), and \"Unlock FPS\" defaults OFF (was forced ON) - both applied once on update and both re-enableable, now persisting properly. Launcher 2.7.15 unchanged.",
+ "notes": "Client 3.6.3 \"Unlock FPS + Use VBOs default ON\": your requested default configuration is back - \"Unlock FPS\" is enabled by default (in-game ~260 fps ceiling, client menus stay capped at 60 fps so Cosmetics stays smooth) and \"Use VBOs\" is enabled by default (re-applied once automatically if 3.6.2 turned it off on your device). Both toggles keep working normally and your choices persist. Also fixed: a duplicated \"Minimal View Bobbing\" option meant fresh installs still had the Video Settings View Bobbing button flipping back OFF - one registration now, View Bobbing changes properly on every install. Launcher 2.7.15 unchanged.",
  "forge": {
   "tag": "forge-1.8.9-11.15.1.1764",
   "version": "11.15.1.1764+OptiFine_M5",
