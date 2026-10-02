@@ -1,12 +1,12 @@
 {
  "updated": "2026-10-02",
  "launcher": {
-  "tag": "launcher-v2.7.14",
-  "version": "2.7.14",
-  "asset": "KinetrixLauncher-Setup-2.7.14.exe",
-  "size": 105339112,
-  "sha256": "eefe56969cb7fad1c840b3614eaaa9aa12f26451facd29be0316424dc30db939",
-  "notes": "THE ACTUAL BUG, FOUND AND KILLED - the fix for \"Cannot launch: missing the Forge 11.15.1.1764 universal jar / no source was reachable\". The launch preflight was checking for the Forge jar at libraries/net/minecraftforge/forge/11.15.1.1764/ (a folder that never exists) while the jar was downloaded, checksum-verified and sitting exactly where the game reads it: libraries/net/minecraftforge/forge/1.8.9-11.15.1.1764/. That is why the log said \"already installed\" and Play still refused to launch and blamed your internet - the network was never the problem. Now the pre-launch check reads the same single path definition the installer and the game classpath use, so they can never disagree again; it also rejects a wrong-size stub in the same step, and the error message states exactly which file is missing. Restart the launcher, accept the update prompt, press PLAY - the game starts from the files you already have."
+  "tag": "launcher-v2.7.15",
+  "version": "2.7.15",
+  "asset": "KinetrixLauncher-Setup-2.7.15.exe",
+  "size": 112893122,
+  "sha256": "f2d8ed37e332a4bea8e301ede411e6f69cdf00000ae80b6ebb9fa7a9dfe77454",
+  "notes": "YOUR EXACT JAR, FROM OUR GITHUB - the client jar is now the byte-exact ForgeOptiFine 1.8.9.jar from your real TLauncher folder (= the official Minecraft 1.8.9 client, sha1 3870888a6c3d349d3771a3e9d16c9bf5e076b908, 8,461,484 bytes). The launcher downloads it from the dedicated minecraft-1.8.9 GitHub release FIRST (the same mechanism as every other game file), then raw + four jsDelivr CDNs + github raw, with Mojang CDN last; the jar is also bundled inside the launcher itself (checksum-gated) so installs work fully offline. Every attempt is size+sha1-verified and a corrupted jar self-heals. Your jar, the Forge universal jar, the OptiFine jar and the launch arguments are all now byte/token-identical to TLauncher - if FPS still feels lower, it is the game profile video settings (each launcher has its own options.txt): set render distance and the OptiFine Performance toggles once in Video Settings. Restart the launcher, accept the update prompt, press PLAY."
  },
  "client": {
   "tag": "mod-v3.6.0",
@@ -28,5 +28,13 @@
    "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
   },
   "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
+ },
+ "clientJar": {
+  "asset": "ForgeOptiFine-1.8.9.jar",
+  "size": 8461484,
+  "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
+  "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
+  "release": "minecraft-1.8.9",
+  "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
  }
 }
