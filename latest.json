@@ -9,13 +9,13 @@
   "notes": "YOUR EXACT JAR, FROM OUR GITHUB - the client jar is now the byte-exact ForgeOptiFine 1.8.9.jar from your real TLauncher folder (= the official Minecraft 1.8.9 client, sha1 3870888a6c3d349d3771a3e9d16c9bf5e076b908, 8,461,484 bytes). The launcher downloads it from the dedicated minecraft-1.8.9 GitHub release FIRST (the same mechanism as every other game file), then raw + four jsDelivr CDNs + github raw, with Mojang CDN last; the jar is also bundled inside the launcher itself (checksum-gated) so installs work fully offline. Every attempt is size+sha1-verified and a corrupted jar self-heals. Your jar, the Forge universal jar, the OptiFine jar and the launch arguments are all now byte/token-identical to TLauncher - if FPS still feels lower, it is the game profile video settings (each launcher has its own options.txt): set render distance and the OptiFine Performance toggles once in Video Settings. Restart the launcher, accept the update prompt, press PLAY."
  },
  "client": {
-  "tag": "mod-v3.6.0",
-  "version": "3.6.0",
-  "asset": "kinetrix-3.6.0.jar",
-  "size": 22728477,
-  "sha256": "65ec48fd15303df727ac4297e6ae9ca7fdbdf6888b66f8ef2ea60186c85d9e1e"
+  "tag": "mod-v3.6.1",
+  "version": "3.6.1",
+  "asset": "kinetrix-3.6.1.jar",
+  "size": 22729869,
+  "sha256": "20b3ef9901eaffada3bbb8b76774c2e8d1854f75c81308b9a70b5db3da3229cf"
  },
- "notes": "Launcher 2.7.13 \"Forge from GitHub releases\": the missing-Forge-universal-jar repair now downloads the Forge 11.15.1.1764 universal + OptiFine M5 jars from a dedicated GitHub release asset FIRST (same mechanism as the client updates), through a 9-source all-public mirror chain, with size+sha1 verification on EVERY attempt and poisoned-partial self-heal. Client 3.6.0 unchanged. If the PLAY button ever still reports a missing file, just press PLAY again - the preflight repair re-runs with the new sources.",
+ "notes": "Client 3.6.1 \"mouse scrolling\": the Multiplayer and Cosmetics screens now fully respond to the mouse - the wheel notch was a nearly invisible 9px and the scrollbar could not be grabbed at all. One wheel notch now scrolls about one card row (40px), the scrollbar thumb is grabbable (drag) and the track jumps on press, and the wheel works anywhere over the page, not just over the list. Touch drag scrolling is unchanged. Launcher 2.7.15 unchanged.",
  "forge": {
   "tag": "forge-1.8.9-11.15.1.1764",
   "version": "11.15.1.1764+OptiFine_M5",
