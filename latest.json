@@ -1,21 +1,21 @@
 {
-  "updated": "2026-10-02T04:05:00.000Z",
+  "updated": "2026-10-02T04:40:00.000Z",
   "launcher": {
     "tag": "launcher-v2.7.11",
     "version": "2.7.11",
     "asset": "KinetrixLauncher-Setup-2.7.11.exe",
     "size": 105333950,
     "sha256": "5cb76a1ac1d84dd157ca652b0c4739a7be78f3eba42a6a4b77cfba481c81f0aa",
-    "notes": "ANY NETWORK — fix for 'fail to download the forge universal jar': the two TLauncher-stack classpath jars are now ALSO committed to this repo (hosted/) and download through 5 independent mirrors (raw.githubusercontent → jsDelivr .pack alias → github.com/raw → release asset → official maven/TLauncher origin), every hop sha1-gated (dc0e4003… / d1f454ec…); corrupt jars auto-deleted and re-downloaded; bundled copy itself sha1-checked before use. Launch stack unchanged: byte-pure vanilla 1.8.9 client + official Forge 11.15.1.1764 universal + OptiFine HD U M5 (TLauncher's exact artifacts, token-exact args). Bundle: Kinetrix Client v3.3.8."
+    "notes": "ANY NETWORK \u2014 fix for 'fail to download the forge universal jar': the two TLauncher-stack classpath jars are now ALSO committed to this repo (hosted/) and download through 5 independent mirrors (raw.githubusercontent \u2192 jsDelivr .pack alias \u2192 github.com/raw \u2192 release asset \u2192 official maven/TLauncher origin), every hop sha1-gated (dc0e4003\u2026 / d1f454ec\u2026); corrupt jars auto-deleted and re-downloaded; bundled copy itself sha1-checked before use. Launch stack unchanged: byte-pure vanilla 1.8.9 client + official Forge 11.15.1.1764 universal + OptiFine HD U M5 (TLauncher's exact artifacts, token-exact args). Bundle: Kinetrix Client v3.3.8."
   },
   "client": {
-    "tag": "mod-v3.5.0",
-    "version": "3.5.0",
-    "asset": "kinetrix-3.5.0.jar",
-    "size": 23115695,
-    "sha256": "17f5ff69037329cae76a06aca28546a38bc0f6ed100056b5c7a644a754f4fee1"
+    "tag": "mod-v3.6.0",
+    "version": "3.6.0",
+    "asset": "kinetrix-3.6.0.jar",
+    "size": 22728477,
+    "sha256": "65ec48fd15303df727ac4297e6ae9ca7fdbdf6888b66f8ef2ea60186c85d9e1e"
   },
-  "notes": "Client 3.5.0 \"Top 30 Legendary Capes\": all 30 capes from the community Top-30 sheet added and EVERY one is a real 24-frame seamless animated loop - Kinetrix (our own logo crest replaces the Lunar slot), Astral, Dragon, Phoenix, Crown, Sakura, Spectre, Ice, Ender, Forest, Inferno, Ocean, Void, Hearts, Cyber, Shadow, Wings, Volcano, Neon, Storm, Galaxy, Blood, Rune, Demon, Snow, Sunset, Wolf, Toxic, Butterfly, Diamond. Each cape plays a live animated preview in the cosmetics menu (All / Normal / Animated filters) and the website dashboard now lists the full 72-cape catalogue. The five older capes that would collide by name (Phoenix, Sakura, Cyber, Inferno, Storm) are renamed with a Classic suffix. Launcher/forge sections unchanged - existing launchers auto-update the client on next start.",
+  "notes": "Client 3.6.0 \"Auras Reborn + True Account Sync\": (1) account switching is now fully account-aware - equipped cape/pet/aura are stored PER MC ACCOUNT instead of one global file, so a different account no longer shows the old account's cosmetics; (2) the website profile sync can no longer answer with the old account's row after a switch (the linked-name fallback only applies while the MC session matches the login identity); (3) skins follow the database on switching - an account without a website skin drops the previous account's synced skin back to the vanilla/Mojang skin, and locally picked skins clear on switch; (4) the AURA cosmetics were REBUILT: no more 3 glow images orbiting the player - every aura is now a big glowing circle centred on the player (two counter-rotating themed rings) plus a themed particle field (rise / fall / orbit / spiral / burst); (5) 10 NEW auras: Emerald, Royal, Shadow, Solar, Rainbow, Vortex, Plasma, Cyclone, Blossom, Amethyst - 21 total, all with live previews in both cosmetics screens. Launcher/forge sections unchanged - existing launchers auto-update the client on next start.",
   "forge": {
     "tag": "launcher-v2.7.11",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -27,6 +27,6 @@
       "size": 2367088,
       "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
     },
-    "notes": "Unchanged bytes (official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde — lib[0] of the user's own ForgeOptiFine 1.8.9.json; OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8 — declared in the user's own TLauncherAdditional.json). Since launcher-v2.7.11 these jars are ALSO committed to this repo under hosted/ and download through 5 sha1-gated mirrors, version-independently. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
+    "notes": "Unchanged bytes (official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde \u2014 lib[0] of the user's own ForgeOptiFine 1.8.9.json; OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8 \u2014 declared in the user's own TLauncherAdditional.json). Since launcher-v2.7.11 these jars are ALSO committed to this repo under hosted/ and download through 5 sha1-gated mirrors, version-independently. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
   }
 }
