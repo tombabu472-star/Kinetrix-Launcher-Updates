@@ -4,8 +4,8 @@
     "tag": "launcher-v2.7.13",
     "version": "2.7.13",
     "asset": "KinetrixLauncher-Setup-2.7.13.exe",
-    "size": 105337601,
-    "sha256": "5131a8d9c2b9b7aab50db665f1d02e424b13fa0445bc89fd10184741eb056c49",
+    "size": 105337853,
+    "sha256": "ccc3eb24a338937c79932542d5db9a7e5773fd159bd002b9d5d8e33a46f16ee9",
     "notes": "FORGE FROM GITHUB RELEASES - the fix for \"Cannot launch: missing the Forge 11.15.1.1764 universal jar / no source was reachable\". The Forge universal jar and OptiFine now download from a DEDICATED GitHub release asset first (the exact same download mechanism as the client updates, which works on every network we have seen), then fall back through raw.githubusercontent, FOUR separate jsDelivr CDNs, github.com/raw, the version release asset and the official Forge maven - 10 independent sources. Every download attempt is verified against the expected SIZE + SHA1 inside the downloader itself, so a captive portal or antivirus interception page can never again be mistaken for a real download (that was the bug that made 2.7.12 report \"no source was reachable\" while the network was up); a poisoned partial download is detected, cleaned and restarted automatically. Restart the launcher, accept the update prompt, then press PLAY - the game files install and the game launches."
   },
   "client": {
@@ -15,7 +15,7 @@
     "size": 22728477,
     "sha256": "65ec48fd15303df727ac4297e6ae9ca7fdbdf6888b66f8ef2ea60186c85d9e1e"
   },
-  "notes": "Launcher 2.7.13 \"Forge from GitHub releases\": the missing-Forge-universal-jar repair now downloads the Forge 11.15.1.1764 universal + OptiFine M5 jars from a dedicated GitHub release asset FIRST (same mechanism as the client updates), through a 10-source mirror chain, with size+sha1 verification on EVERY attempt and poisoned-partial self-heal. Client 3.6.0 unchanged. If the PLAY button ever still reports a missing file, just press PLAY again - the preflight repair re-runs with the new sources.",
+  "notes": "Launcher 2.7.13 \"Forge from GitHub releases\": the missing-Forge-universal-jar repair now downloads the Forge 11.15.1.1764 universal + OptiFine M5 jars from a dedicated GitHub release asset FIRST (same mechanism as the client updates), through a 9-source all-public mirror chain, with size+sha1 verification on EVERY attempt and poisoned-partial self-heal. Client 3.6.0 unchanged. If the PLAY button ever still reports a missing file, just press PLAY again - the preflight repair re-runs with the new sources.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
