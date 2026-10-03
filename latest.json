@@ -1,21 +1,21 @@
 {
-  "updated": "2026-10-03T08:10:00Z",
+  "updated": "2026-10-03T09:20:00Z",
   "launcher": {
-    "tag": "launcher-v2.8.0",
-    "version": "2.8.0",
-    "asset": "KinetrixLauncher-Setup-2.8.0.exe",
-    "size": 113639513,
-    "sha256": "f529d20f6f4e2b36979e9806322a12e183c27b2703e32816c31276f1c0dff0f5",
-    "notes": "THE ACCOUNT LEFT THE DASHBOARD - the home screen is now a pure launch experience with zero account clutter: the titlebar chip and the always-open accounts card are gone, and your identity lives on a single avatar at the bottom of the navigation rail. Hover the avatar (or click it) and the account switcher opens right next to it; clicking pins it open, a second click closes it, and a hover-open closes itself shortly after your pointer moves away. Switch accounts with one click (the avatar updates instantly), add an offline nickname or sign in with Microsoft right inside the flyout; the full account manager still lives in Settings. The running status line no longer shows the username either. Same trusted launch pipeline: managed Java 8, Minecraft 1.8.9, Forge + OptiFine and the Kinetrix Client, prepared in the background and launched in seconds. Restart the launcher and accept the update prompt."
+    "tag": "launcher-v2.8.1",
+    "version": "2.8.1",
+    "asset": "KinetrixLauncher-Setup-2.8.1.exe",
+    "size": 113640550,
+    "sha256": "aa5d7c81c28f3cc0bee1a4f5ff2f63bdfd41781f50f80f9ac881550e7cec2757",
+    "notes": "MICROSOFT ACCOUNTS ALWAYS LAUNCH PREMIUM - the launch command now carries your Microsoft token, uuid and name whenever a session is on record (exactly how the msmc engine feeds the Minecraft command line), so an added Microsoft account can no longer load as an offline account and premium servers stop rejecting your login. The silent session renewal at launch retries once automatically, and the log now states in plain words what the game gets and why. A hidden account flip is fixed too: an offline in-game login could quietly move the launcher's active account away from your Microsoft account and the next PLAY started offline - only same-kind in-game switches are followed now. Restart the launcher and accept the update prompt."
   },
   "client": {
-    "tag": "mod-v3.6.4",
-    "version": "3.6.4",
-    "asset": "kinetrix-3.6.4.jar",
-    "size": 22737542,
-    "sha256": "b3515528ef76eedb1cb5aa52d9be0bc8789b837b0dafcb0f076884637b576f98"
+    "tag": "mod-v3.6.5",
+    "version": "3.6.5",
+    "asset": "kinetrix-3.6.5.jar",
+    "size": 22744376,
+    "sha256": "d7b0353bddc327cd618a3e220fe9387cd48edd16a7a1a0d3b5404b69e6526ec9"
   },
-  "notes": "Kinetrix Client 3.6.4 - In-game Microsoft sign-in fixed and modernized. The old code-linking method is gone: 'Add Microsoft' in the client's account manager now opens the REAL Microsoft sign-in page in your browser (the same method the launcher uses), and the game picks the result up automatically. This also fixes switching Microsoft accounts in-game failing with 'Refresh failed: HTTP 400 from user.auth.xboxlive.com' - sessions added with the outdated method can no longer be refreshed, so the client now tells you clearly and walks you through the browser sign-in once; after that, switching and refreshing work normally again. The account list also scrolls with the mouse wheel from anywhere on the page. Launcher stays 2.8.0. Restart the launcher and accept the client update prompt.",
+  "notes": "Kinetrix Client 3.6.5 - in-game Microsoft sign-in RESTORED. The previous in-game sign-in sent Microsoft a redirect address it does not accept for this app id, so the sign-in page showed its 'unknown request' error and switching/adding Microsoft accounts in-game was impossible. The in-game flow now uses the same method as the launcher (msmc parity): a real Microsoft sign-in window opens, and on Edge/Chrome the game picks the result up the moment you finish signing in - hands-free. If no Edge/Chrome exists, the page still opens in your default browser and you paste the address you land on. Combined with launcher 2.8.1: add your Microsoft account in the launcher or in the game, press PLAY, and the game launches as your Microsoft account - premium servers work. Restart the launcher and accept the prompts.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
