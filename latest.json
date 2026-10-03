@@ -1,21 +1,21 @@
 {
-  "updated": "2026-10-03T09:20:00Z",
+  "updated": "2026-10-03T11:05:00Z",
   "launcher": {
-    "tag": "launcher-v2.8.1",
-    "version": "2.8.1",
-    "asset": "KinetrixLauncher-Setup-2.8.1.exe",
-    "size": 113640550,
-    "sha256": "aa5d7c81c28f3cc0bee1a4f5ff2f63bdfd41781f50f80f9ac881550e7cec2757",
-    "notes": "MICROSOFT ACCOUNTS ALWAYS LAUNCH PREMIUM - the launch command now carries your Microsoft token, uuid and name whenever a session is on record (exactly how the msmc engine feeds the Minecraft command line), so an added Microsoft account can no longer load as an offline account and premium servers stop rejecting your login. The silent session renewal at launch retries once automatically, and the log now states in plain words what the game gets and why. A hidden account flip is fixed too: an offline in-game login could quietly move the launcher's active account away from your Microsoft account and the next PLAY started offline - only same-kind in-game switches are followed now. Restart the launcher and accept the update prompt."
+    "tag": "launcher-v2.8.2",
+    "version": "2.8.2",
+    "asset": "KinetrixLauncher-Setup-2.8.2.exe",
+    "size": 113641443,
+    "sha256": "43878e47388ea5827947b0b56d1ee85bf18ee4074e9404b516b0317a137ba27d",
+    "notes": "SESSION SAFETY - NO MORE RE-LOGIN LOOPS. The launcher used to adopt an older (or dead legacy) refresh token from the shared account file over its own fresh Microsoft session, which is why every restart ended with a re-login ask; the merge now only takes a session that is STRICTLY NEWER and stamps every rotation (sessionAt, honoured by the client too). A newer in-game session is adopted together with its live Minecraft token and stays launchable without a forced re-refresh. Legacy device-code tokens can never poison modern msmc sessions, and re-signing in replaces old uuid-less rows by name instead of duplicating them. Startup now syncs with the client BEFORE the silent refresh. Restart the launcher and accept the update prompt."
   },
   "client": {
-    "tag": "mod-v3.6.5",
-    "version": "3.6.5",
-    "asset": "kinetrix-3.6.5.jar",
-    "size": 22744376,
-    "sha256": "d7b0353bddc327cd618a3e220fe9387cd48edd16a7a1a0d3b5404b69e6526ec9"
+    "tag": "mod-v3.6.6",
+    "version": "3.6.6",
+    "asset": "kinetrix-3.6.6.jar",
+    "size": 22748324,
+    "sha256": "84578aa33ff8318a9c6a15a25226d886aa8a0cd5b3a9f7e38bf1b0cefda9fa72"
   },
-  "notes": "Kinetrix Client 3.6.5 - in-game Microsoft sign-in RESTORED. The previous in-game sign-in sent Microsoft a redirect address it does not accept for this app id, so the sign-in page showed its 'unknown request' error and switching/adding Microsoft accounts in-game was impossible. The in-game flow now uses the same method as the launcher (msmc parity): a real Microsoft sign-in window opens, and on Edge/Chrome the game picks the result up the moment you finish signing in - hands-free. If no Edge/Chrome exists, the page still opens in your default browser and you paste the address you land on. Combined with launcher 2.8.1: add your Microsoft account in the launcher or in the game, press PLAY, and the game launches as your Microsoft account - premium servers work. Restart the launcher and accept the prompts.",
+  "notes": "Kinetrix Client 3.6.6 + Launcher 2.8.2 - SESSION KEEP-ALIVE END-TO-END. Switching Microsoft accounts in game no longer dies with 'Session expired': the client now re-reads the freshest session before refreshing, applies a launcher-published live session instantly (no network), publishes its own full session after every refresh, and silently keeps your current session alive when you open the accounts screen. The launcher stops downgrading fresh sessions with stale ones, so restarts no longer ask you to sign in again. One-time note: rows created by the very old device-code flow still need one guided re-sign-in (Microsoft killed that platform) - after that, refreshes are silent forever. Restart the launcher and accept the prompts.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
