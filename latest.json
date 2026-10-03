@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T06:46:04Z",
+  "updated": "2026-10-03T08:10:00Z",
   "launcher": {
     "tag": "launcher-v2.8.0",
     "version": "2.8.0",
@@ -9,13 +9,13 @@
     "notes": "THE ACCOUNT LEFT THE DASHBOARD - the home screen is now a pure launch experience with zero account clutter: the titlebar chip and the always-open accounts card are gone, and your identity lives on a single avatar at the bottom of the navigation rail. Hover the avatar (or click it) and the account switcher opens right next to it; clicking pins it open, a second click closes it, and a hover-open closes itself shortly after your pointer moves away. Switch accounts with one click (the avatar updates instantly), add an offline nickname or sign in with Microsoft right inside the flyout; the full account manager still lives in Settings. The running status line no longer shows the username either. Same trusted launch pipeline: managed Java 8, Minecraft 1.8.9, Forge + OptiFine and the Kinetrix Client, prepared in the background and launched in seconds. Restart the launcher and accept the update prompt."
   },
   "client": {
-    "tag": "mod-v3.6.3",
-    "version": "3.6.3",
-    "asset": "kinetrix-3.6.3.jar",
-    "size": 22730831,
-    "sha256": "0ed35cac0df3a40625df927743918d99bc221938b359422e658e2200def22418"
+    "tag": "mod-v3.6.4",
+    "version": "3.6.4",
+    "asset": "kinetrix-3.6.4.jar",
+    "size": 22737542,
+    "sha256": "b3515528ef76eedb1cb5aa52d9be0bc8789b837b0dafcb0f076884637b576f98"
   },
-  "notes": "Kinetrix Launcher 2.8.0 - The account left the dashboard. The home screen shows zero account surfaces: the titlebar chip and the always-open accounts card are gone; a single avatar at the bottom of the navigation rail carries the account switcher (hover or click to open, click to pin, second click / outside click / Escape to close). One-click switching updates the avatar instantly; offline nicknames and Microsoft sign-in work inside the flyout; the full manager stays in Settings. Kinetrix Client stays 3.6.3 (Unlock FPS + Use VBOs default ON). Restart the launcher and accept the update prompt.",
+  "notes": "Kinetrix Client 3.6.4 - In-game Microsoft sign-in fixed and modernized. The old code-linking method is gone: 'Add Microsoft' in the client's account manager now opens the REAL Microsoft sign-in page in your browser (the same method the launcher uses), and the game picks the result up automatically. This also fixes switching Microsoft accounts in-game failing with 'Refresh failed: HTTP 400 from user.auth.xboxlive.com' - sessions added with the outdated method can no longer be refreshed, so the client now tells you clearly and walks you through the browser sign-in once; after that, switching and refreshing work normally again. The account list also scrolls with the mouse wheel from anywhere on the page. Launcher stays 2.8.0. Restart the launcher and accept the client update prompt.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
