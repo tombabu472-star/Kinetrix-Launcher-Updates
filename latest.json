@@ -1,40 +1,40 @@
 {
- "updated": "2026-10-02",
- "launcher": {
-  "tag": "launcher-v2.7.15",
-  "version": "2.7.15",
-  "asset": "KinetrixLauncher-Setup-2.7.15.exe",
-  "size": 112893122,
-  "sha256": "f2d8ed37e332a4bea8e301ede411e6f69cdf00000ae80b6ebb9fa7a9dfe77454",
-  "notes": "YOUR EXACT JAR, FROM OUR GITHUB - the client jar is now the byte-exact ForgeOptiFine 1.8.9.jar from your real TLauncher folder (= the official Minecraft 1.8.9 client, sha1 3870888a6c3d349d3771a3e9d16c9bf5e076b908, 8,461,484 bytes). The launcher downloads it from the dedicated minecraft-1.8.9 GitHub release FIRST (the same mechanism as every other game file), then raw + four jsDelivr CDNs + github raw, with Mojang CDN last; the jar is also bundled inside the launcher itself (checksum-gated) so installs work fully offline. Every attempt is size+sha1-verified and a corrupted jar self-heals. Your jar, the Forge universal jar, the OptiFine jar and the launch arguments are all now byte/token-identical to TLauncher - if FPS still feels lower, it is the game profile video settings (each launcher has its own options.txt): set render distance and the OptiFine Performance toggles once in Video Settings. Restart the launcher, accept the update prompt, press PLAY."
- },
- "client": {
-  "tag": "mod-v3.6.3",
-  "version": "3.6.3",
-  "asset": "kinetrix-3.6.3.jar",
-  "size": 22730831,
-  "sha256": "0ed35cac0df3a40625df927743918d99bc221938b359422e658e2200def22418"
- },
- "notes": "Client 3.6.3 \"Unlock FPS + Use VBOs default ON\": your requested default configuration is back - \"Unlock FPS\" is enabled by default (in-game ~260 fps ceiling, client menus stay capped at 60 fps so Cosmetics stays smooth) and \"Use VBOs\" is enabled by default (re-applied once automatically if 3.6.2 turned it off on your device). Both toggles keep working normally and your choices persist. Also fixed: a duplicated \"Minimal View Bobbing\" option meant fresh installs still had the Video Settings View Bobbing button flipping back OFF - one registration now, View Bobbing changes properly on every install. Launcher 2.7.15 unchanged.",
- "forge": {
-  "tag": "forge-1.8.9-11.15.1.1764",
-  "version": "11.15.1.1764+OptiFine_M5",
-  "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
-  "size": 3726026,
-  "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
-  "optifine": {
-   "asset": "OptiFine-1.8.9_HD_U_M5.jar",
-   "size": 2367088,
-   "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
+  "updated": "2026-10-03T06:46:04Z",
+  "launcher": {
+    "tag": "launcher-v2.8.0",
+    "version": "2.8.0",
+    "asset": "KinetrixLauncher-Setup-2.8.0.exe",
+    "size": 113639513,
+    "sha256": "f529d20f6f4e2b36979e9806322a12e183c27b2703e32816c31276f1c0dff0f5",
+    "notes": "THE ACCOUNT LEFT THE DASHBOARD - the home screen is now a pure launch experience with zero account clutter: the titlebar chip and the always-open accounts card are gone, and your identity lives on a single avatar at the bottom of the navigation rail. Hover the avatar (or click it) and the account switcher opens right next to it; clicking pins it open, a second click closes it, and a hover-open closes itself shortly after your pointer moves away. Switch accounts with one click (the avatar updates instantly), add an offline nickname or sign in with Microsoft right inside the flyout; the full account manager still lives in Settings. The running status line no longer shows the username either. Same trusted launch pipeline: managed Java 8, Minecraft 1.8.9, Forge + OptiFine and the Kinetrix Client, prepared in the background and launched in seconds. Restart the launcher and accept the update prompt."
   },
-  "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
- },
- "clientJar": {
-  "asset": "ForgeOptiFine-1.8.9.jar",
-  "size": 8461484,
-  "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
-  "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
-  "release": "minecraft-1.8.9",
-  "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
- }
+  "client": {
+    "tag": "mod-v3.6.3",
+    "version": "3.6.3",
+    "asset": "kinetrix-3.6.3.jar",
+    "size": 22730831,
+    "sha256": "0ed35cac0df3a40625df927743918d99bc221938b359422e658e2200def22418"
+  },
+  "notes": "Kinetrix Launcher 2.8.0 - The account left the dashboard. The home screen shows zero account surfaces: the titlebar chip and the always-open accounts card are gone; a single avatar at the bottom of the navigation rail carries the account switcher (hover or click to open, click to pin, second click / outside click / Escape to close). One-click switching updates the avatar instantly; offline nicknames and Microsoft sign-in work inside the flyout; the full manager stays in Settings. Kinetrix Client stays 3.6.3 (Unlock FPS + Use VBOs default ON). Restart the launcher and accept the update prompt.",
+  "forge": {
+    "tag": "forge-1.8.9-11.15.1.1764",
+    "version": "11.15.1.1764+OptiFine_M5",
+    "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
+    "size": 3726026,
+    "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
+    "optifine": {
+      "asset": "OptiFine-1.8.9_HD_U_M5.jar",
+      "size": 2367088,
+      "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
+    },
+    "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
+  },
+  "clientJar": {
+    "asset": "ForgeOptiFine-1.8.9.jar",
+    "size": 8461484,
+    "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
+    "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
+    "release": "minecraft-1.8.9",
+    "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
+  }
 }
