@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T11:05:00Z",
+ "updated": "2026-10-09T18:00:00Z",
  "launcher": {
   "tag": "launcher-v2.8.2",
   "version": "2.8.2",
@@ -9,13 +9,13 @@
   "notes": "SESSION SAFETY - NO MORE RE-LOGIN LOOPS. The launcher used to adopt an older (or dead legacy) refresh token from the shared account file over its own fresh Microsoft session, which is why every restart ended with a re-login ask; the merge now only takes a session that is STRICTLY NEWER and stamps every rotation (sessionAt, honoured by the client too). A newer in-game session is adopted together with its live Minecraft token and stays launchable without a forced re-refresh. Legacy device-code tokens can never poison modern msmc sessions, and re-signing in replaces old uuid-less rows by name instead of duplicating them. Startup now syncs with the client BEFORE the silent refresh. Restart the launcher and accept the update prompt."
  },
  "client": {
-  "tag": "mod-v3.6.7",
-  "version": "3.6.7",
-  "asset": "kinetrix-3.6.7.jar",
-  "size": 22758594,
-  "sha256": "ac768227208fc746ddd43b7a158addc6597a2efb23fd0023fe344b30b40806df"
+  "tag": "mod-v3.7.0",
+  "version": "3.7.0",
+  "asset": "kinetrix-3.7.0.jar",
+  "size": 22889116,
+  "sha256": "adb588adfc52da1d0849be438e33d90bca2b0619bcfbe77fe041e9548fadf581"
  },
- "notes": "Kinetrix Client 3.6.7 - ANIMATION MODULE: 1.7 SWORD SWING + SMOOTH SNEAK. The 1.7 Swing setting brings back the classic old flat sword swing arc (OldAnimations parity, default ON). Smooth Sneak removes the full-screen 1.8 sneak jolt - the camera now glides between standing and sneaking height instead of snapping (default ON). Both live in the Animation module next to the existing 1.7 block/eat/bow/rod animations; every toggle defaults to enabled. Launcher 2.8.2 unchanged. Forge/clientJar sections unchanged.",
+ "notes": "Kinetrix Client 3.7.0 - VOID SKY FIX + 6 NEW MODULES + LOADING SCREEN GROUNDWORK. CUSTOM SKY FIX: falling into the void used to show a pure black screen - the sky (and resource pack custom skies) now renders inside the void too (new Custom Sky module, default ON; toggle off for the classic black void). Coordinates: Biome line now defaults OFF - most players only need XYZ (toggle Biome back on any time). NEW modules (all on popular clients, none give an unfair advantage): Texture Pack (shows your active resource pack), Clear Water (clear underwater vision, Fog Amount slider), Low Fire (flames pinned to the bottom edge, Height/Opacity sliders), Chunk Borders (F3+G style grid with neighbors, color/thickness), Hit Sound (Bubble/Level Up/Pling/Chicken/Click on landed hits, Volume slider). HIDDEN FIX: the Animation module's renderer swap silently failed since forever (reflection type mismatch) - the 1.7 sword swing now really applies. The client now also writes config/splash.properties + splash art so the branded Kinetrix loading screen with real progress bars lights up once the launcher updates to 2.8.3. Launcher 2.8.2 stays compatible; forge/clientJar sections unchanged.",
  "forge": {
   "tag": "forge-1.8.9-11.15.1.1764",
   "version": "11.15.1.1764+OptiFine_M5",
