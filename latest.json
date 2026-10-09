@@ -1,40 +1,40 @@
 {
-  "updated": "2026-10-03T11:05:00Z",
-  "launcher": {
-    "tag": "launcher-v2.8.2",
-    "version": "2.8.2",
-    "asset": "KinetrixLauncher-Setup-2.8.2.exe",
-    "size": 113641443,
-    "sha256": "43878e47388ea5827947b0b56d1ee85bf18ee4074e9404b516b0317a137ba27d",
-    "notes": "SESSION SAFETY - NO MORE RE-LOGIN LOOPS. The launcher used to adopt an older (or dead legacy) refresh token from the shared account file over its own fresh Microsoft session, which is why every restart ended with a re-login ask; the merge now only takes a session that is STRICTLY NEWER and stamps every rotation (sessionAt, honoured by the client too). A newer in-game session is adopted together with its live Minecraft token and stays launchable without a forced re-refresh. Legacy device-code tokens can never poison modern msmc sessions, and re-signing in replaces old uuid-less rows by name instead of duplicating them. Startup now syncs with the client BEFORE the silent refresh. Restart the launcher and accept the update prompt."
+ "updated": "2026-10-03T11:05:00Z",
+ "launcher": {
+  "tag": "launcher-v2.8.2",
+  "version": "2.8.2",
+  "asset": "KinetrixLauncher-Setup-2.8.2.exe",
+  "size": 113641443,
+  "sha256": "43878e47388ea5827947b0b56d1ee85bf18ee4074e9404b516b0317a137ba27d",
+  "notes": "SESSION SAFETY - NO MORE RE-LOGIN LOOPS. The launcher used to adopt an older (or dead legacy) refresh token from the shared account file over its own fresh Microsoft session, which is why every restart ended with a re-login ask; the merge now only takes a session that is STRICTLY NEWER and stamps every rotation (sessionAt, honoured by the client too). A newer in-game session is adopted together with its live Minecraft token and stays launchable without a forced re-refresh. Legacy device-code tokens can never poison modern msmc sessions, and re-signing in replaces old uuid-less rows by name instead of duplicating them. Startup now syncs with the client BEFORE the silent refresh. Restart the launcher and accept the update prompt."
+ },
+ "client": {
+  "tag": "mod-v3.6.7",
+  "version": "3.6.7",
+  "asset": "kinetrix-3.6.7.jar",
+  "size": 22758594,
+  "sha256": "ac768227208fc746ddd43b7a158addc6597a2efb23fd0023fe344b30b40806df"
+ },
+ "notes": "Kinetrix Client 3.6.7 - ANIMATION MODULE: 1.7 SWORD SWING + SMOOTH SNEAK. The 1.7 Swing setting brings back the classic old flat sword swing arc (OldAnimations parity, default ON). Smooth Sneak removes the full-screen 1.8 sneak jolt - the camera now glides between standing and sneaking height instead of snapping (default ON). Both live in the Animation module next to the existing 1.7 block/eat/bow/rod animations; every toggle defaults to enabled. Launcher 2.8.2 unchanged. Forge/clientJar sections unchanged.",
+ "forge": {
+  "tag": "forge-1.8.9-11.15.1.1764",
+  "version": "11.15.1.1764+OptiFine_M5",
+  "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
+  "size": 3726026,
+  "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
+  "optifine": {
+   "asset": "OptiFine-1.8.9_HD_U_M5.jar",
+   "size": 2367088,
+   "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
   },
-  "client": {
-    "tag": "mod-v3.6.6",
-    "version": "3.6.6",
-    "asset": "kinetrix-3.6.6.jar",
-    "size": 22748324,
-    "sha256": "84578aa33ff8318a9c6a15a25226d886aa8a0cd5b3a9f7e38bf1b0cefda9fa72"
-  },
-  "notes": "Kinetrix Client 3.6.6 + Launcher 2.8.2 - SESSION KEEP-ALIVE END-TO-END. Switching Microsoft accounts in game no longer dies with 'Session expired': the client now re-reads the freshest session before refreshing, applies a launcher-published live session instantly (no network), publishes its own full session after every refresh, and silently keeps your current session alive when you open the accounts screen. The launcher stops downgrading fresh sessions with stale ones, so restarts no longer ask you to sign in again. One-time note: rows created by the very old device-code flow still need one guided re-sign-in (Microsoft killed that platform) - after that, refreshes are silent forever. Restart the launcher and accept the prompts.",
-  "forge": {
-    "tag": "forge-1.8.9-11.15.1.1764",
-    "version": "11.15.1.1764+OptiFine_M5",
-    "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
-    "size": 3726026,
-    "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
-    "optifine": {
-      "asset": "OptiFine-1.8.9_HD_U_M5.jar",
-      "size": 2367088,
-      "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
-    },
-    "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
-  },
-  "clientJar": {
-    "asset": "ForgeOptiFine-1.8.9.jar",
-    "size": 8461484,
-    "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
-    "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
-    "release": "minecraft-1.8.9",
-    "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
-  }
+  "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
+ },
+ "clientJar": {
+  "asset": "ForgeOptiFine-1.8.9.jar",
+  "size": 8461484,
+  "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
+  "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
+  "release": "minecraft-1.8.9",
+  "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
+ }
 }
