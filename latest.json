@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T08:49:35Z",
+  "updated": "2026-10-11T11:08:48Z",
   "launcher": {
     "tag": "launcher-v2.9.0",
     "version": "2.9.0",
@@ -9,13 +9,13 @@
     "notes": "KINETRIX 2.9.0 - THE BIG HOME REDESIGN.\n\n- Quick Play: pick Hypixel / Minemen Club / CubeCraft / Mineplex / PvP Legacy right on the home screen - the launcher shows LIVE player counts (real server ping) and PLAY joins that server directly.\n- Cosmetics locker in the launcher: every cape, pet and aura from the Kinetrix Client, equip with one click (applies on next launch) and see it LIVE on a real 3D 360-degree player preview (drag to rotate, scroll to zoom; animated capes animate; auras draw their ring).\n- Kinetrix website sign-in inside the launcher - signing in here also signs your game in (same account file).\n- Brand-new premium home: cinematic hero, cleaner news with thumbnails, faster account switching. Component status moved to Settings.\n- Everything else unchanged: Microsoft sign-in, crash auto-fix, client/Forge auto-update, verify files."
   },
   "client": {
-    "tag": "mod-v3.8.2",
-    "version": "3.8.2",
-    "asset": "kinetrix-3.8.2.jar",
-    "size": 23000897,
-    "sha256": "7593fd789ecd85130bb8072b4e1f3555ee7e3908eebab86a8db3b05eefda6fbe"
+    "tag": "mod-v3.9.0",
+    "version": "3.9.0",
+    "asset": "kinetrix-3.9.0.jar",
+    "size": 23017473,
+    "sha256": "2b8e8b6dffe3fff4c3161c3033988815735bdec5fb9cf02918ccf4a8a6362a7f"
   },
-  "notes": "Kinetrix Client 3.8.2 - SIGN-IN GATE + FULL-BODY PREVIEW + BADLION ANIMATIONS. COSMETICS: the Kinetrix sign-in screen is back - open cosmetics and sign in with your Kinetrix account (username/password card with the real cloud auth), sign out any time from the locker header. LOCKER PREVIEW: the player preview now renders the FULL BODY on every device (mobile included) with your selected cosmetics on - equipped cape, pet and aura - and a single hiccup no longer breaks it for the session. ANIMATIONS: the block hit and sword swing are now EXACTLY the Badlion Client legacy animations (1.7 legacy hold, swing rendered while blocking, legacy block pose) - verified matrix-for-matrix. Update from the launcher's mod updater prompt.",
+  "notes": "Kinetrix Client 3.9.0 - THE GLASS MODULES MENU. The classic mods screen is completely rebuilt: a translucent full-window glass panel that keeps the live game visible behind it, with real module cards instead of the old dark grid - each card has its icon, name, short description, a working toggle switch, its category badge and a settings arrow. Responsive 4-column grid (3/2/1 columns on smaller windows) plus a compact list view, sidebar with Mods + Settings, tabs All/HUD/Mechanic/Visual/Tweaks, live search, A-Z/Z-A sorting and a grid/list switch. Every toggle and setting is REAL - toggles flip the actual features, the arrow opens the real settings page, everything still saves. The original Kinetrix logo and title stay, and Menu Blur still follows your Kinetrix Settings. Update from the launcher's mod updater prompt.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
