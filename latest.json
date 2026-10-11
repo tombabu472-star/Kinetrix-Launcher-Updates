@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T11:08:48Z",
+  "updated": "2026-10-11T15:44:05Z",
   "launcher": {
     "tag": "launcher-v2.9.0",
     "version": "2.9.0",
@@ -9,13 +9,13 @@
     "notes": "KINETRIX 2.9.0 - THE BIG HOME REDESIGN.\n\n- Quick Play: pick Hypixel / Minemen Club / CubeCraft / Mineplex / PvP Legacy right on the home screen - the launcher shows LIVE player counts (real server ping) and PLAY joins that server directly.\n- Cosmetics locker in the launcher: every cape, pet and aura from the Kinetrix Client, equip with one click (applies on next launch) and see it LIVE on a real 3D 360-degree player preview (drag to rotate, scroll to zoom; animated capes animate; auras draw their ring).\n- Kinetrix website sign-in inside the launcher - signing in here also signs your game in (same account file).\n- Brand-new premium home: cinematic hero, cleaner news with thumbnails, faster account switching. Component status moved to Settings.\n- Everything else unchanged: Microsoft sign-in, crash auto-fix, client/Forge auto-update, verify files."
   },
   "client": {
-    "tag": "mod-v3.9.0",
-    "version": "3.9.0",
-    "asset": "kinetrix-3.9.0.jar",
-    "size": 23017473,
-    "sha256": "2b8e8b6dffe3fff4c3161c3033988815735bdec5fb9cf02918ccf4a8a6362a7f"
+    "tag": "mod-v3.10.0",
+    "version": "3.10.0",
+    "asset": "kinetrix-3.10.0.jar",
+    "size": 24308890,
+    "sha256": "79f08ec83ed49fa08b0da80b717adef2bd53c4d6227aa7e4b570aaece4851caf"
   },
-  "notes": "Kinetrix Client 3.9.0 - THE GLASS MODULES MENU. The classic mods screen is completely rebuilt: a translucent full-window glass panel that keeps the live game visible behind it, with real module cards instead of the old dark grid - each card has its icon, name, short description, a working toggle switch, its category badge and a settings arrow. Responsive 4-column grid (3/2/1 columns on smaller windows) plus a compact list view, sidebar with Mods + Settings, tabs All/HUD/Mechanic/Visual/Tweaks, live search, A-Z/Z-A sorting and a grid/list switch. Every toggle and setting is REAL - toggles flip the actual features, the arrow opens the real settings page, everything still saves. The original Kinetrix logo and title stay, and Menu Blur still follows your Kinetrix Settings. Update from the launcher's mod updater prompt.",
+  "notes": "Kinetrix Client 3.10.0 - THE NEW MAIN MENU. The home screen is completely rebuilt to the new reference design: a golden-hour Minecraft landscape (blocky sun, drifting square clouds, sun-glitter water, oak terrain) behind clean translucent charcoal glass. A new left sidebar holds the Kinetrix logo, the KINETRIX CLIENT wordmark and your Mods / Cosmetics / Accounts / Settings / About navigation with an active-state indicator, and the top bar shows PLAY DIFFERENT plus your account pill with the real player head, name, online status dot and power button (opens your account manager). The center greets you with the logo, KINETRIX CLIENT and the new tagline: The competitive 1.8.9 client - fast, boxy, beautiful. Singleplayer and Multiplayer are now large glass buttons with chevrons and hover/press states, and the footer keeps the version info and the Mojang/Microsoft legal line. Blue now appears only in the Kinetrix logo and small accents. Every existing action is preserved and click-verified: Singleplayer, Multiplayer, Mods (glass module menu), Cosmetics, Accounts, Settings, About, the account pill and the HUD editor. Verified at multiple window sizes and GUI scales. Update from the launcher's mod updater prompt.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
