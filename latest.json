@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-11T04:51:41Z",
+  "updated": "2026-10-11T08:49:35Z",
   "launcher": {
-    "tag": "launcher-v2.8.2",
-    "version": "2.8.2",
-    "asset": "KinetrixLauncher-Setup-2.8.2.exe",
-    "size": 113641443,
-    "sha256": "43878e47388ea5827947b0b56d1ee85bf18ee4074e9404b516b0317a137ba27d",
-    "notes": "SESSION SAFETY - NO MORE RE-LOGIN LOOPS. The launcher used to adopt an older (or dead legacy) refresh token from the shared account file over its own fresh Microsoft session, which is why every restart ended with a re-login ask; the merge now only takes a session that is STRICTLY NEWER and stamps every rotation (sessionAt, honoured by the client too). A newer in-game session is adopted together with its live Minecraft token and stays launchable without a forced re-refresh. Legacy device-code tokens can never poison modern msmc sessions, and re-signing in replaces old uuid-less rows by name instead of duplicating them. Startup now syncs with the client BEFORE the silent refresh. Restart the launcher and accept the update prompt."
+    "tag": "launcher-v2.9.0",
+    "version": "2.9.0",
+    "asset": "KinetrixLauncher-Setup-2.9.0.exe",
+    "size": 115203474,
+    "sha256": "cf097cf0f1aa11aa4c26e8319ecc1cf490f2d33fb2db9cd4a033d7544b40f9d7",
+    "notes": "KINETRIX 2.9.0 - THE BIG HOME REDESIGN.\n\n- Quick Play: pick Hypixel / Minemen Club / CubeCraft / Mineplex / PvP Legacy right on the home screen - the launcher shows LIVE player counts (real server ping) and PLAY joins that server directly.\n- Cosmetics locker in the launcher: every cape, pet and aura from the Kinetrix Client, equip with one click (applies on next launch) and see it LIVE on a real 3D 360-degree player preview (drag to rotate, scroll to zoom; animated capes animate; auras draw their ring).\n- Kinetrix website sign-in inside the launcher - signing in here also signs your game in (same account file).\n- Brand-new premium home: cinematic hero, cleaner news with thumbnails, faster account switching. Component status moved to Settings.\n- Everything else unchanged: Microsoft sign-in, crash auto-fix, client/Forge auto-update, verify files."
   },
   "client": {
     "tag": "mod-v3.8.2",
