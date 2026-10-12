@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T17:28:59Z",
+  "updated": "2026-10-12T01:48:01Z",
   "launcher": {
     "tag": "launcher-v2.9.0",
     "version": "2.9.0",
@@ -9,13 +9,13 @@
     "notes": "KINETRIX 2.9.0 - THE BIG HOME REDESIGN.\n\n- Quick Play: pick Hypixel / Minemen Club / CubeCraft / Mineplex / PvP Legacy right on the home screen - the launcher shows LIVE player counts (real server ping) and PLAY joins that server directly.\n- Cosmetics locker in the launcher: every cape, pet and aura from the Kinetrix Client, equip with one click (applies on next launch) and see it LIVE on a real 3D 360-degree player preview (drag to rotate, scroll to zoom; animated capes animate; auras draw their ring).\n- Kinetrix website sign-in inside the launcher - signing in here also signs your game in (same account file).\n- Brand-new premium home: cinematic hero, cleaner news with thumbnails, faster account switching. Component status moved to Settings.\n- Everything else unchanged: Microsoft sign-in, crash auto-fix, client/Forge auto-update, verify files."
   },
   "client": {
-    "tag": "mod-v3.10.1",
-    "version": "3.10.1",
-    "asset": "kinetrix-3.10.1.jar",
-    "size": 23801010,
-    "sha256": "47700e9ce9cce0a947eae4c36d821290c5399a895f8a403237fcac75b317fe16"
+    "tag": "mod-v3.11.0",
+    "version": "3.11.0",
+    "asset": "kinetrix-3.11.0.jar",
+    "size": 23883318,
+    "sha256": "7758b40c64242137999eb091eabc9ec4970871b571a586ebbca156e33ebe5c8b"
   },
-  "notes": "Kinetrix Client 3.10.1 - MAIN MENU FIX PASS. Fixes the 3.10.0 main menu issues: the black background on some devices is gone (the sunset backdrop is now a power-of-two 1024x512 texture that renders correctly on GLES2-class drivers, and the landscape was regenerated to match the reference: small square sun low on the right horizon, oak trees left, sun-glitter river bottom right). The whole home is now laid out in the reference's own design frame and cover-fits every window size and GUI scale - sidebar, Singleplayer/Multiplayer buttons, hero, account pill and footer keep the exact reference proportions (the old buttons stretched nearly double the reference width and the sidebar overflowed on shorter screens). The CLIENT wordmark no longer overlaps the Mods row and the GUI version stays inside the panel. A full-frame invisible container was swallowing every click before the buttons received it - Singleplayer, Multiplayer and the account pill now open reliably. Verified in-game at three window/scale combinations with real click paths through every destination. Update from the launcher's mod updater prompt.",
+  "notes": "Kinetrix Client 3.11.0 - Main Menu exact-reference pass: your sunset backdrop is now the real menu background (self-verifying POT ladder - no more black backdrop on gl4es devices), translucent reference-measured glass panels, blur owned by the existing Menu Blur setting only, true text scaling on every device, cleaner buttons, all actions preserved.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
