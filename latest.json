@@ -1,12 +1,21 @@
 {
   "updated": "2026-10-12T01:48:01Z",
   "launcher": {
-    "tag": "launcher-v2.9.0",
-    "version": "2.9.0",
-    "asset": "KinetrixLauncher-Setup-2.9.0.exe",
-    "size": 115203474,
-    "sha256": "cf097cf0f1aa11aa4c26e8319ecc1cf490f2d33fb2db9cd4a033d7544b40f9d7",
-    "notes": "KINETRIX 2.9.0 - THE BIG HOME REDESIGN.\n\n- Quick Play: pick Hypixel / Minemen Club / CubeCraft / Mineplex / PvP Legacy right on the home screen - the launcher shows LIVE player counts (real server ping) and PLAY joins that server directly.\n- Cosmetics locker in the launcher: every cape, pet and aura from the Kinetrix Client, equip with one click (applies on next launch) and see it LIVE on a real 3D 360-degree player preview (drag to rotate, scroll to zoom; animated capes animate; auras draw their ring).\n- Kinetrix website sign-in inside the launcher - signing in here also signs your game in (same account file).\n- Brand-new premium home: cinematic hero, cleaner news with thumbnails, faster account switching. Component status moved to Settings.\n- Everything else unchanged: Microsoft sign-in, crash auto-fix, client/Forge auto-update, verify files."
+    "tag": "launcher-v2.10.0",
+    "version": "2.10.0",
+    "asset": "KinetrixLauncher-Setup-2.10.0.exe",
+    "size": 115210174,
+    "sha256": "2998931fb55472a79602c0c21192d72dd3166b5a1d04a2cf4fccc00b086332da",
+    "notes": "KINETRIX 2.10.0 — LINUX SUPPORT. The launcher now runs on Windows AND Linux: a portable AppImage (no install, no root) plus a native .deb for Debian/Ubuntu/Mint. Nothing was cut — Microsoft sign-in, offline accounts, Quick Play, the cosmetics locker with the 3D preview, auto-update, the crash doctor and the full FPS stack all work the same. The Linux build installs the real Linux native libraries (LWJGL/OpenAL), auto-installs Temurin JRE 8 for Linux (or finds your distro JVM), and self-updates in place. Windows behavior is untouched.",
+    "date": "2026-10-14",
+    "linux": {
+      "asset": "KinetrixLauncher-2.10.0-Linux.AppImage",
+      "size": 144670709,
+      "sha256": "6a43f0a044261d961395ddb2558f8e639a966026fe57be938b9d36d5a74607a5",
+      "deb": "KinetrixLauncher-2.10.0-Linux.deb",
+      "debSize": 111432626,
+      "debSha256": "11bbc00231b919e915b3207020fe712147ad2bf5d35ef83bac7240f084c2e2b7"
+    }
   },
   "client": {
     "tag": "mod-v3.11.0",
