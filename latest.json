@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-12T01:48:01Z",
+  "updated": "2026-10-14T12:15:52Z",
   "launcher": {
     "tag": "launcher-v2.10.0",
     "version": "2.10.0",
     "asset": "KinetrixLauncher-Setup-2.10.0.exe",
     "size": 115210174,
     "sha256": "2998931fb55472a79602c0c21192d72dd3166b5a1d04a2cf4fccc00b086332da",
-    "notes": "KINETRIX 2.10.0 — LINUX SUPPORT. The launcher now runs on Windows AND Linux: a portable AppImage (no install, no root) plus a native .deb for Debian/Ubuntu/Mint. Nothing was cut — Microsoft sign-in, offline accounts, Quick Play, the cosmetics locker with the 3D preview, auto-update, the crash doctor and the full FPS stack all work the same. The Linux build installs the real Linux native libraries (LWJGL/OpenAL), auto-installs Temurin JRE 8 for Linux (or finds your distro JVM), and self-updates in place. Windows behavior is untouched.",
+    "notes": "KINETRIX 2.10.0 \u2014 LINUX SUPPORT. The launcher now runs on Windows AND Linux: a portable AppImage (no install, no root) plus a native .deb for Debian/Ubuntu/Mint. Nothing was cut \u2014 Microsoft sign-in, offline accounts, Quick Play, the cosmetics locker with the 3D preview, auto-update, the crash doctor and the full FPS stack all work the same. The Linux build installs the real Linux native libraries (LWJGL/OpenAL), auto-installs Temurin JRE 8 for Linux (or finds your distro JVM), and self-updates in place. Windows behavior is untouched.",
     "date": "2026-10-14",
     "linux": {
       "asset": "KinetrixLauncher-2.10.0-Linux.AppImage",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.11.0",
-    "version": "3.11.0",
-    "asset": "kinetrix-3.11.0.jar",
-    "size": 23883318,
-    "sha256": "7758b40c64242137999eb091eabc9ec4970871b571a586ebbca156e33ebe5c8b"
+    "tag": "mod-v3.11.1",
+    "version": "3.11.1",
+    "asset": "kinetrix-3.11.1.jar",
+    "size": 23884047,
+    "sha256": "7f80fa0ff1e60b0e23e7218297849fb97cab7084052eaae7a41add2324fc37a1"
   },
-  "notes": "Kinetrix Client 3.11.0 - Main Menu exact-reference pass: your sunset backdrop is now the real menu background (self-verifying POT ladder - no more black backdrop on gl4es devices), translucent reference-measured glass panels, blur owned by the existing Menu Blur setting only, true text scaling on every device, cleaner buttons, all actions preserved.",
+  "notes": "Kinetrix Client 3.11.1 - Bug fixes: the main menu no longer renders overlaid/dark right after launch (no server-selector round-trip needed), and alt-account skins registered on the website now show in-game for you and for every other Kinetrix client user.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
