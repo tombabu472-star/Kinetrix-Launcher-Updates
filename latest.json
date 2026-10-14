@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T12:15:52Z",
+  "updated": "2026-10-14T16:55:45Z",
   "launcher": {
     "tag": "launcher-v2.10.0",
     "version": "2.10.0",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.11.1",
-    "version": "3.11.1",
-    "asset": "kinetrix-3.11.1.jar",
-    "size": 23884047,
-    "sha256": "7f80fa0ff1e60b0e23e7218297849fb97cab7084052eaae7a41add2324fc37a1"
+    "tag": "mod-v3.11.2",
+    "version": "3.11.2",
+    "asset": "kinetrix-3.11.2.jar",
+    "size": 23888876,
+    "sha256": "2cb5c267ec93e07dd21a4d4ea7499e160dc5727d392eb5f2ebca644df7c7752c"
   },
-  "notes": "Kinetrix Client 3.11.1 - Bug fixes: the main menu no longer renders overlaid/dark right after launch (no server-selector round-trip needed), and alt-account skins registered on the website now show in-game for you and for every other Kinetrix client user.",
+  "notes": "Kinetrix Client 3.11.2 - Multiplayer right-click fixes (clean menu: Join / Edit / Remove, no more stacked entries, Edit Server modal restored) + legacy blockhit/sword swing animation now works while aiming at players, blocks or air (Badlion LegacyAnimations style).",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
