@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14T16:55:45Z",
+  "updated": "2026-10-15T01:22:06Z",
   "launcher": {
     "tag": "launcher-v2.10.0",
     "version": "2.10.0",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.11.2",
-    "version": "3.11.2",
-    "asset": "kinetrix-3.11.2.jar",
-    "size": 23888876,
-    "sha256": "2cb5c267ec93e07dd21a4d4ea7499e160dc5727d392eb5f2ebca644df7c7752c"
+    "tag": "mod-v3.11.3",
+    "version": "3.11.3",
+    "asset": "kinetrix-3.11.3.jar",
+    "size": 23889789,
+    "sha256": "5023e0b91549b0b657a03c7308fa4aad1476fcf85610a64703c76867502f2f34"
   },
-  "notes": "Kinetrix Client 3.11.2 - Multiplayer right-click fixes (clean menu: Join / Edit / Remove, no more stacked entries, Edit Server modal restored) + legacy blockhit/sword swing animation now works while aiming at players, blocks or air (Badlion LegacyAnimations style).",
+  "notes": "Kinetrix Client 3.11.3 - The real Badlion blockhit: left click while blocking now runs the 1.7 route again (like Badlion LegacyAnimations) - the sword really swings (visible to other players), the attack registers, and your block stays up. Vanilla 1.8 discards left clicks while blocking; that drain is bypassed exactly like Badlion does it.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
