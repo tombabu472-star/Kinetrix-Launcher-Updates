@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T01:22:06Z",
+  "updated": "2026-10-15T07:25:14Z",
   "launcher": {
     "tag": "launcher-v2.10.0",
     "version": "2.10.0",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.11.3",
-    "version": "3.11.3",
-    "asset": "kinetrix-3.11.3.jar",
-    "size": 23889789,
-    "sha256": "5023e0b91549b0b657a03c7308fa4aad1476fcf85610a64703c76867502f2f34"
+    "tag": "mod-v3.11.4",
+    "version": "3.11.4",
+    "asset": "kinetrix-3.11.4.jar",
+    "size": 23903689,
+    "sha256": "3ca812cc2e4d40377e4f8fff0d1821124ecff4e7df3589b391653907140c13b1"
   },
-  "notes": "Kinetrix Client 3.11.3 - The real Badlion blockhit: left click while blocking now runs the 1.7 route again (like Badlion LegacyAnimations) - the sword really swings (visible to other players), the attack registers, and your block stays up. Vanilla 1.8 discards left clicks while blocking; that drain is bypassed exactly like Badlion does it.",
+  "notes": "Kinetrix Client 3.11.4 - CM Client exact sword hitting: hold attack while blocking and the arm swings every tick (others see it too) with block hit particles, no block damage - the CM 1.7 blockhit, line-for-line. The block pose follows the real swing arc. Free look fix: name tags and holograms no longer disappear when the camera tilts to the front. ClientTag is now an always-on client feature (Kinetrix logo only, cannot be disabled). Discord RPC turns itself back on at every launch.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
