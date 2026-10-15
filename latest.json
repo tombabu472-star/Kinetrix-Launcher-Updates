@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T07:25:14Z",
+  "updated": "2026-10-15T07:52:02Z",
   "launcher": {
     "tag": "launcher-v2.10.0",
     "version": "2.10.0",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.11.4",
-    "version": "3.11.4",
-    "asset": "kinetrix-3.11.4.jar",
-    "size": 23903689,
-    "sha256": "3ca812cc2e4d40377e4f8fff0d1821124ecff4e7df3589b391653907140c13b1"
+    "tag": "mod-v3.11.5",
+    "version": "3.11.5",
+    "asset": "kinetrix-3.11.5.jar",
+    "size": 23903754,
+    "sha256": "74b7c88c5109d9fc1d9ef9f27aff51a5787d33a0cb8fff17b63b6f5563504255"
   },
-  "notes": "Kinetrix Client 3.11.4 - CM Client exact sword hitting: hold attack while blocking and the arm swings every tick (others see it too) with block hit particles, no block damage - the CM 1.7 blockhit, line-for-line. The block pose follows the real swing arc. Free look fix: name tags and holograms no longer disappear when the camera tilts to the front. ClientTag is now an always-on client feature (Kinetrix logo only, cannot be disabled). Discord RPC turns itself back on at every launch.",
+  "notes": "Kinetrix Client 3.11.5 - SAFETY REVERT: the blockhit animation is now 100% visual-only. Zero packets, zero attacks, zero input changes - the server sees a perfectly normal vanilla blocking player, so there is nothing to detect and no ban risk. The 1.7 blockhit ANIMATION in first person (pose following the swing arc + hit particles) is unchanged. Free look nametag fix, always-on Kinetrix-only ClientTag and the Discord RPC every-launch re-enable are all kept.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
