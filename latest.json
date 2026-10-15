@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-15T07:52:02Z",
+  "updated": "2026-10-15T12:56:41Z",
   "launcher": {
-    "tag": "launcher-v2.10.0",
-    "version": "2.10.0",
-    "asset": "KinetrixLauncher-Setup-2.10.0.exe",
-    "size": 115210174,
-    "sha256": "2998931fb55472a79602c0c21192d72dd3166b5a1d04a2cf4fccc00b086332da",
-    "notes": "KINETRIX 2.10.0 \u2014 LINUX SUPPORT. The launcher now runs on Windows AND Linux: a portable AppImage (no install, no root) plus a native .deb for Debian/Ubuntu/Mint. Nothing was cut \u2014 Microsoft sign-in, offline accounts, Quick Play, the cosmetics locker with the 3D preview, auto-update, the crash doctor and the full FPS stack all work the same. The Linux build installs the real Linux native libraries (LWJGL/OpenAL), auto-installs Temurin JRE 8 for Linux (or finds your distro JVM), and self-updates in place. Windows behavior is untouched.",
-    "date": "2026-10-14",
+    "tag": "launcher-v2.10.1",
+    "version": "2.10.1",
+    "asset": "KinetrixLauncher-Setup-2.10.1.exe",
+    "size": 115213558,
+    "sha256": "dc0b901373ff98bf7336fb48fd2c089c8e3c0e710b947681672382244fbf84ee",
+    "notes": "KINETRIX LAUNCHER 2.10.1 - THE LINUX LAUNCH FIX. Some Linux players clicked LAUNCH and watched the launcher close itself while no game ever appeared: the launcher quit the moment the game process was born, but the JVM takes seconds to boot and that boot can still fail on Linux (a missing desktop library like libXtst, or the xrandr utility LWJGL needs) with NO crash report and NO window. Now: (1) boot-proof auto-close - the launcher hides when the game starts and only quits after the game proved itself alive plus a 15-second boot grace; if the game dies during boot the launcher REAPPEARS with the exact reason (this also repairs the automatic memory-retry on Windows for close-after-launch users); (2) a Linux launch preflight refuses with the exact one-line install command (apt/dnf/pacman) when the graphical session, xrandr or any LWJGL/OpenAL system library is missing; (3) no-report crashes now surface the JVM's own last error lines with the package hint. Windows behavior is unchanged except the safer close-after-launch timing.",
+    "date": "2026-10-15",
     "linux": {
-      "asset": "KinetrixLauncher-2.10.0-Linux.AppImage",
-      "size": 144670709,
-      "sha256": "6a43f0a044261d961395ddb2558f8e639a966026fe57be938b9d36d5a74607a5",
-      "deb": "KinetrixLauncher-2.10.0-Linux.deb",
-      "debSize": 111432626,
-      "debSha256": "11bbc00231b919e915b3207020fe712147ad2bf5d35ef83bac7240f084c2e2b7"
+      "asset": "KinetrixLauncher-2.10.1-Linux.AppImage",
+      "size": 144674869,
+      "sha256": "4825907abde67193ea95f6167dfdb16f4a89885c9c4800b9455b801d9dc9819b",
+      "deb": "KinetrixLauncher-2.10.1-Linux.deb",
+      "debSize": 111420836,
+      "debSha256": "c74f83be1b8ae3f7c94dfee0f241a99c40eb495167e1832eaa991a7f8a1a89fe"
     }
   },
   "client": {
