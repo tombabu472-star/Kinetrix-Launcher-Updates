@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T12:56:41Z",
+  "updated": "2026-10-15T14:41:20Z",
   "launcher": {
     "tag": "launcher-v2.10.1",
     "version": "2.10.1",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.11.5",
-    "version": "3.11.5",
-    "asset": "kinetrix-3.11.5.jar",
-    "size": 23903754,
-    "sha256": "74b7c88c5109d9fc1d9ef9f27aff51a5787d33a0cb8fff17b63b6f5563504255"
+    "tag": "mod-v3.12.0",
+    "version": "3.12.0",
+    "asset": "kinetrix-3.12.0.jar",
+    "size": 26263510,
+    "sha256": "25ded977b27c57185af83d48129ad135531f189d2c9fef3c45f2ab7dc2c3f12d"
   },
-  "notes": "Kinetrix Client 3.11.5 - SAFETY REVERT: the blockhit animation is now 100% visual-only. Zero packets, zero attacks, zero input changes - the server sees a perfectly normal vanilla blocking player, so there is nothing to detect and no ban risk. The 1.7 blockhit ANIMATION in first person (pose following the swing arc + hit particles) is unchanged. Free look nametag fix, always-on Kinetrix-only ClientTag and the Discord RPC every-launch re-enable are all kept.",
+  "notes": "Kinetrix Client 3.12.0 - HiDPI CLARITY OVERHAUL. If you play on a 2K/4K monitor and the home screen, menus or HUD looked blurry, that's fixed: every custom font was baked at a fixed 2x density and stretched up to 4.5x on screen; now fonts bake at your framebuffer's real density (pixel-exact at 1080p/1440p, up to 3x sharper on 4K). The home-screen hero text bakes at full density instead of being matrix-stretched, HUD text re-bakes on resolution/GUI-scale change, the home-screen backdrop ships at 2048x1024 with a 1024px logo, and menu blur composites at a higher resolution. Bonus fix: switching resolutions used to leak every font atlas's VRAM. Layout and gameplay are unchanged - same UI, just crisp.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
