@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-15T14:41:20Z",
+  "updated": "2026-10-16T02:35:00Z",
   "launcher": {
-    "tag": "launcher-v2.10.1",
-    "version": "2.10.1",
-    "asset": "KinetrixLauncher-Setup-2.10.1.exe",
-    "size": 115213558,
-    "sha256": "dc0b901373ff98bf7336fb48fd2c089c8e3c0e710b947681672382244fbf84ee",
-    "notes": "KINETRIX LAUNCHER 2.10.1 - THE LINUX LAUNCH FIX. Some Linux players clicked LAUNCH and watched the launcher close itself while no game ever appeared: the launcher quit the moment the game process was born, but the JVM takes seconds to boot and that boot can still fail on Linux (a missing desktop library like libXtst, or the xrandr utility LWJGL needs) with NO crash report and NO window. Now: (1) boot-proof auto-close - the launcher hides when the game starts and only quits after the game proved itself alive plus a 15-second boot grace; if the game dies during boot the launcher REAPPEARS with the exact reason (this also repairs the automatic memory-retry on Windows for close-after-launch users); (2) a Linux launch preflight refuses with the exact one-line install command (apt/dnf/pacman) when the graphical session, xrandr or any LWJGL/OpenAL system library is missing; (3) no-report crashes now surface the JVM's own last error lines with the package hint. Windows behavior is unchanged except the safer close-after-launch timing.",
-    "date": "2026-10-15",
+    "tag": "launcher-v3.0.0",
+    "version": "3.0.0",
+    "asset": "KinetrixLauncher-Setup-3.0.0.exe",
+    "size": 115238993,
+    "sha256": "13400d6c10776d21886c5880c6eaa2a1417fdc80cd154c27ec3eae3859be4838",
+    "notes": "KINETRIX LAUNCHER 3.0.0 - ALL VERSIONS. The launcher now plays every Minecraft version with Forge or Fabric, installs mods from Modrinth and CurseForge, and imports Modrinth profiles - while the Kinetrix 1.8.9 flagship stays untouched as the home-screen LAUNCH 1.8.9 button. VERSIONS: a new Versions page lists every Mojang version (releases, snapshots, old beta/alpha); pick a version + loader (Vanilla/Forge/Fabric) and it installs into its own folder with its own saves, mods and configs, so nothing collides. Modern Forge installs through the OFFICIAL Forge installer run headless and Java 17/21 runtimes are detected or downloaded automatically. The home LAUNCH button follows the selected version and the arrow next to it is the quick version switcher. MODS: a new Mods page searches Modrinth and CurseForge for the exact version + loader you picked, installs with one click (sha1-verified) and manages installed mods (enable/disable/delete). CurseForge works out of the box via a public community mirror; your own free API key (console.curseforge.com) can be pasted in Settings for the official API. MODRINTH PROFILES: import a whole modpack by picking its .mrpack file or pasting a modrinth.com/modpack link - version, loader, configs and every mod are set up automatically. Everything else is unchanged: Microsoft sign-in, accounts, Quick Play, cosmetics locker with the 3D preview, crash doctor, auto-update.",
+    "date": "2026-10-16",
     "linux": {
-      "asset": "KinetrixLauncher-2.10.1-Linux.AppImage",
-      "size": 144674869,
-      "sha256": "4825907abde67193ea95f6167dfdb16f4a89885c9c4800b9455b801d9dc9819b",
-      "deb": "KinetrixLauncher-2.10.1-Linux.deb",
-      "debSize": 111420836,
-      "debSha256": "c74f83be1b8ae3f7c94dfee0f241a99c40eb495167e1832eaa991a7f8a1a89fe"
+      "asset": "KinetrixLauncher-3.0.0-Linux.AppImage",
+      "size": 144707786,
+      "sha256": "e801e032f2a8c5514cddf756bc0d896f0a42f65897f4be3f36c5c6147b9deea7",
+      "deb": "KinetrixLauncher-3.0.0-Linux.deb",
+      "debSize": 111445230,
+      "debSha256": "353eb3f3fb33447d6af4f5bb53dcabaa3ed3754560e44686165d1f0a8673874a"
     }
   },
   "client": {
