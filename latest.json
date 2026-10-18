@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T02:35:00Z",
+  "updated": "2026-10-18T09:07:36Z",
   "launcher": {
     "tag": "launcher-v3.0.0",
     "version": "3.0.0",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.12.0",
-    "version": "3.12.0",
-    "asset": "kinetrix-3.12.0.jar",
-    "size": 26263510,
-    "sha256": "25ded977b27c57185af83d48129ad135531f189d2c9fef3c45f2ab7dc2c3f12d"
+    "tag": "mod-v3.13.0",
+    "version": "3.13.0",
+    "asset": "kinetrix-3.13.0.jar",
+    "size": 26453352,
+    "sha256": "4ede0fd4a148e76c3fa19e3a9e2bc389eb658633eeee3f078cd9b56c208ac8c9"
   },
-  "notes": "Kinetrix Client 3.12.0 - HiDPI CLARITY OVERHAUL. If you play on a 2K/4K monitor and the home screen, menus or HUD looked blurry, that's fixed: every custom font was baked at a fixed 2x density and stretched up to 4.5x on screen; now fonts bake at your framebuffer's real density (pixel-exact at 1080p/1440p, up to 3x sharper on 4K). The home-screen hero text bakes at full density instead of being matrix-stretched, HUD text re-bakes on resolution/GUI-scale change, the home-screen backdrop ships at 2048x1024 with a 1024px logo, and menu blur composites at a higher resolution. Bonus fix: switching resolutions used to leak every font atlas's VRAM. Layout and gameplay are unchanged - same UI, just crisp.",
+  "notes": "Kinetrix Client 3.13.0 - GLASS SERVER SELECTOR + LOADING SCREEN FIX. The multiplayer server selector is rebuilt around a large centered frosted-glass panel: the Kinetrix logo beside the Multiplayer title with live server/online stats, refresh, a thin divider, glass search field + Direct Connect, and taller flat glass server cards with icon, name, MOTD, status dot (Online/Checking/Offline), player count, ms ping, supported version tag and neutral grey Join buttons - blue now stays with the logo and the selection accent only. A small GUI v3.13.0 tag sits bottom-left. Search filters live; double-click joins, right-click offers Join/Edit/Remove. PLUS a loading screen fix: installs that never saw the branded Kinetrix loading screen (Forge writes a default splash config on first boot that the client then refused to overwrite) get it from the next launch, with new transparent splash art and a Kinetrix corner mark instead of the forge anvil.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
