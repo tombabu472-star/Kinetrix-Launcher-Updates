@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T09:17:43Z",
+  "updated": "2026-10-19T06:40:25Z",
   "launcher": {
     "tag": "launcher-v3.0.1",
     "version": "3.0.1",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.13.0",
-    "version": "3.13.0",
-    "asset": "kinetrix-3.13.0.jar",
-    "size": 26453352,
-    "sha256": "4ede0fd4a148e76c3fa19e3a9e2bc389eb658633eeee3f078cd9b56c208ac8c9"
+    "tag": "mod-v3.14.0",
+    "version": "3.14.0",
+    "asset": "kinetrix-3.14.0.jar",
+    "size": 107341282,
+    "sha256": "5b0879f27446bc4cda7144c53634baf05ff2be6ca18cb472b053d08ec31193ea"
   },
-  "notes": "Kinetrix Client 3.13.0 - GLASS SERVER SELECTOR + LOADING SCREEN FIX. The multiplayer server selector is rebuilt around a large centered frosted-glass panel: the Kinetrix logo beside the Multiplayer title with live server/online stats, refresh, a thin divider, glass search field + Direct Connect, and taller flat glass server cards with icon, name, MOTD, status dot (Online/Checking/Offline), player count, ms ping, supported version tag and neutral grey Join buttons - blue now stays with the logo and the selection accent only. A small GUI v3.13.0 tag sits bottom-left. Search filters live; double-click joins, right-click offers Join/Edit/Remove. PLUS a loading screen fix: installs that never saw the branded Kinetrix loading screen (Forge writes a default splash config on first boot that the client then refused to overwrite) get it from the next launch, with new transparent splash art and a Kinetrix corner mark instead of the forge anvil.",
+  "notes": "Kinetrix Client 3.14.0 - LOCKER SECURITY FIX + SKINS WITHOUT LOGIN + CELESTIAL COLLECTION + HD CAPES. Security: a cosmetics session whose Minecraft username changed is now signed out immediately - renaming in the Account Manager can never show another player's locker (you are asked to sign in again). Skins: your skin is fetched straight from the Kinetrix database by your username and shown even when you never sign in to cosmetics - boot, world join, Locker preview and the Skins screen; only uploading/cloud sync still needs an account. New Celestial Collection: 12 new 48-frame animated capes (Eclipse, Zenith, Celestial, Quantum, Mirage, Sapphire, Emerald Dream, Crimson King, Hyperspace, Northern Lights, Solstice, Obsidian) + 4 new auras (Gold, Obsidian, Nebula, Aurora) - the Locker now holds 117 cosmetics. HD capes: every cape re-rendered at 1024x512 with 48-frame loops, crisp on 4K, with a lazy frame loader that keeps your FPS untouched. NOTE: this update is ~102 MB because of the HD cape art - one-time download.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
