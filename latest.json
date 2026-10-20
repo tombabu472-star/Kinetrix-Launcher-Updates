@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T08:10:00Z",
+  "updated": "2026-10-20T17:05:00Z",
   "launcher": {
     "tag": "launcher-v3.0.3",
     "version": "3.0.3",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.14.0",
-    "version": "3.14.0",
-    "asset": "kinetrix-3.14.0.jar",
-    "size": 107341282,
-    "sha256": "5b0879f27446bc4cda7144c53634baf05ff2be6ca18cb472b053d08ec31193ea"
+    "tag": "mod-v3.14.1",
+    "version": "3.14.1",
+    "asset": "kinetrix-3.14.1.jar",
+    "size": 107341241,
+    "sha256": "4fcdfb3c5278d2f76a365f517ff9dbe14f2e2563e7fa67755e1e930f52650107"
   },
-  "notes": "Kinetrix Client 3.14.0 - LOCKER SECURITY FIX + SKINS WITHOUT LOGIN + CELESTIAL COLLECTION + HD CAPES. Security: a cosmetics session whose Minecraft username changed is now signed out immediately - renaming in the Account Manager can never show another player's locker (you are asked to sign in again). Skins: your skin is fetched straight from the Kinetrix database by your username and shown even when you never sign in to cosmetics - boot, world join, Locker preview and the Skins screen; only uploading/cloud sync still needs an account. New Celestial Collection: 12 new 48-frame animated capes (Eclipse, Zenith, Celestial, Quantum, Mirage, Sapphire, Emerald Dream, Crimson King, Hyperspace, Northern Lights, Solstice, Obsidian) + 4 new auras (Gold, Obsidian, Nebula, Aurora) - the Locker now holds 117 cosmetics. HD capes: every cape re-rendered at 1024x512 with 48-frame loops, crisp on 4K, with a lazy frame loader that keeps your FPS untouched. NOTE: this update is ~102 MB because of the HD cape art - one-time download.",
+  "notes": "Kinetrix Client 3.14.1 - RIGHT-CLICK MENU FIXED. In the Multiplayer server selector (and every other right-click menu), clicking Edit or Remove did nothing and the menu just vanished: the screen closed the menu on every left click BEFORE the menu item's action could run. That pre-close is removed - Join / Edit / Remove now work, clicks outside the menu still close it, ESC still closes it. Verified with an automated click-path harness against the real UI dispatcher before shipping. Everything else from 3.14.0 is unchanged: locker security, skins without login, Celestial Collection (12 animated capes + 4 auras), HD animated capes at 1024x512 with 48-frame loops.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
