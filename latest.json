@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-19T17:35:00Z",
+  "updated": "2026-10-20T08:10:00Z",
   "launcher": {
-    "tag": "launcher-v3.0.2",
-    "version": "3.0.2",
-    "asset": "KinetrixLauncher-Setup-3.0.2.exe",
-    "size": 115241680,
-    "sha256": "70b7237a5ed4f4a96b9efd0628732de82cf6570d365c8081720952b9d9a94fc6",
-    "notes": "KINETRIX LAUNCHER 3.0.2 - LINUX LAUNCH FIXED FOR REAL: THE LAUNCHER NOW CARRIES THE GAME'S GRAPHICS LIBRARIES. Linux players on minimal desktops (i3, sway, X-only images, some Wayland setups) were stopped by 'Cannot launch - this Linux is missing system libraries the game needs: libXcursor.so.1, libXrandr.so.2' and had to install desktop libraries by hand before the game would start. From 3.0.2 the launcher ships those libraries itself: every Linux build bundles the exact small X11 client libraries the game's LWJGL/OpenAL natives need (libXcursor, libXrandr, libXxf86vm, libXtst, libXi, libXinerama, libXfixes, libXrender), the pre-launch check runs with the bundle in mind, and PLAY hands the bundled copies straight to the game - no sudo, no terminal, works on any distro. A system that already has these libraries is untouched (its own copies are used; the bundle only fills gaps). If something outside the bundle is still missing - for example the OpenGL driver stack itself - the message still names it with the exact one-line install command for your distro. Windows behavior is unchanged. Everything from 3.0.1/3.0.0 is unchanged: all Minecraft versions with Forge or Fabric, Modrinth + CurseForge mod browser, Modrinth profile import, Microsoft sign-in, cosmetics locker, crash doctor and auto-update.",
-    "date": "2026-10-19",
+    "tag": "launcher-v3.0.3",
+    "version": "3.0.3",
+    "asset": "KinetrixLauncher-Setup-3.0.3.exe",
+    "size": 115334959,
+    "sha256": "08df23a0e4d4dd682b13026b2954ab0fbe2585cc2d9dce00bebba93d9e3637b9",
+    "notes": "KINETRIX LAUNCHER 3.0.3 - TASKBAR ICON FIXED, NO MORE WHITE TILE. Windows players saw the correct Kinetrix logo on the desktop shortcut but a blank WHITE icon on the taskbar once the launcher was open. Reason: the desktop shortcut renders straight from the icon embedded in the exe, while the running window's taskbar button was given a single 256px PNG - Windows wants a real multi-size .ico (16/24/32/48px frames) for that small taskbar image, and with a PNG it silently falls back to a white tile. The launcher window now uses the full multi-size Kinetrix .ico (shipped inside the app), the app identity (AppUserModelID) is registered before any window exists so the taskbar always associates the button with the installed launcher, and the icon is re-asserted right before the window shows as insurance for frameless windows. Linux is unchanged and v3.0.2's bundled Linux game libraries carry over untouched. Everything else stands: all Minecraft versions with Forge or Fabric, Modrinth + CurseForge mod browser, Modrinth profile import, Microsoft sign-in, cosmetics locker, crash doctor and auto-update.",
+    "date": "2026-10-20",
     "linux": {
-      "asset": "KinetrixLauncher-3.0.2-Linux.AppImage",
-      "size": 144822494,
-      "sha256": "7f72d9ae8341ba6cb6ea41631f935d8842d580365a8c5d53b44ddf6e2e988726",
-      "deb": "KinetrixLauncher-3.0.2-Linux.deb",
-      "debSize": 111529958,
-      "debSha256": "6b2bf64a53866fe257336f10c187afe6ae841898b4bb7a715ccc9cad2526aa55"
+      "asset": "KinetrixLauncher-3.0.3-Linux.AppImage",
+      "size": 144912627,
+      "sha256": "6bd8ac99257770094c7a8f384f7be1cb1189089ebcd00c2dd90e2efb83792fd7",
+      "deb": "KinetrixLauncher-3.0.3-Linux.deb",
+      "debSize": 111520524,
+      "debSha256": "dd9d9742edca01321216f5de9af1ef52ea713ea71314be65f741bd6b88b64357"
     }
   },
   "client": {
