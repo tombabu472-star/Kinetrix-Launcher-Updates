@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-21T04:06:11Z",
+  "updated": "2026-10-21T04:47:38Z",
   "launcher": {
-    "tag": "launcher-v3.0.3",
-    "version": "3.0.3",
-    "asset": "KinetrixLauncher-Setup-3.0.3.exe",
-    "size": 115334959,
-    "sha256": "08df23a0e4d4dd682b13026b2954ab0fbe2585cc2d9dce00bebba93d9e3637b9",
-    "notes": "KINETRIX LAUNCHER 3.0.3 - TASKBAR ICON FIXED, NO MORE WHITE TILE. Windows players saw the correct Kinetrix logo on the desktop shortcut but a blank WHITE icon on the taskbar once the launcher was open. Reason: the desktop shortcut renders straight from the icon embedded in the exe, while the running window's taskbar button was given a single 256px PNG - Windows wants a real multi-size .ico (16/24/32/48px frames) for that small taskbar image, and with a PNG it silently falls back to a white tile. The launcher window now uses the full multi-size Kinetrix .ico (shipped inside the app), the app identity (AppUserModelID) is registered before any window exists so the taskbar always associates the button with the installed launcher, and the icon is re-asserted right before the window shows as insurance for frameless windows. Linux is unchanged and v3.0.2's bundled Linux game libraries carry over untouched. Everything else stands: all Minecraft versions with Forge or Fabric, Modrinth + CurseForge mod browser, Modrinth profile import, Microsoft sign-in, cosmetics locker, crash doctor and auto-update.",
-    "date": "2026-10-20",
+    "tag": "launcher-v3.0.4",
+    "version": "3.0.4",
+    "asset": "KinetrixLauncher-Setup-3.0.4.exe",
+    "size": 115336860,
+    "sha256": "875ce0ba1cbb4a2703036b4ee2a1ecef86d8c68847719d2096e7b2f82e54a441",
+    "notes": "KINETRIX LAUNCHER 3.0.4 - LAUNCH ALWAYS UPDATES THE CLIENT FIRST. You can no longer play on an old Kinetrix Client. When you press LAUNCH, the launcher verifies the installed client against the update channel BEFORE the game is allowed to start: if a newer client was published it is downloaded right there (the progress card shows Updating Kinetrix Client with a live percentage, and the bar now gives the client download the space it deserves - it is the biggest file in the whole install) and the game starts only once the current client is verified on disk. If the update cannot be completed - a still-running Minecraft keeps the old jar locked, or a download keeps failing after 3 automatic retries - the launch is BLOCKED with the exact reason, and PLAY retries the moment the cause is fixed; the launcher never silently starts the game on an outdated client. Downloads are checksum-verified before they replace anything, an offline session still plays with the client already on disk (stated in the log), and the crash doctor's client-disabled safe mode is untouched. Everything from 3.0.3 is unchanged: all Minecraft versions with Forge or Fabric, Modrinth + CurseForge mod browser, Modrinth profile import, Microsoft sign-in, cosmetics locker, Linux game libraries and auto-update.",
+    "date": "2026-10-21",
     "linux": {
-      "asset": "KinetrixLauncher-3.0.3-Linux.AppImage",
-      "size": 144912627,
-      "sha256": "6bd8ac99257770094c7a8f384f7be1cb1189089ebcd00c2dd90e2efb83792fd7",
-      "deb": "KinetrixLauncher-3.0.3-Linux.deb",
-      "debSize": 111520524,
-      "debSha256": "dd9d9742edca01321216f5de9af1ef52ea713ea71314be65f741bd6b88b64357"
+      "asset": "KinetrixLauncher-3.0.4-Linux.AppImage",
+      "size": 144916773,
+      "sha256": "732b5d29ff0dff4d3b6e9745dfe3ac8fa19f886e6c2556b5af5f46fbaca4ea60",
+      "deb": "KinetrixLauncher-3.0.4-Linux.deb",
+      "debSize": 111533918,
+      "debSha256": "b500cef251bdd20e10320d43e2b304caeb78808ca162cb5c01293a80eb299622"
     }
   },
   "client": {
