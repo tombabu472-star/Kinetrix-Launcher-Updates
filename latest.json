@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T04:47:38Z",
+  "updated": "2026-10-21T06:21:09Z",
   "launcher": {
     "tag": "launcher-v3.0.4",
     "version": "3.0.4",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.15.0",
-    "version": "3.15.0",
-    "asset": "kinetrix-3.15.0.jar",
-    "size": 105623722,
-    "sha256": "3a57a7218a85b674cf5d86579d3bc39f4a03e191ab64dd8866a2c4b5158ab1cd"
+    "tag": "mod-v3.16.0",
+    "version": "3.16.0",
+    "asset": "kinetrix-3.16.0.jar",
+    "size": 105240006,
+    "sha256": "963e2bcd840ce46db398632c89742c38919abbb4822523eec2cc20604d4dbae9"
   },
-  "notes": "Kinetrix Client v3.15.0 - source protection release.\n\nEvery client build is now obfuscated: class, method and field names of the client's own code are renamed and repackaged, debug info stripped - the jar no longer decompiles to the original sources. Launcher compatibility, accounts, cosmetics and the website are fully preserved.\n\nAll old readable client releases were removed from the update channel; v3.15.0 is the only client distribution. This version also completes the rebrand: zero 'cloud' traces remain anywhere in the client.",
+  "notes": "Kinetrix Client v3.16.0 - Rank & Identity System.\n\nYour Kinetrix identity now travels with you in-game: your own nametag shows your rank badge in place of the standard client logo - staff badges, community badges and membership tiers each carry their own custom mark. Kinetrix+ subscribers wear the subscription-coloured Kinetrix+ mark (Green at day one up to Obsidian at 54 months), computed on the server and impossible to fake. No rank yet means the default Kinetrix logo, same as always. The main menu account chip shows your badge next to your username, and badges refresh automatically from the website - no reinstall needed. Source protection from v3.15.0 continues: every build stays obfuscated.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
