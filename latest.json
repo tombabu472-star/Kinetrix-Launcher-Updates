@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T12:05:00Z",
+  "updated": "2026-10-21T13:32:18Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.16.2",
-    "version": "3.16.2",
-    "asset": "kinetrix-3.16.2.jar",
-    "size": 105342316,
-    "sha256": "8ec3341bf5d88df7e3a2c5497f41553f52ab3e88b9f3a64cb3621486bb61e22b"
+    "tag": "mod-v3.16.3",
+    "version": "3.16.3",
+    "asset": "kinetrix-3.16.3.jar",
+    "size": 105276804,
+    "sha256": "0418acb3973c0faec1d6fb4f423136f1987b0d54214af3ead04b12575910833b"
   },
-  "notes": "Kinetrix Client 3.16.2 - launch crash fully fixed. The obfuscation pipeline was rebuilt: stack-map frames are recomputed with ASM and every shipped class is now verified by a real JVM before release, plus a headless launch/world-join/screenshot gate after every build. This build was verified end-to-end (launch, world join, in-game screenshots, clean exit).",
+  "notes": "Kinetrix Client 3.16.3 - BLACK SCREEN FIXED. The obfuscation step had renamed every menu screen's override methods (drawScreen, initGui, ...) so Minecraft never called them - all client GUIs rendered nothing while the game ran behind. 126 methods across 40 classes are re-bound to the runtime names Minecraft actually calls; verified end-to-end: title menu renders, world joins, HUD + crosshair render, zero errors in the log.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -46,5 +46,5 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": "2026-10-21T12:05:00Z"
+  "timestamp": "2026-10-21T13:32:18Z"
 }
