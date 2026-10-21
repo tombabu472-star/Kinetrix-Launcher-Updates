@@ -20,10 +20,9 @@
   "client": {
     "tag": "mod-v3.16.2",
     "version": "3.16.2",
-    "asset": "kinetrix-3.16.1.jar",
+    "asset": "kinetrix-3.16.2.jar",
     "size": 105342316,
-    "sha256": "8ec3341bf5d88df7e3a2c5497f41553f52ab3e88b9f3a64cb3621486bb61e22b",
-    "file": "kinetrix-3.16.2.jar"
+    "sha256": "8ec3341bf5d88df7e3a2c5497f41553f52ab3e88b9f3a64cb3621486bb61e22b"
   },
   "notes": "Kinetrix Client 3.16.2 - launch crash fully fixed. The obfuscation pipeline was rebuilt: stack-map frames are recomputed with ASM and every shipped class is now verified by a real JVM before release, plus a headless launch/world-join/screenshot gate after every build. This build was verified end-to-end (launch, world join, in-game screenshots, clean exit).",
   "forge": {
