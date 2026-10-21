@@ -18,13 +18,14 @@
     }
   },
   "client": {
-    "tag": "mod-v3.16.1",
-    "version": "3.16.1",
+    "tag": "mod-v3.16.2",
+    "version": "3.16.2",
     "asset": "kinetrix-3.16.1.jar",
-    "size": 105839416,
-    "sha256": "f21fda3a4caab314d3914dac57164bcf39f8e2e2b79a537738aed305f876fc49"
+    "size": 105342316,
+    "sha256": "8ec3341bf5d88df7e3a2c5497f41553f52ab3e88b9f3a64cb3621486bb61e22b",
+    "file": "kinetrix-3.16.2.jar"
   },
-  "notes": "Kinetrix Client v3.16.1 - Launch crash fixed + Rank & Identity System.\n\nFIXED: the startup crash reported on some installs (game exiting during mod loading with a verifier error in the loading-screen swap). The v3.15.0 source-protection step renamed the client's internal classes into short default-package names and a few of those collided with Minecraft 1.8.9's own internal class names - Forge's runtime remapper then rewrote those references into vanilla classes and the mod failed verification before the main menu. Obfuscated classes now live in a dedicated package that cannot collide, the build refuses to ship if that rule is ever broken again, and the reported client version was corrected. No gameplay behaviour changed - just press LAUNCH and the client updates itself.\n\nEverything from v3.16.0 is included: your Kinetrix identity travels with you in-game - your own nametag shows your server-verified rank badge in place of the standard client logo (staff badges, community badges and Kinetrix+ milestone marks, computed on the server and impossible to fake; no rank yet means the default Kinetrix logo, same as always), and the main-menu account chip shows your badge next to your username. Badges refresh automatically from the website - no reinstall needed. Source protection continues: every build stays fully obfuscated.",
+  "notes": "Kinetrix Client 3.16.2 - launch crash fully fixed. The obfuscation pipeline was rebuilt: stack-map frames are recomputed with ASM and every shipped class is now verified by a real JVM before release, plus a headless launch/world-join/screenshot gate after every build. This build was verified end-to-end (launch, world join, in-game screenshots, clean exit).",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -45,5 +46,6 @@
     "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
-  }
+  },
+  "timestamp": "2026-10-21T10:42:07Z"
 }
