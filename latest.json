@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-21T07:10:36Z",
+  "updated": "2026-10-21T12:05:00Z",
   "launcher": {
-    "tag": "launcher-v3.0.4",
-    "version": "3.0.4",
-    "asset": "KinetrixLauncher-Setup-3.0.4.exe",
-    "size": 115336860,
-    "sha256": "875ce0ba1cbb4a2703036b4ee2a1ecef86d8c68847719d2096e7b2f82e54a441",
-    "notes": "KINETRIX LAUNCHER 3.0.4 - LAUNCH ALWAYS UPDATES THE CLIENT FIRST. You can no longer play on an old Kinetrix Client. When you press LAUNCH, the launcher verifies the installed client against the update channel BEFORE the game is allowed to start: if a newer client was published it is downloaded right there (the progress card shows Updating Kinetrix Client with a live percentage, and the bar now gives the client download the space it deserves - it is the biggest file in the whole install) and the game starts only once the current client is verified on disk. If the update cannot be completed - a still-running Minecraft keeps the old jar locked, or a download keeps failing after 3 automatic retries - the launch is BLOCKED with the exact reason, and PLAY retries the moment the cause is fixed; the launcher never silently starts the game on an outdated client. Downloads are checksum-verified before they replace anything, an offline session still plays with the client already on disk (stated in the log), and the crash doctor's client-disabled safe mode is untouched. Everything from 3.0.3 is unchanged: all Minecraft versions with Forge or Fabric, Modrinth + CurseForge mod browser, Modrinth profile import, Microsoft sign-in, cosmetics locker, Linux game libraries and auto-update.",
+    "tag": "launcher-v3.0.5",
+    "version": "3.0.5",
+    "asset": "KinetrixLauncher-Setup-3.0.5.exe",
+    "size": 115338061,
+    "sha256": "1c5a5feceabe83395b53febb2fb877b76aa31c73592fdfb121c3532b123755c6",
+    "notes": "KINETRIX LAUNCHER 3.0.5 - LAUNCH BLOCKER FIXED + TASKBAR ICON STAYS. A stale filename inside the update manifest (kinetrix-3.16.1.jar listed under the mod-v3.16.2 release) made the pre-launch client update fail with HTTP 404 after 3 retries and blocked every launch - the manifest is now cross-checked against its own version, a mismatching filename is repaired from the release's real asset list, and if the download URL is ever rejected (or a checksum disagrees) the launcher re-resolves the newest release from the actual GitHub release assets before giving up, so a bad manifest can no longer stop you from playing (already fixed live on the channel too - today's 404 is gone even on v3.0.4). The taskbar icon no longer disappears: with close-after-launch the window is hidden while the game runs, and on Windows re-showing it that way could drop the taskbar button - the window is now restored and the taskbar entry is re-registered every time it reappears. Everything from 3.0.4 is unchanged: the hard pre-launch client gate, Modrinth + CurseForge browser, Microsoft sign-in, Quick Play, cosmetics locker and full crash doctor.",
     "date": "2026-10-21",
     "linux": {
-      "asset": "KinetrixLauncher-3.0.4-Linux.AppImage",
-      "size": 144916773,
-      "sha256": "732b5d29ff0dff4d3b6e9745dfe3ac8fa19f886e6c2556b5af5f46fbaca4ea60",
-      "deb": "KinetrixLauncher-3.0.4-Linux.deb",
-      "debSize": 111533918,
-      "debSha256": "b500cef251bdd20e10320d43e2b304caeb78808ca162cb5c01293a80eb299622"
+      "asset": "KinetrixLauncher-3.0.5-Linux.AppImage",
+      "size": 144916910,
+      "sha256": "8fed63835f15d04b6acf64b00293c69459df8b4b95872c94882f63360eea9c13",
+      "deb": "KinetrixLauncher-3.0.5-Linux.deb",
+      "debSize": 111561256,
+      "debSha256": "a7218459c786717641d6c842048341c49d95064ee6c9eddd0179764d58d21d3d"
     }
   },
   "client": {
@@ -46,5 +46,5 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": "2026-10-21T10:42:07Z"
+  "timestamp": "2026-10-21T12:05:00Z"
 }
