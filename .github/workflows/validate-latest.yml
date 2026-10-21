@@ -1,0 +1,75 @@
+name: Validate latest.json
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['latest.json']
+
+permissions: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate every latest.json entry against the real releases
+        run: |
+          python3 - <<'EOF'
+          import json, sys, urllib.request
+
+          manifest = json.load(open('latest.json'))
+          REPO = 'tombabu472-star/Kinetrix-Launcher-Updates'
+          failures = []
+
+          def check(tag, asset, size=None, what=''):
+              """The exact URL the launcher builds MUST exist; size must match."""
+              url = f'https://github.com/{REPO}/releases/download/{tag}/{asset}'
+              req = urllib.request.Request(url, method='HEAD', headers={'User-Agent': 'kinetrix-manifest-guard'})
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      final = r.geturl()
+                      length = int(r.headers.get('Content-Length') or 0)
+                      ok = 200 <= r.status < 300 and final.startswith('https://release-assets.githubusercontent.com/')
+                      if not ok:
+                          failures.append(f'{what}: {url} -> HTTP {r.status} (unexpected redirect target)')
+                      elif size and length and length != size:
+                          failures.append(f'{what}: {url} size {length} != manifest size {size}')
+                      else:
+                          print(f'  OK  {what}: {tag}/{asset} ({length} bytes)')
+              except urllib.error.HTTPError as e:
+                  failures.append(f'{what}: {url} -> HTTP {e.code} (ASSET MISSING - the launcher would 404!)')
+              except Exception as e:
+                  failures.append(f'{what}: {url} -> {e}')
+
+          c = manifest.get('client') or {}
+          if c.get('tag') and c.get('asset'):
+              # the exact bug class this guard exists for: a manifest version
+              # whose asset filename disagrees with it (kinetrix-3.16.1.jar on mod-v3.16.2)
+              ver, name = str(c.get('version', '')), str(c['asset'])
+              digits = name.replace('kinetrix-', '').replace('.jar', '')
+              if ver and digits and digits != ver:
+                  failures.append(f'client: asset "{name}" disagrees with version "{ver}" - the launcher WILL 404 on this')
+              check(c['tag'], c['asset'], c.get('size'), 'client')
+
+          l = manifest.get('launcher') or {}
+          if l.get('tag') and l.get('asset'):
+              check(l['tag'], l['asset'], l.get('size'), 'launcher')
+
+          f = manifest.get('forge') or {}
+          if f.get('tag') and f.get('asset'):
+              check(f['tag'], f['asset'], f.get('size'), 'forge')
+              of = f.get('optifine') or {}
+              if of.get('asset'):
+                  check(f['tag'], of['asset'], of.get('size'), 'forge/optifine')
+
+          cj = manifest.get('clientJar') or {}
+          if cj.get('release') and cj.get('asset'):
+              check(cj['release'], cj['asset'], cj.get('size'), 'clientJar')
+
+          if failures:
+              print('\n'.join('FAIL ' + x for x in failures))
+              sys.exit(1)
+          print('latest.json: every entry resolves to a real release asset')
+          EOF
