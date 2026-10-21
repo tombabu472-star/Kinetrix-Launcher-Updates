@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T17:05:00Z",
+  "updated": "2026-10-21T04:06:11Z",
   "launcher": {
     "tag": "launcher-v3.0.3",
     "version": "3.0.3",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.14.1",
-    "version": "3.14.1",
-    "asset": "kinetrix-3.14.1.jar",
-    "size": 107341241,
-    "sha256": "4fcdfb3c5278d2f76a365f517ff9dbe14f2e2563e7fa67755e1e930f52650107"
+    "tag": "mod-v3.15.0",
+    "version": "3.15.0",
+    "asset": "kinetrix-3.15.0.jar",
+    "size": 105623722,
+    "sha256": "3a57a7218a85b674cf5d86579d3bc39f4a03e191ab64dd8866a2c4b5158ab1cd"
   },
-  "notes": "Kinetrix Client 3.14.1 - RIGHT-CLICK MENU FIXED. In the Multiplayer server selector (and every other right-click menu), clicking Edit or Remove did nothing and the menu just vanished: the screen closed the menu on every left click BEFORE the menu item's action could run. That pre-close is removed - Join / Edit / Remove now work, clicks outside the menu still close it, ESC still closes it. Verified with an automated click-path harness against the real UI dispatcher before shipping. Everything else from 3.14.0 is unchanged: locker security, skins without login, Celestial Collection (12 animated capes + 4 auras), HD animated capes at 1024x512 with 48-frame loops.",
+  "notes": "Kinetrix Client v3.15.0 - source protection release.\n\nEvery client build is now obfuscated: class, method and field names of the client's own code are renamed and repackaged, debug info stripped - the jar no longer decompiles to the original sources. Launcher compatibility, accounts, cosmetics and the website are fully preserved.\n\nAll old readable client releases were removed from the update channel; v3.15.0 is the only client distribution. This version also completes the rebrand: zero 'cloud' traces remain anywhere in the client.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
