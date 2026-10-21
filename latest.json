@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T06:21:09Z",
+  "updated": "2026-10-21T07:10:36Z",
   "launcher": {
     "tag": "launcher-v3.0.4",
     "version": "3.0.4",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.16.0",
-    "version": "3.16.0",
-    "asset": "kinetrix-3.16.0.jar",
-    "size": 105240006,
-    "sha256": "963e2bcd840ce46db398632c89742c38919abbb4822523eec2cc20604d4dbae9"
+    "tag": "mod-v3.16.1",
+    "version": "3.16.1",
+    "asset": "kinetrix-3.16.1.jar",
+    "size": 105839416,
+    "sha256": "f21fda3a4caab314d3914dac57164bcf39f8e2e2b79a537738aed305f876fc49"
   },
-  "notes": "Kinetrix Client v3.16.0 - Rank & Identity System.\n\nYour Kinetrix identity now travels with you in-game: your own nametag shows your rank badge in place of the standard client logo - staff badges, community badges and membership tiers each carry their own custom mark. Kinetrix+ subscribers wear the subscription-coloured Kinetrix+ mark (Green at day one up to Obsidian at 54 months), computed on the server and impossible to fake. No rank yet means the default Kinetrix logo, same as always. The main menu account chip shows your badge next to your username, and badges refresh automatically from the website - no reinstall needed. Source protection from v3.15.0 continues: every build stays obfuscated.",
+  "notes": "Kinetrix Client v3.16.1 - Launch crash fixed + Rank & Identity System.\n\nFIXED: the startup crash reported on some installs (game exiting during mod loading with a verifier error in the loading-screen swap). The v3.15.0 source-protection step renamed the client's internal classes into short default-package names and a few of those collided with Minecraft 1.8.9's own internal class names - Forge's runtime remapper then rewrote those references into vanilla classes and the mod failed verification before the main menu. Obfuscated classes now live in a dedicated package that cannot collide, the build refuses to ship if that rule is ever broken again, and the reported client version was corrected. No gameplay behaviour changed - just press LAUNCH and the client updates itself.\n\nEverything from v3.16.0 is included: your Kinetrix identity travels with you in-game - your own nametag shows your server-verified rank badge in place of the standard client logo (staff badges, community badges and Kinetrix+ milestone marks, computed on the server and impossible to fake; no rank yet means the default Kinetrix logo, same as always), and the main-menu account chip shows your badge next to your username. Badges refresh automatically from the website - no reinstall needed. Source protection continues: every build stays fully obfuscated.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
