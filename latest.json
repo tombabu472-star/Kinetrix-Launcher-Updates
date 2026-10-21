@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.16.3",
-    "version": "3.16.3",
-    "asset": "kinetrix-3.16.3.jar",
-    "size": 105276804,
-    "sha256": "0418acb3973c0faec1d6fb4f423136f1987b0d54214af3ead04b12575910833b"
+    "tag": "mod-v3.16.4",
+    "version": "3.16.4",
+    "asset": "kinetrix-3.16.4.jar",
+    "size": 105849888,
+    "sha256": "ede20564728fa361effe8c631b48d35370aa937d2e0e33bd48b7e09b71ba319c"
   },
-  "notes": "Kinetrix Client 3.16.3 - BLACK SCREEN FIXED. The obfuscation step had renamed every menu screen's override methods (drawScreen, initGui, ...) so Minecraft never called them - all client GUIs rendered nothing while the game ran behind. 126 methods across 40 classes are re-bound to the runtime names Minecraft actually calls; verified end-to-end: title menu renders, world joins, HUD + crosshair render, zero errors in the log.",
+  "notes": "Kinetrix Client 3.16.4 - GUI interaction hotfix: every screen is fully clickable again (Mods/ModMenu/Accounts/HUD editor). Obfuscation pipeline now preserves all vanilla event dispatch overrides (167 verified, 0 renamed), verified with real-click release gates.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -46,5 +46,5 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": "2026-10-21T13:32:18Z"
+  "timestamp": "2026-10-21T16:54:51Z"
 }
