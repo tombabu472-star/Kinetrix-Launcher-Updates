@@ -1,50 +1,50 @@
 {
-  "updated": "2026-10-21T13:32:18Z",
-  "launcher": {
-    "tag": "launcher-v3.0.5",
-    "version": "3.0.5",
-    "asset": "KinetrixLauncher-Setup-3.0.5.exe",
-    "size": 115338061,
-    "sha256": "1c5a5feceabe83395b53febb2fb877b76aa31c73592fdfb121c3532b123755c6",
-    "notes": "KINETRIX LAUNCHER 3.0.5 - LAUNCH BLOCKER FIXED + TASKBAR ICON STAYS. A stale filename inside the update manifest (kinetrix-3.16.1.jar listed under the mod-v3.16.2 release) made the pre-launch client update fail with HTTP 404 after 3 retries and blocked every launch - the manifest is now cross-checked against its own version, a mismatching filename is repaired from the release's real asset list, and if the download URL is ever rejected (or a checksum disagrees) the launcher re-resolves the newest release from the actual GitHub release assets before giving up, so a bad manifest can no longer stop you from playing (already fixed live on the channel too - today's 404 is gone even on v3.0.4). The taskbar icon no longer disappears: with close-after-launch the window is hidden while the game runs, and on Windows re-showing it that way could drop the taskbar button - the window is now restored and the taskbar entry is re-registered every time it reappears. Everything from 3.0.4 is unchanged: the hard pre-launch client gate, Modrinth + CurseForge browser, Microsoft sign-in, Quick Play, cosmetics locker and full crash doctor.",
-    "date": "2026-10-21",
-    "linux": {
-      "asset": "KinetrixLauncher-3.0.5-Linux.AppImage",
-      "size": 144916910,
-      "sha256": "8fed63835f15d04b6acf64b00293c69459df8b4b95872c94882f63360eea9c13",
-      "deb": "KinetrixLauncher-3.0.5-Linux.deb",
-      "debSize": 111561256,
-      "debSha256": "a7218459c786717641d6c842048341c49d95064ee6c9eddd0179764d58d21d3d"
-    }
+ "updated": "2026-10-22T01:08:53Z",
+ "launcher": {
+  "tag": "launcher-v3.0.5",
+  "version": "3.0.5",
+  "asset": "KinetrixLauncher-Setup-3.0.5.exe",
+  "size": 115338061,
+  "sha256": "1c5a5feceabe83395b53febb2fb877b76aa31c73592fdfb121c3532b123755c6",
+  "notes": "KINETRIX LAUNCHER 3.0.5 - LAUNCH BLOCKER FIXED + TASKBAR ICON STAYS. A stale filename inside the update manifest (kinetrix-3.16.1.jar listed under the mod-v3.16.2 release) made the pre-launch client update fail with HTTP 404 after 3 retries and blocked every launch - the manifest is now cross-checked against its own version, a mismatching filename is repaired from the release's real asset list, and if the download URL is ever rejected (or a checksum disagrees) the launcher re-resolves the newest release from the actual GitHub release assets before giving up, so a bad manifest can no longer stop you from playing (already fixed live on the channel too - today's 404 is gone even on v3.0.4). The taskbar icon no longer disappears: with close-after-launch the window is hidden while the game runs, and on Windows re-showing it that way could drop the taskbar button - the window is now restored and the taskbar entry is re-registered every time it reappears. Everything from 3.0.4 is unchanged: the hard pre-launch client gate, Modrinth + CurseForge browser, Microsoft sign-in, Quick Play, cosmetics locker and full crash doctor.",
+  "date": "2026-10-21",
+  "linux": {
+   "asset": "KinetrixLauncher-3.0.5-Linux.AppImage",
+   "size": 144916910,
+   "sha256": "8fed63835f15d04b6acf64b00293c69459df8b4b95872c94882f63360eea9c13",
+   "deb": "KinetrixLauncher-3.0.5-Linux.deb",
+   "debSize": 111561256,
+   "debSha256": "a7218459c786717641d6c842048341c49d95064ee6c9eddd0179764d58d21d3d"
+  }
+ },
+ "client": {
+  "tag": "mod-v3.16.5",
+  "version": "3.16.5",
+  "asset": "kinetrix-3.16.5.jar",
+  "size": 105998164,
+  "sha256": "b8965394036f9d1ec45420a7d2e5d577dfcec612dfcf5a603afcc18781427bd9"
+ },
+ "notes": "Kinetrix Client 3.16.5 - source-level obfuscation (CMPack-class depth): string-pool scrambling moves all 5,879 string constants out of the code into pool classes with junk index arithmetic (decompiled code no longer shows strings at their use sites), on top of the existing rename obfuscation. Zero gameplay or feature changes - full launch, world join and GUI click-through re-verified before release.",
+ "forge": {
+  "tag": "forge-1.8.9-11.15.1.1764",
+  "version": "11.15.1.1764+OptiFine_M5",
+  "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
+  "size": 3726026,
+  "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
+  "optifine": {
+   "asset": "OptiFine-1.8.9_HD_U_M5.jar",
+   "size": 2367088,
+   "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
   },
-  "client": {
-    "tag": "mod-v3.16.4",
-    "version": "3.16.4",
-    "asset": "kinetrix-3.16.4.jar",
-    "size": 105849888,
-    "sha256": "ede20564728fa361effe8c631b48d35370aa937d2e0e33bd48b7e09b71ba319c"
-  },
-  "notes": "Kinetrix Client 3.16.4 - GUI interaction hotfix: every screen is fully clickable again (Mods/ModMenu/Accounts/HUD editor). Obfuscation pipeline now preserves all vanilla event dispatch overrides (167 verified, 0 renamed), verified with real-click release gates.",
-  "forge": {
-    "tag": "forge-1.8.9-11.15.1.1764",
-    "version": "11.15.1.1764+OptiFine_M5",
-    "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
-    "size": 3726026,
-    "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
-    "optifine": {
-      "asset": "OptiFine-1.8.9_HD_U_M5.jar",
-      "size": 2367088,
-      "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
-    },
-    "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
-  },
-  "clientJar": {
-    "asset": "ForgeOptiFine-1.8.9.jar",
-    "size": 8461484,
-    "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
-    "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
-    "release": "minecraft-1.8.9",
-    "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
-  },
-  "timestamp": "2026-10-21T16:54:51Z"
+  "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
+ },
+ "clientJar": {
+  "asset": "ForgeOptiFine-1.8.9.jar",
+  "size": 8461484,
+  "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
+  "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
+  "release": "minecraft-1.8.9",
+  "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
+ },
+ "timestamp": 1792631333
 }
