@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.16.6",
-    "version": "3.16.6",
-    "asset": "kinetrix-3.16.6.jar",
-    "size": 105998257,
-    "sha256": "17f16078253be168f4be41eb391fecb348c44528a73f56b5bef236ce8f696506"
+    "tag": "mod-v3.16.7",
+    "version": "3.16.7",
+    "asset": "kinetrix-3.16.7.jar",
+    "size": 105999934,
+    "sha256": "cb9a05ab9341f7dea6f481eb3ef1f41838307591b8ad61f865908592addaa366"
   },
-  "notes": "Kinetrix Client 3.16.6 \"Clarity\": full UI rendering-quality pass with zero design changes - bilinear sampling for every smooth texture (logos, icons, backdrops, capes, pets, world icons), crisper text (MIN filter on pictures + HiDPI glyph atlases), 512px title panorama skybox, analytic anti-aliased rounded cards/circles/gradients. Same layout, colors and artwork - only sharper. Mobile path untouched.",
+  "notes": "Client 3.16.7: Account Manager obfuscation hotfix - launcher-added and Microsoft accounts load and show again; GSON wire format now verified at build time (verifyGsonKeys) and at release time (verify-accounts).",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -46,5 +46,5 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": 1792676236
+  "timestamp": "2026-10-23T10:19:18Z"
 }
