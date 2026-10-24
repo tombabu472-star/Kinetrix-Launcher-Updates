@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T11:07:12Z",
+  "updated": "2026-10-24T14:35:17Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,11 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.16.10",
-    "version": "3.16.10",
-    "asset": "kinetrix-3.16.10.jar",
-    "size": 106028217,
-    "sha256": "aa73c7fda598d82c4a9c5143bc71dfe8838c9bc3e3051e207213e3672354cad0"
+    "tag": "mod-v3.17.0",
+    "version": "3.17.0",
+    "asset": "kinetrix-3.17.0.jar",
+    "size": 106424556,
+    "sha256": "529e7948adbbeb80b3e9fae27fd1a8b368657b66447e4b79e44ca8a28733a501",
+    "notes": "KINETRIX CLIENT 3.17.0 \"STUDIO\" - NEW DEFAULT FONT + UI SOUNDS + HUD EDITOR ACTION BAR + UI STUDIO. Rubik (Google Fonts, OFL) is now the default typeface, bundled in the jar and rendered crisp and anti-aliased at every scale - never the blocky vanilla font. The Font Changer finally works everywhere: picking a font re-bakes all menus and HUD text live, no restart. New UI sound kit (click, hover, toggle on/off, drawer open/close - whisper quiet, master mute under Client Settings). The HUD editor gains a hover action bar: lock (freeze drag + resize), hide (skip the in-game render) and reset scale, with accent-colored active states, ghost hitboxes for hidden elements and full config persistence. Brand-new UI Studio (sparkle icon in the ClickGUI header): a live editor rendering the real draw pipeline while you tune accent, radius, gloss, font size, shadow and outline, generating copy-to-clipboard render code. Unknown system fonts fall back to bundled Rubik instead of broken boxes; configs migrate automatically.",
+    "date": "2026-10-24"
   },
   "notes": "Kinetrix Client 3.16.10 'Silk Gloss' - glossy UI sheen everywhere, deeper frosted-glass blur, rank icon pack rendered at full logo size, Poppins font migration made real. Rendering-only release.",
   "forge": {
