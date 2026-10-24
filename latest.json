@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.16.7",
-    "version": "3.16.7",
-    "asset": "kinetrix-3.16.7.jar",
-    "size": 105999934,
-    "sha256": "cb9a05ab9341f7dea6f481eb3ef1f41838307591b8ad61f865908592addaa366"
+    "tag": "mod-v3.16.8",
+    "version": "3.16.8",
+    "asset": "kinetrix-3.16.8.jar",
+    "size": 105920935,
+    "sha256": "155e305e92be84245daece53d86f8a998c8860b0b4579ed2836d4b64b45c8276"
   },
-  "notes": "Client 3.16.7: Account Manager obfuscation hotfix - launcher-added and Microsoft accounts load and show again; GSON wire format now verified at build time (verifyGsonKeys) and at release time (verify-accounts).",
+  "notes": "Client 3.16.8: pure icon art - the dark plate/background stripped from every rank badge, Kinetrix+ milestone mark and the K+ logo. Only the icon remains, fully transparent. Nametag badges now render as clean neon art on any background. Obfuscation gates all green; verified in-game on the obfuscated build (title + world join + screenshots).",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -46,5 +46,5 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": "2026-10-23T10:19:18Z"
+  "timestamp": 1792816789598
 }
