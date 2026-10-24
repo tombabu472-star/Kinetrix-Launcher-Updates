@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.16.9",
-    "version": "3.16.9",
-    "asset": "kinetrix-3.16.9.jar",
-    "size": 105927616,
-    "sha256": "4a45cdfb75325623a7000e3dae7d4b2821ed557e90c791bada1a446f5755afa5"
+    "tag": "mod-v3.16.10",
+    "version": "3.16.10",
+    "asset": "kinetrix-3.16.10.jar",
+    "size": 106028217,
+    "sha256": "aa73c7fda598d82c4a9c5143bc71dfe8838c9bc3e3051e207213e3672354cad0"
   },
-  "notes": "Client 3.16.9 \"Poly-Silk\": OneClient-class rendering with ZERO UI/layout changes - Skia-style text (exact fractional glyph advances + batched quads, one draw per string instead of per character), Poppins (OneClient's typeface) now drives the HUD/legacy faces too with auto-migration from Arial, analytic SDF pie/ring arcs with 1px AA edges at any radius, and a true separable 9-tap Gaussian GPU blur for menu backdrops (blit chain kept as fallback). Mobile quarantine untouched; Smooth UI kill-switch intact; all obfuscation gates green; verified in-game on the obfuscated jar (title pixel gate PASS + world join + 7 screenshots).",
+  "notes": "Kinetrix Client 3.16.10 'Silk Gloss' - glossy UI sheen everywhere, deeper frosted-glass blur, rank icon pack rendered at full logo size, Poppins font migration made real. Rendering-only release.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -46,5 +46,6 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": 1792816789598
+  "timestamp": 1792816789598,
+  "updatedAt": 1792843882781
 }
