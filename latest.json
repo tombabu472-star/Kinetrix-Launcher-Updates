@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T13:37:16Z",
+  "updated": "2026-10-24T11:07:12Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.16.8",
-    "version": "3.16.8",
-    "asset": "kinetrix-3.16.8.jar",
-    "size": 105920935,
-    "sha256": "155e305e92be84245daece53d86f8a998c8860b0b4579ed2836d4b64b45c8276"
+    "tag": "mod-v3.16.9",
+    "version": "3.16.9",
+    "asset": "kinetrix-3.16.9.jar",
+    "size": 105927616,
+    "sha256": "4a45cdfb75325623a7000e3dae7d4b2821ed557e90c791bada1a446f5755afa5"
   },
-  "notes": "Client 3.16.8: pure icon art - the dark plate/background stripped from every rank badge, Kinetrix+ milestone mark and the K+ logo. Only the icon remains, fully transparent. Nametag badges now render as clean neon art on any background. Obfuscation gates all green; verified in-game on the obfuscated build (title + world join + screenshots).",
+  "notes": "Client 3.16.9 \"Poly-Silk\": OneClient-class rendering with ZERO UI/layout changes - Skia-style text (exact fractional glyph advances + batched quads, one draw per string instead of per character), Poppins (OneClient's typeface) now drives the HUD/legacy faces too with auto-migration from Arial, analytic SDF pie/ring arcs with 1px AA edges at any radius, and a true separable 9-tap Gaussian GPU blur for menu backdrops (blit chain kept as fallback). Mobile quarantine untouched; Smooth UI kill-switch intact; all obfuscation gates green; verified in-game on the obfuscated jar (title pixel gate PASS + world join + 7 screenshots).",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
