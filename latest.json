@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T10:57:38Z",
+  "updated": "2026-10-25T14:25:11Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,15 +18,15 @@
     }
   },
   "client": {
-    "tag": "mod-v3.19.0",
-    "version": "3.19.0",
-    "asset": "kinetrix-3.19.0.jar",
-    "size": 105918960,
-    "sha256": "95780506632567ae18505d9733742272a47b77d1cec5aa9ebc4a8fbfad4b0c6f",
-    "notes": "KINETRIX CLIENT 3.19.0 \"PHOTOSMOOTH\" - REFERENCE-GRADE RENDER CONFIGURATION. The entire UI now renders through an analytic anti-aliased vector pipeline: every panel, button, slider, tile and rounded image is drawn as a signed-distance field with hermite-eased edge coverage, so corners, hairlines and outlines come out photographic instead of pixelated - same GUI shape and layout everywhere, radically sharper. Window shadows moved to the wide box-gradient depth profile (50% edge alpha, 64px linear feather at 1080p) and the GL alpha test is disabled around the AA pass so soft edge pixels are never clipped into crunchy stairs. Glyph baking fixed: the shape anti-aliasing hint was inverted, so all fonts now bake with true anti-aliased edges at every size, and the font cache is OOM-safe on low-memory machines. The LIVE studio capture is supersampled at 1920x1080 (JPEG 0.94, adaptive grab rate), the resolution scaler gained HD/Ultra/Max tiers up to 2560x1440, and the real-time ClickGUI editor ships in the box (v3.18.0 LiveGUI: click once on any element in the real client and edit it live - modules, toggles, sliders, colors, keybinds, plus global style: horizontal/vertical padding, section/tile gap, columns, radius, opacity, accent hue, font scale, panel width). Version footer fixed (was stale at 3.18.1). Obfuscated production jar (ProGuard + string-pool scramble) verified on Forge 1.8.9 + OptiFine HD U M5: launch, title render, world join and screenshots all pass.",
+    "tag": "mod-v3.19.1",
+    "version": "3.19.1",
+    "asset": "kinetrix-3.19.1.jar",
+    "size": 106462658,
+    "sha256": "6d2bf2403466ee2a8772278136b7d6d3ad9e53a5aa60731bd30c60543c7d53e0",
+    "notes": "KINETRIX CLIENT 3.19.1 - CAPES FOR EVERYONE + OFFICIAL LOGO + GUI SOUNDS NEVER DIE. Capes now load straight from the Kinetrix database for accounts WITHOUT cosmetics login (same public appearance rows that drive other players' capes) - the website-API-only path failed for unregistered accounts so their cape never showed; skins and rank/tag loading unchanged, and your explicit local/website choice (including unequip) always wins. The default rank badge now uses the OFFICIAL Kinetrix hexagon logo image. GUI sounds fixed after entering + leaving a world: vanilla 1.8.9 kills and async-restarts the whole OpenAL engine on every resource reload and silently drops cues in that window (and forever if the restart thread dies) - the UI sound kit now self-heals the engine, replays the cue and keeps a passive watchdog. Obfuscated production jar (ProGuard + string-pool scramble), all build gates green, smoke-verified on Forge 1.8.9 + OptiFine: launch, title render, world join.",
     "date": "2026-10-25"
   },
-  "notes": "Kinetrix Client 3.19.0 'PhotoSmooth' - reference-grade render configuration: analytic AA vector shapes, box-gradient shadows, alpha-test-free AA pass, fixed glyph AA baking, supersampled 1080p live capture, resolution scaler tiers, real-time ClickGUI editor. Rendering-only release, shape/layout unchanged.",
+  "notes": "Kinetrix Client 3.19.1 - capes without cosmetics login (DB-backed, explicit unequip respected), default rank now the official Kinetrix logo image, GUI sound engine self-healing so UI cues survive world enter/leave. Obfuscated production jar.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
