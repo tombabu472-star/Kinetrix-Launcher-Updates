@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T14:35:17Z",
+  "updated": "2026-10-25T10:57:38Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,15 +18,15 @@
     }
   },
   "client": {
-    "tag": "mod-v3.17.0",
-    "version": "3.17.0",
-    "asset": "kinetrix-3.17.0.jar",
-    "size": 106424556,
-    "sha256": "529e7948adbbeb80b3e9fae27fd1a8b368657b66447e4b79e44ca8a28733a501",
-    "notes": "KINETRIX CLIENT 3.17.0 \"STUDIO\" - NEW DEFAULT FONT + UI SOUNDS + HUD EDITOR ACTION BAR + UI STUDIO. Rubik (Google Fonts, OFL) is now the default typeface, bundled in the jar and rendered crisp and anti-aliased at every scale - never the blocky vanilla font. The Font Changer finally works everywhere: picking a font re-bakes all menus and HUD text live, no restart. New UI sound kit (click, hover, toggle on/off, drawer open/close - whisper quiet, master mute under Client Settings). The HUD editor gains a hover action bar: lock (freeze drag + resize), hide (skip the in-game render) and reset scale, with accent-colored active states, ghost hitboxes for hidden elements and full config persistence. Brand-new UI Studio (sparkle icon in the ClickGUI header): a live editor rendering the real draw pipeline while you tune accent, radius, gloss, font size, shadow and outline, generating copy-to-clipboard render code. Unknown system fonts fall back to bundled Rubik instead of broken boxes; configs migrate automatically.",
-    "date": "2026-10-24"
+    "tag": "mod-v3.19.0",
+    "version": "3.19.0",
+    "asset": "kinetrix-3.19.0.jar",
+    "size": 105918960,
+    "sha256": "95780506632567ae18505d9733742272a47b77d1cec5aa9ebc4a8fbfad4b0c6f",
+    "notes": "KINETRIX CLIENT 3.19.0 \"PHOTOSMOOTH\" - REFERENCE-GRADE RENDER CONFIGURATION. The entire UI now renders through an analytic anti-aliased vector pipeline: every panel, button, slider, tile and rounded image is drawn as a signed-distance field with hermite-eased edge coverage, so corners, hairlines and outlines come out photographic instead of pixelated - same GUI shape and layout everywhere, radically sharper. Window shadows moved to the wide box-gradient depth profile (50% edge alpha, 64px linear feather at 1080p) and the GL alpha test is disabled around the AA pass so soft edge pixels are never clipped into crunchy stairs. Glyph baking fixed: the shape anti-aliasing hint was inverted, so all fonts now bake with true anti-aliased edges at every size, and the font cache is OOM-safe on low-memory machines. The LIVE studio capture is supersampled at 1920x1080 (JPEG 0.94, adaptive grab rate), the resolution scaler gained HD/Ultra/Max tiers up to 2560x1440, and the real-time ClickGUI editor ships in the box (v3.18.0 LiveGUI: click once on any element in the real client and edit it live - modules, toggles, sliders, colors, keybinds, plus global style: horizontal/vertical padding, section/tile gap, columns, radius, opacity, accent hue, font scale, panel width). Version footer fixed (was stale at 3.18.1). Obfuscated production jar (ProGuard + string-pool scramble) verified on Forge 1.8.9 + OptiFine HD U M5: launch, title render, world join and screenshots all pass.",
+    "date": "2026-10-25"
   },
-  "notes": "Kinetrix Client 3.16.10 'Silk Gloss' - glossy UI sheen everywhere, deeper frosted-glass blur, rank icon pack rendered at full logo size, Poppins font migration made real. Rendering-only release.",
+  "notes": "Kinetrix Client 3.19.0 'PhotoSmooth' - reference-grade render configuration: analytic AA vector shapes, box-gradient shadows, alpha-test-free AA pass, fixed glyph AA baking, supersampled 1080p live capture, resolution scaler tiers, real-time ClickGUI editor. Rendering-only release, shape/layout unchanged.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -48,6 +48,6 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": 1792816789598,
-  "updatedAt": 1792843882781
+  "timestamp": 1792925858994,
+  "updatedAt": 1792925858994
 }
