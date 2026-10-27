@@ -1,53 +1,53 @@
 {
-  "updated": "2026-10-27T07:52:53Z",
-  "launcher": {
-    "tag": "launcher-v3.0.5",
-    "version": "3.0.5",
-    "asset": "KinetrixLauncher-Setup-3.0.5.exe",
-    "size": 115338061,
-    "sha256": "1c5a5feceabe83395b53febb2fb877b76aa31c73592fdfb121c3532b123755c6",
-    "notes": "KINETRIX LAUNCHER 3.0.5 - LAUNCH BLOCKER FIXED + TASKBAR ICON STAYS. A stale filename inside the update manifest (kinetrix-3.16.1.jar listed under the mod-v3.16.2 release) made the pre-launch client update fail with HTTP 404 after 3 retries and blocked every launch - the manifest is now cross-checked against its own version, a mismatching filename is repaired from the release's real asset list, and if the download URL is ever rejected (or a checksum disagrees) the launcher re-resolves the newest release from the actual GitHub release assets before giving up, so a bad manifest can no longer stop you from playing (already fixed live on the channel too - today's 404 is gone even on v3.0.4). The taskbar icon no longer disappears: with close-after-launch the window is hidden while the game runs, and on Windows re-showing it that way could drop the taskbar button - the window is now restored and the taskbar entry is re-registered every time it reappears. Everything from 3.0.4 is unchanged: the hard pre-launch client gate, Modrinth + CurseForge browser, Microsoft sign-in, Quick Play, cosmetics locker and full crash doctor.",
-    "date": "2026-10-21",
-    "linux": {
-      "asset": "KinetrixLauncher-3.0.5-Linux.AppImage",
-      "size": 144916910,
-      "sha256": "8fed63835f15d04b6acf64b00293c69459df8b4b95872c94882f63360eea9c13",
-      "deb": "KinetrixLauncher-3.0.5-Linux.deb",
-      "debSize": 111561256,
-      "debSha256": "a7218459c786717641d6c842048341c49d95064ee6c9eddd0179764d58d21d3d"
-    }
-  },
-  "client": {
-    "tag": "mod-v3.19.2",
-    "version": "3.19.2",
-    "asset": "kinetrix-3.19.2.jar",
-    "size": 106460344,
-    "sha256": "9dad8cde4725157cadf62e3371104b64ac0ef4c4398c968cce73d9fddfee6ce7",
-    "notes": "KINETRIX CLIENT 3.19.2 - RPC PRIORITY + AUTOTEXT SAVES + LIVE PING WITH TRAFFIC-LIGHT COLOURS. Discord RPC keeps the foreground: presence re-asserts every 15s (was 45s) and any real change pushes instantly, so Kinetrix stays the most recently updated activity and keeps the top spot on your profile even while other apps also show an RPC. AutoText saves now: keybind capture used a racy per-tick poll - quick taps left it stuck and the next keystroke (or typing in a text box) silently wiped the key so AutoText keys never survived a restart; keys now bind instantly at the moment you press them (vanilla Controls behaviour, ESC cancels) in both modern and classic menus. Ping is live: the HUD reads the real in-game latency (the tab-list value, refreshed by the server about once a second) instead of the frozen number from the server list, and the new Recolour setting (ON by default) paints the ping number green at <=100ms, yellow up to 200ms and red above (turn it off for the plain font colour). Obfuscated production jar (ProGuard + string-pool scramble), all build gates green, production-verified on Forge 1.8.9 + OptiFine: launch, title render, world join, GUI click-dispatch pass, config round-trip live.",
-    "date": "2026-10-27"
-  },
-  "notes": "Kinetrix Client 3.19.1 - capes without cosmetics login (DB-backed, explicit unequip respected), default rank now the official Kinetrix logo image, GUI sound engine self-healing so UI cues survive world enter/leave. Obfuscated production jar.",
-  "forge": {
-    "tag": "forge-1.8.9-11.15.1.1764",
-    "version": "11.15.1.1764+OptiFine_M5",
-    "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
-    "size": 3726026,
-    "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
-    "optifine": {
-      "asset": "OptiFine-1.8.9_HD_U_M5.jar",
-      "size": 2367088,
-      "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
+    "updated": "2026-10-27T21:20:00Z",
+    "launcher": {
+        "tag": "launcher-v3.0.5",
+        "version": "3.0.5",
+        "asset": "KinetrixLauncher-Setup-3.0.5.exe",
+        "size": 115338061,
+        "sha256": "1c5a5feceabe83395b53febb2fb877b76aa31c73592fdfb121c3532b123755c6",
+        "notes": "KINETRIX LAUNCHER 3.0.5 - LAUNCH BLOCKER FIXED + TASKBAR ICON STAYS. A stale filename inside the update manifest (kinetrix-3.16.1.jar listed under the mod-v3.16.2 release) made the pre-launch client update fail with HTTP 404 after 3 retries and blocked every launch - the manifest is now cross-checked against its own version, a mismatching filename is repaired from the release's real asset list, and if the download URL is ever rejected (or a checksum disagrees) the launcher re-resolves the newest release from the actual GitHub release assets before giving up, so a bad manifest can no longer stop you from playing (already fixed live on the channel too - today's 404 is gone even on v3.0.4). The taskbar icon no longer disappears: with close-after-launch the window is hidden while the game runs, and on Windows re-showing it that way could drop the taskbar button - the window is now restored and the taskbar entry is re-registered every time it reappears. Everything from 3.0.4 is unchanged: the hard pre-launch client gate, Modrinth + CurseForge browser, Microsoft sign-in, Quick Play, cosmetics locker and full crash doctor.",
+        "date": "2026-10-21",
+        "linux": {
+            "asset": "KinetrixLauncher-3.0.5-Linux.AppImage",
+            "size": 144916910,
+            "sha256": "8fed63835f15d04b6acf64b00293c69459df8b4b95872c94882f63360eea9c13",
+            "deb": "KinetrixLauncher-3.0.5-Linux.deb",
+            "debSize": 111561256,
+            "debSha256": "a7218459c786717641d6c842048341c49d95064ee6c9eddd0179764d58d21d3d"
+        }
     },
-    "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
-  },
-  "clientJar": {
-    "asset": "ForgeOptiFine-1.8.9.jar",
-    "size": 8461484,
-    "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
-    "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
-    "release": "minecraft-1.8.9",
-    "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
-  },
-  "timestamp": 1792925858994,
-  "updatedAt": 1792925858994
+    "client": {
+        "tag": "mod-v3.20.0",
+        "version": "3.20.0",
+        "asset": "kinetrix-3.20.0.jar",
+        "size": 106472623,
+        "sha256": "a67356fed5e00f59724173b23ca18db910798b2f91bf43829d3f41614edf5b81",
+        "notes": "KINETRIX CLIENT 3.20.0 - THE MAIN MENU, BACK TO THE REFERENCE. The home screen is re-measured against the original design frame pixel-for-pixel at 1671x941: taller glass nav pills with the quiet active state, the re-measured brand block, the two-tone KINETRIX CLIENT headline, the Singleplayer light-glass / Multiplayer deep-charcoal pair (the designed contrast was missing), the account pill at its reference type size and the logo drawn content-fit so the visible mark fills its tile exactly. The sidebar glass is now one seamless analytic gradient (the old 18-band fill printed a seam line every ~47px) and the smoky vignette that darkened the whole home sky is gone. SMOOTH TEXT EVERYWHERE: a new pure-Java TrueType rasterizer (no java.awt anywhere) bakes the bundled Rubik/Poppins/DM Sans faces on PojavLauncher-class mobile runtimes and on desktop JREs with broken java.desktop - exactly the environments that silently fell back to the blocky vanilla font before. 'Menu Blur' now defaults off (the reference look) and no longer paints a full-screen dark veil when enabled - it softens only. Also fixed: the Settings page could NPE every frame at high GUI scales (the font-atlas OOM guard freed textures still referenced by the page - atlases now self-heal by re-uploading). Obfuscated production jar (ProGuard + string-pool scramble), all build gates green, production-verified: launch, title render, main-menu visual gate at 1671x941 and 1366x768, real-click paths into Multiplayer/Mods/Cosmetics/Accounts/Settings/About, Settings render, world join.",
+        "date": "2026-10-27"
+    },
+    "notes": "Kinetrix Client 3.19.1 - capes without cosmetics login (DB-backed, explicit unequip respected), default rank now the official Kinetrix logo image, GUI sound engine self-healing so UI cues survive world enter/leave. Obfuscated production jar.",
+    "forge": {
+        "tag": "forge-1.8.9-11.15.1.1764",
+        "version": "11.15.1.1764+OptiFine_M5",
+        "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
+        "size": 3726026,
+        "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
+        "optifine": {
+            "asset": "OptiFine-1.8.9_HD_U_M5.jar",
+            "size": 2367088,
+            "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
+        },
+        "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
+    },
+    "clientJar": {
+        "asset": "ForgeOptiFine-1.8.9.jar",
+        "size": 8461484,
+        "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
+        "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
+        "release": "minecraft-1.8.9",
+        "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
+    },
+    "timestamp": 1792925858994,
+    "updatedAt": 1792925858994
 }
