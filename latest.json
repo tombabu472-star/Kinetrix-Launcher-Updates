@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T14:25:11Z",
+  "updated": "2026-10-27T07:52:53Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.19.1",
-    "version": "3.19.1",
-    "asset": "kinetrix-3.19.1.jar",
-    "size": 106462658,
-    "sha256": "6d2bf2403466ee2a8772278136b7d6d3ad9e53a5aa60731bd30c60543c7d53e0",
-    "notes": "KINETRIX CLIENT 3.19.1 - CAPES FOR EVERYONE + OFFICIAL LOGO + GUI SOUNDS NEVER DIE. Capes now load straight from the Kinetrix database for accounts WITHOUT cosmetics login (same public appearance rows that drive other players' capes) - the website-API-only path failed for unregistered accounts so their cape never showed; skins and rank/tag loading unchanged, and your explicit local/website choice (including unequip) always wins. The default rank badge now uses the OFFICIAL Kinetrix hexagon logo image. GUI sounds fixed after entering + leaving a world: vanilla 1.8.9 kills and async-restarts the whole OpenAL engine on every resource reload and silently drops cues in that window (and forever if the restart thread dies) - the UI sound kit now self-heals the engine, replays the cue and keeps a passive watchdog. Obfuscated production jar (ProGuard + string-pool scramble), all build gates green, smoke-verified on Forge 1.8.9 + OptiFine: launch, title render, world join.",
-    "date": "2026-10-25"
+    "tag": "mod-v3.19.2",
+    "version": "3.19.2",
+    "asset": "kinetrix-3.19.2.jar",
+    "size": 106460344,
+    "sha256": "9dad8cde4725157cadf62e3371104b64ac0ef4c4398c968cce73d9fddfee6ce7",
+    "notes": "KINETRIX CLIENT 3.19.2 - RPC PRIORITY + AUTOTEXT SAVES + LIVE PING WITH TRAFFIC-LIGHT COLOURS. Discord RPC keeps the foreground: presence re-asserts every 15s (was 45s) and any real change pushes instantly, so Kinetrix stays the most recently updated activity and keeps the top spot on your profile even while other apps also show an RPC. AutoText saves now: keybind capture used a racy per-tick poll - quick taps left it stuck and the next keystroke (or typing in a text box) silently wiped the key so AutoText keys never survived a restart; keys now bind instantly at the moment you press them (vanilla Controls behaviour, ESC cancels) in both modern and classic menus. Ping is live: the HUD reads the real in-game latency (the tab-list value, refreshed by the server about once a second) instead of the frozen number from the server list, and the new Recolour setting (ON by default) paints the ping number green at <=100ms, yellow up to 200ms and red above (turn it off for the plain font colour). Obfuscated production jar (ProGuard + string-pool scramble), all build gates green, production-verified on Forge 1.8.9 + OptiFine: launch, title render, world join, GUI click-dispatch pass, config round-trip live.",
+    "date": "2026-10-27"
   },
   "notes": "Kinetrix Client 3.19.1 - capes without cosmetics login (DB-backed, explicit unequip respected), default rank now the official Kinetrix logo image, GUI sound engine self-healing so UI cues survive world enter/leave. Obfuscated production jar.",
   "forge": {
