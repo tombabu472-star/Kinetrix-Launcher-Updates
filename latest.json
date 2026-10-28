@@ -1,5 +1,5 @@
 {
-    "updated": "2026-10-27T21:20:00Z",
+    "updated": "2026-10-28T03:30:00Z",
     "launcher": {
         "tag": "launcher-v3.0.5",
         "version": "3.0.5",
@@ -18,15 +18,15 @@
         }
     },
     "client": {
-        "tag": "mod-v3.20.0",
-        "version": "3.20.0",
-        "asset": "kinetrix-3.20.0.jar",
-        "size": 106472623,
-        "sha256": "a67356fed5e00f59724173b23ca18db910798b2f91bf43829d3f41614edf5b81",
-        "notes": "KINETRIX CLIENT 3.20.0 - THE MAIN MENU, BACK TO THE REFERENCE. The home screen is re-measured against the original design frame pixel-for-pixel at 1671x941: taller glass nav pills with the quiet active state, the re-measured brand block, the two-tone KINETRIX CLIENT headline, the Singleplayer light-glass / Multiplayer deep-charcoal pair (the designed contrast was missing), the account pill at its reference type size and the logo drawn content-fit so the visible mark fills its tile exactly. The sidebar glass is now one seamless analytic gradient (the old 18-band fill printed a seam line every ~47px) and the smoky vignette that darkened the whole home sky is gone. SMOOTH TEXT EVERYWHERE: a new pure-Java TrueType rasterizer (no java.awt anywhere) bakes the bundled Rubik/Poppins/DM Sans faces on PojavLauncher-class mobile runtimes and on desktop JREs with broken java.desktop - exactly the environments that silently fell back to the blocky vanilla font before. 'Menu Blur' now defaults off (the reference look) and no longer paints a full-screen dark veil when enabled - it softens only. Also fixed: the Settings page could NPE every frame at high GUI scales (the font-atlas OOM guard freed textures still referenced by the page - atlases now self-heal by re-uploading). Obfuscated production jar (ProGuard + string-pool scramble), all build gates green, production-verified: launch, title render, main-menu visual gate at 1671x941 and 1366x768, real-click paths into Multiplayer/Mods/Cosmetics/Accounts/Settings/About, Settings render, world join.",
-        "date": "2026-10-27"
+        "tag": "mod-v3.20.1",
+        "version": "3.20.1",
+        "asset": "kinetrix-3.20.1.jar",
+        "size": 106512826,
+        "sha256": "b72af4a1dbf556c1b1978785df6eabda7877ed60d8256c63324913407a7f262c",
+        "notes": "KINETRIX CLIENT 3.20.1 - FONTS THAT FOLLOW YOU EVERYWHERE. Switching the Font Changer now re-bakes the option, the HUD faces, the menu face cache and the shared glyph pages in ONE atomic switch with a pre-frame sanity bake, so every surface (main menu, mod menu, classic panel, HUD) follows the pick instantly - no more half-updated or blank text areas after a font change. Failed font loads retry instead of sticking forever, a poisoned page degrades that one string to the vanilla face instead of blanking an area, and family-lookup hiccups no longer wipe every cache each frame; verified under normal AWT, broken-java.desktop and constant cache-churn conditions. BLOCK OVERLAY gains the full config: independent outline/fill toggles + colors, per-part alpha, thickness, box expand, Through Walls, Smooth Lines, Chroma outline/fill with speed, Pulse with speed, Hide Vanilla Box - and with the mod OFF the vanilla selection box renders again. All 66 module icons + the sidebar Mods/Settings glyphs are redrawn in one coherent premium design language (uniform stroke grid, rounded caps, optical centering). Obfuscated production jar (ProGuard + string-pool scramble); bytecode-verified (1454 classes), 5898 SRG refs clean, production launch (title + world join) and real-click GUI interaction verified on the obfuscated artifact.",
+        "date": "2026-10-28"
     },
-    "notes": "Kinetrix Client 3.19.1 - capes without cosmetics login (DB-backed, explicit unequip respected), default rank now the official Kinetrix logo image, GUI sound engine self-healing so UI cues survive world enter/leave. Obfuscated production jar.",
+    "notes": "Kinetrix Client 3.20.1 - TypeSafe font switching (every GUI area follows the Font Changer instantly, no more blank areas), Block Overlay full config (chroma, pulse, through walls, per-part alpha) with vanilla box restore on disable, and a coherent premium redraw of the full module icon set.",
     "forge": {
         "tag": "forge-1.8.9-11.15.1.1764",
         "version": "11.15.1.1764+OptiFine_M5",
