@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T09:55:38Z",
+  "updated": "2026-10-30T09:33:16Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.22.0",
-    "version": "3.22.0",
-    "file": "kinetrix-3.22.0.jar",
-    "size": 106741822,
-    "sha256": "1cc29866dca62c64c90711e7103fee504d8ca31b1b389547100922fca43d450a"
+    "tag": "mod-v3.22.1",
+    "version": "3.22.1",
+    "file": "kinetrix-3.22.1.jar",
+    "size": 106539883,
+    "sha256": "637f61f5a10e0f39e69e77634dc0f811dc3bb040d3b081e23a33b44650ee6255"
   },
-  "notes": "Kinetrix Client 3.22.0 'Glyph' - the whole UI now runs on a real high-res image icon set in one crisp flat language: 84 UI glyphs including new title-screen navigation icons (Mods, Cosmetics, Accounts, Settings, About) plus play/globe on the menu buttons. Defaults changed as requested: Menu Blur and Blur Module Menu Background now ship OFF (one-time config migration flips them off for existing installs; your own re-enable persists), and Video Settings Use VBOs now ships ON by default (an explicit OFF choice is respected). Carries forward the 3.21.0 flat no-shadow UI, the 3.20.1 font fixes and BlockOverlay.",
+  "notes": "Kinetrix Client 3.22.1 'Classic Icons' - your classic icon set is back: the whole UI (title screen navigation, ClickGUI, HUD editor, settings) reverts to the proven classic glyph look from 3.21.0, exactly as requested. Kept from 3.22.0: Menu Blur and Blur Module Menu Background ship OFF by default (one-time config migration flips existing installs too; your own re-enable persists) and Video Settings Use VBOs ships ON by default (an explicit OFF choice is respected). Carries forward the 3.21.0 flat no-shadow UI, the 3.20.1 font fixes, Block Overlay, live ping recolour and the Discord RPC fixes.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -46,6 +46,6 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": 1792925858994,
-  "updatedAt": 1792925858994
+  "timestamp": 1793352796570,
+  "updatedAt": 1793352796570
 }
