@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T09:33:16Z",
+  "updated": "2026-11-01T13:58:24Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.22.1",
-    "version": "3.22.1",
-    "file": "kinetrix-3.22.1.jar",
-    "size": 106539883,
-    "sha256": "637f61f5a10e0f39e69e77634dc0f811dc3bb040d3b081e23a33b44650ee6255"
+    "tag": "mod-v3.23.0",
+    "version": "3.23.0",
+    "file": "kinetrix-3.23.0.jar",
+    "size": 106557011,
+    "sha256": "afc3764d5c4cc0ee8b48351c54f17534f20a6696ac4c17e401488bc468195261"
   },
-  "notes": "Kinetrix Client 3.22.1 'Classic Icons' - your classic icon set is back: the whole UI (title screen navigation, ClickGUI, HUD editor, settings) reverts to the proven classic glyph look from 3.21.0, exactly as requested. Kept from 3.22.0: Menu Blur and Blur Module Menu Background ship OFF by default (one-time config migration flips existing installs too; your own re-enable persists) and Video Settings Use VBOs ships ON by default (an explicit OFF choice is respected). Carries forward the 3.21.0 flat no-shadow UI, the 3.20.1 font fixes, Block Overlay, live ping recolour and the Discord RPC fixes.",
+  "notes": "Kinetrix Client 3.23.0 'Clarity' - two root-cause rendering fixes, verified in-game with before/after A/B screenshots. (1) Long-distance sharpness: anisotropic filtering now ships 16x by default (was Off since v3.8.1, so the distance-mush fix never actually reached users) - block textures keep their detail at 2-64+ blocks, mipmaps stay fully on, AF never adds blur; one-time config migration flips existing installs (a deliberate Off pick afterwards persists); also fixed a real GL state leak in the AF applier (active texture unit restore). Hologram/nameplate rendering is unchanged vanilla-sharp. (2) The void renders dark: the Custom Sky fake-horizon provider hack (getHorizon=-1000) is deleted - it made the sky dome and OptiFine pack skies draw inside the void; a depth-tested black cap now renders just below the world floor, so looking down floor holes/at the world edge/below the floor shows the vanilla dark void, the sky can never bleed through terrain, and custom skies still render looking up and at the horizon. Nether keeps its dark void, the End sky is untouched.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -46,6 +46,6 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": 1793352796570,
-  "updatedAt": 1793352796570
+  "timestamp": 1793541504699,
+  "updatedAt": 1793541504699
 }
