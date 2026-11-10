@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T09:33:03Z",
+ "updated": "2026-11-10T13:02:41Z",
  "launcher": {
   "tag": "launcher-v3.0.5",
   "version": "3.0.5",
@@ -18,11 +18,11 @@
   }
  },
  "client": {
-  "tag": "mod-v3.24.0",
-  "version": "3.24.0",
-  "file": "kinetrix-3.24.0.jar",
-  "size": 110527658,
-  "sha256": "e5cc27f8a001bd0a00fb248e9cbbf1291a30732a92ce832a33d1b56d37b08ae6"
+  "tag": "mod-v3.25.0",
+  "version": "3.25.0",
+  "file": "kinetrix-3.25.0.jar",
+  "size": 20685076,
+  "sha256": "8899c78c514e3f72a336c87c85b97789bee9dc5e69348fc02fd48b90c17e9b93"
  },
  "notes": "Kinetrix Client 3.23.0 'Clarity' - two root-cause rendering fixes, verified in-game with before/after A/B screenshots. (1) Long-distance sharpness: anisotropic filtering now ships 16x by default (was Off since v3.8.1, so the distance-mush fix never actually reached users) - block textures keep their detail at 2-64+ blocks, mipmaps stay fully on, AF never adds blur; one-time config migration flips existing installs (a deliberate Off pick afterwards persists); also fixed a real GL state leak in the AF applier (active texture unit restore). Hologram/nameplate rendering is unchanged vanilla-sharp. (2) The void renders dark: the Custom Sky fake-horizon provider hack (getHorizon=-1000) is deleted - it made the sky dome and OptiFine pack skies draw inside the void; a depth-tested black cap now renders just below the world floor, so looking down floor holes/at the world edge/below the floor shows the vanilla dark void, the sky can never bleed through terrain, and custom skies still render looking up and at the horizon. Nether keeps its dark void, the End sky is untouched.",
  "forge": {
