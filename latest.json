@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T16:20:27Z",
+  "updated": "2026-11-11T00:44:54Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.26.0",
-    "version": "3.26.0",
-    "file": "kinetrix-3.26.0.jar",
-    "size": 21633165,
-    "sha256": "766ccb8d9a4ded692855d4477ae1b76de4bd14e41c160bc74880a00ce3423300"
+    "tag": "mod-v3.27.0",
+    "version": "3.27.0",
+    "file": "kinetrix-3.27.0.jar",
+    "size": 20803516,
+    "sha256": "78199f40d87d906a172bbb3f5dc759f81b82de9808a658c1061f12b367fa9f66"
   },
-  "notes": "Kinetrix Client 3.26.0 'Lagoon' - the old account manager is back (Microsoft sign-in, saved account switching, offline play and Kinetrix platform accounts under the account pill > Manage accounts), the settings button is now KC Settings, the green accent is replaced by light blue aqua across every menu, the module menu got a full style redesign (squared chrome, flat rows, aqua edge bars) and KC Settings > Appearance gains a Dark/White theme switch (Dark stays default).",
+  "notes": "Kinetrix Client 3.27.0 'Tide' - every client menu is back on the original upstream UI: the module menu has its inset rounded rows back, toggles are rounded pills with round knobs again, sliders are rounded with circular thumbs, tabs/chips and panel chrome are rounded. The buggy White theme is removed entirely (Dark remains the only theme). The only changes to the original UI code are the accent colour - light blue aqua - and the branding: the Kinetrix K logo and KINETRIX CLIENT wordmark are edited into the original logo, loading, splash and mark textures at their original sizes and resolutions, and the account/rung logo marks are redrawn as the K hexagon in every rung colour. Verified in a launched game: title, module menu (title + in-world), world load and render with no stuck fullscreen overlay, video settings over a live world.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
@@ -46,6 +46,6 @@
     "release": "minecraft-1.8.9",
     "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
   },
-  "timestamp": "2026-11-10T16:20:27Z",
-  "updatedAt": "2026-11-10T16:20:27Z"
+  "timestamp": "2026-11-11T00:44:54Z",
+  "updatedAt": "2026-11-11T00:44:54Z"
 }
