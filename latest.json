@@ -1,51 +1,51 @@
 {
-  "updated": "2026-11-11T03:31:01Z",
-  "launcher": {
-    "tag": "launcher-v3.0.5",
-    "version": "3.0.5",
-    "asset": "KinetrixLauncher-Setup-3.0.5.exe",
-    "size": 115338061,
-    "sha256": "1c5a5feceabe83395b53febb2fb877b76aa31c73592fdfb121c3532b123755c6",
-    "notes": "KINETRIX LAUNCHER 3.0.5 - LAUNCH BLOCKER FIXED + TASKBAR ICON STAYS. A stale filename inside the update manifest (kinetrix-3.16.1.jar listed under the mod-v3.16.2 release) made the pre-launch client update fail with HTTP 404 after 3 retries and blocked every launch - the manifest is now cross-checked against its own version, a mismatching filename is repaired from the release's real asset list, and if the download URL is ever rejected (or a checksum disagrees) the launcher re-resolves the newest release from the actual GitHub release assets before giving up, so a bad manifest can no longer stop you from playing (already fixed live on the channel too - today's 404 is gone even on v3.0.4). The taskbar icon no longer disappears: with close-after-launch the window is hidden while the game runs, and on Windows re-showing it that way could drop the taskbar button - the window is now restored and the taskbar entry is re-registered every time it reappears. Everything from 3.0.4 is unchanged: the hard pre-launch client gate, Modrinth + CurseForge browser, Microsoft sign-in, Quick Play, cosmetics locker and full crash doctor.",
-    "date": "2026-10-21",
-    "linux": {
-      "asset": "KinetrixLauncher-3.0.5-Linux.AppImage",
-      "size": 144916910,
-      "sha256": "8fed63835f15d04b6acf64b00293c69459df8b4b95872c94882f63360eea9c13",
-      "deb": "KinetrixLauncher-3.0.5-Linux.deb",
-      "debSize": 111561256,
-      "debSha256": "a7218459c786717641d6c842048341c49d95064ee6c9eddd0179764d58d21d3d"
-    }
-  },
-  "client": {
-    "tag": "mod-v3.28.0",
-    "version": "3.28.0",
-    "file": "kinetrix-3.28.0.jar",
-    "size": 20808244,
-    "sha256": "b09dab2797f563e28ed7cb1dc8ad7e5990a85ca1e5df3c2de12508966704a956"
-  },
-  "notes": "Kinetrix Client 3.28.0 'Undertow' - the old Kinetrix msmc login code is back in the in-game account manager, so the client is fully compatible with the Kinetrix Launcher Microsoft accounts. Microsoft sign-in uses the msmc browser flow again (the SAME method the Kinetrix Launcher's msmc engine uses: a real Microsoft sign-in window hands the session over on redirect, with copy-link + paste fallback); the dead device-code flow is removed. Launcher-added Microsoft accounts switch instantly from the shared accounts.json fast path (live access token + expiry + rotation stamp), refreshes re-read the store so the freshest launcher-rotated token always wins, the current session gets a silent background keep-alive, and in-game sign-ins publish the rotated refresh token + live access token + expiry + sessionAt back to accounts.json so the launcher and the client never fight over whose token is current. Boot-time platform re-verify restored.",
-  "forge": {
-    "tag": "forge-1.8.9-11.15.1.1764",
-    "version": "11.15.1.1764+OptiFine_M5",
-    "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
-    "size": 3726026,
-    "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
-    "optifine": {
-      "asset": "OptiFine-1.8.9_HD_U_M5.jar",
-      "size": 2367088,
-      "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
+    "updated": "2026-11-12T16:27:40Z",
+    "launcher": {
+        "tag": "launcher-v3.0.5",
+        "version": "3.0.5",
+        "asset": "KinetrixLauncher-Setup-3.0.5.exe",
+        "size": 115338061,
+        "sha256": "1c5a5feceabe83395b53febb2fb877b76aa31c73592fdfb121c3532b123755c6",
+        "notes": "KINETRIX LAUNCHER 3.0.5 - LAUNCH BLOCKER FIXED + TASKBAR ICON STAYS. A stale filename inside the update manifest (kinetrix-3.16.1.jar listed under the mod-v3.16.2 release) made the pre-launch client update fail with HTTP 404 after 3 retries and blocked every launch - the manifest is now cross-checked against its own version, a mismatching filename is repaired from the release's real asset list, and if the download URL is ever rejected (or a checksum disagrees) the launcher re-resolves the newest release from the actual GitHub release assets before giving up, so a bad manifest can no longer stop you from playing (already fixed live on the channel too - today's 404 is gone even on v3.0.4). The taskbar icon no longer disappears: with close-after-launch the window is hidden while the game runs, and on Windows re-showing it that way could drop the taskbar button - the window is now restored and the taskbar entry is re-registered every time it reappears. Everything from 3.0.4 is unchanged: the hard pre-launch client gate, Modrinth + CurseForge browser, Microsoft sign-in, Quick Play, cosmetics locker and full crash doctor.",
+        "date": "2026-10-21",
+        "linux": {
+            "asset": "KinetrixLauncher-3.0.5-Linux.AppImage",
+            "size": 144916910,
+            "sha256": "8fed63835f15d04b6acf64b00293c69459df8b4b95872c94882f63360eea9c13",
+            "deb": "KinetrixLauncher-3.0.5-Linux.deb",
+            "debSize": 111561256,
+            "debSha256": "a7218459c786717641d6c842048341c49d95064ee6c9eddd0179764d58d21d3d"
+        }
     },
-    "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
-  },
-  "clientJar": {
-    "asset": "ForgeOptiFine-1.8.9.jar",
-    "size": 8461484,
-    "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
-    "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
-    "release": "minecraft-1.8.9",
-    "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
-  },
-  "timestamp": "2026-11-11T03:31:01Z",
-  "updatedAt": "2026-11-11T03:31:01Z"
+    "client": {
+        "tag": "mod-v3.28.1",
+        "version": "3.28.1",
+        "file": "kinetrix-3.28.1.jar",
+        "size": 20808997,
+        "sha256": "9588b0378bf39a2065a69a796696e1a63e2efc3e457d26e01158a6d41353d1cc"
+    },
+    "notes": "Kinetrix Client 3.28.1 'Undertow hotfix' - LAUNCH CRASH FIXED: launches died instantly with ClassNotFoundException: dev.kinetrix.launch.KinetrixSplashTweaker because the v3.25.0 rebase dropped that ITweaker source while the launcher's merged ForgeOptiFine layout still passes it as the first --tweakClass. The old Kinetrix tweaker is restored verbatim (v3.24.0 code): it sets optifine.ForgeSplashCompatible on the launch blackboard so the branded loading screen survives OptiFine detection, exactly like the old client. Everything from 3.28.0 is unchanged: the old Kinetrix msmc browser sign-in (the SAME method the launcher's msmc engine uses), launcher-published session fast path from shared accounts.json, freshest-row adoption, silent keep-alive, publishSession token rotation, boot-time platform re-verify.",
+    "forge": {
+        "tag": "forge-1.8.9-11.15.1.1764",
+        "version": "11.15.1.1764+OptiFine_M5",
+        "asset": "forge-1.8.9-11.15.1.1764-universal.jar",
+        "size": 3726026,
+        "sha256": "4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a",
+        "optifine": {
+            "asset": "OptiFine-1.8.9_HD_U_M5.jar",
+            "size": 2367088,
+            "sha256": "1c36e888f726682a3bf905e408bc4b4313efa3755abfa047ffe8acb3b535e9c5"
+        },
+        "notes": "Unchanged bytes, NEW home: both jars are release assets on the dedicated forge-1.8.9-11.15.1.1764 release of this repo (the launcher v2.7.13+ downloads them from there FIRST, like the client updates), and also committed under hosted/ + mirrored by jsDelivr/raw/maven. Official Forge 11.15.1.1764 universal sha1 dc0e4003b93da2b4adaa72ee9a15e8293a606dde (sha256 4ef8d070b2b57628ba00d3774d8c013291e730e0c2008c8680e198cdfa5f091a, 3,726,026 bytes); OptiFine HD U M5 sha1 d1f454ec5685e78236a3982d8512fc9e42d127c8. Classpath order: forge first, OptiFine last, vanilla client jar untouched."
+    },
+    "clientJar": {
+        "asset": "ForgeOptiFine-1.8.9.jar",
+        "size": 8461484,
+        "sha1": "3870888a6c3d349d3771a3e9d16c9bf5e076b908",
+        "sha256": "14f0d96d1a56fb4f5c3b2233d00699525893fe5ce3dcf181e7de59120595d298",
+        "release": "minecraft-1.8.9",
+        "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
+    },
+    "timestamp": "2026-11-12T16:27:40Z",
+    "updatedAt": "2026-11-12T16:27:40Z"
 }
