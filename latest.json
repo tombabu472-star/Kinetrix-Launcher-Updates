@@ -1,5 +1,5 @@
 {
-    "updated": "2026-11-15T04:55:00Z",
+    "updated": "2026-11-12T16:27:40Z",
     "launcher": {
         "tag": "launcher-v3.0.5",
         "version": "3.0.5",
@@ -18,13 +18,13 @@
         }
     },
     "client": {
-        "tag": "mod-v3.29.0",
-        "version": "3.29.0",
-        "file": "kinetrix-3.29.0.jar",
-        "size": 20826823,
-        "sha256": "be03e24c78d7d0aeaa10158280ff4e5d180822cd5fbc6bb1bb1d626d815b3e84"
+        "tag": "mod-v3.28.1",
+        "version": "3.28.1",
+        "file": "kinetrix-3.28.1.jar",
+        "size": 20808997,
+        "sha256": "9588b0378bf39a2065a69a796696e1a63e2efc3e457d26e01158a6d41353d1cc"
     },
-    "notes": "Kinetrix Client 3.29.0 'UI Studio' - THE ADMIN VISUAL UI EDITOR: edit every UI in the client with zero Java knowledge. Open Kinetrix Mods -> Edit UI, or bind the new UI Studio key. STYLE: accent presets (aqua family), corner roundness 0-24px, panel glow 0-100%, four surface tones (Default/Slate/Deep/Soft), text brightness - with a live preview card. SIZE: menu scale 50-200%, hotbar / health & hunger / item icon sizes with one-click Item Transforms enable. ARRANGE: one-click launchers for the HUD editor (drag + corner-resize any HUD element) and the ESC menu editor (reorder/add/remove buttons), edge snap with adjustable inset, main menu wallpaper. Nothing to save - every change applies the instant you move it (styles live in kinetrix/ui/theme.properties, live-reloaded by the client every frame; sizes live in your client profile) and Reset Style returns the aqua defaults. Everything from 3.28.1 is unchanged: the KinetrixSplashTweaker launch-crash fix, the old msmc browser sign-in (the SAME method the launcher's msmc engine uses), launcher-published session fast path from shared accounts.json, token rotation and platform re-verify.",
+    "notes": "Kinetrix Client 3.28.1 'Undertow hotfix' - LAUNCH CRASH FIXED: launches died instantly with ClassNotFoundException: dev.kinetrix.launch.KinetrixSplashTweaker because the v3.25.0 rebase dropped that ITweaker source while the launcher's merged ForgeOptiFine layout still passes it as the first --tweakClass. The old Kinetrix tweaker is restored verbatim (v3.24.0 code): it sets optifine.ForgeSplashCompatible on the launch blackboard so the branded loading screen survives OptiFine detection, exactly like the old client. Everything from 3.28.0 is unchanged: the old Kinetrix msmc browser sign-in (the SAME method the launcher's msmc engine uses), launcher-published session fast path from shared accounts.json, freshest-row adoption, silent keep-alive, publishSession token rotation, boot-time platform re-verify.",
     "forge": {
         "tag": "forge-1.8.9-11.15.1.1764",
         "version": "11.15.1.1764+OptiFine_M5",
@@ -46,6 +46,6 @@
         "release": "minecraft-1.8.9",
         "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
     },
-    "timestamp": "2026-11-15T04:55:00Z",
-    "updatedAt": "2026-11-15T04:55:00Z"
+    "timestamp": "2026-11-12T16:27:40Z",
+    "updatedAt": "2026-11-12T16:27:40Z"
 }
