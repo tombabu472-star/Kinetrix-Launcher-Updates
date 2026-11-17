@@ -1,5 +1,5 @@
 {
-    "updated": "2026-11-12T16:27:40Z",
+    "updated": "2026-11-17T13:05:00Z",
     "launcher": {
         "tag": "launcher-v3.0.5",
         "version": "3.0.5",
@@ -18,13 +18,13 @@
         }
     },
     "client": {
-        "tag": "mod-v3.28.1",
-        "version": "3.28.1",
-        "file": "kinetrix-3.28.1.jar",
-        "size": 20808997,
-        "sha256": "9588b0378bf39a2065a69a796696e1a63e2efc3e457d26e01158a6d41353d1cc"
+        "tag": "mod-v3.30.0",
+        "version": "3.30.0",
+        "file": "kinetrix-3.30.0.jar",
+        "size": 20840247,
+        "sha256": "9cc67655fc9a3f6c6056cc90f2351e4289e3f7563bbb498e2dfa5cdd35824f62"
     },
-    "notes": "Kinetrix Client 3.28.1 'Undertow hotfix' - LAUNCH CRASH FIXED: launches died instantly with ClassNotFoundException: dev.kinetrix.launch.KinetrixSplashTweaker because the v3.25.0 rebase dropped that ITweaker source while the launcher's merged ForgeOptiFine layout still passes it as the first --tweakClass. The old Kinetrix tweaker is restored verbatim (v3.24.0 code): it sets optifine.ForgeSplashCompatible on the launch blackboard so the branded loading screen survives OptiFine detection, exactly like the old client. Everything from 3.28.0 is unchanged: the old Kinetrix msmc browser sign-in (the SAME method the launcher's msmc engine uses), launcher-published session fast path from shared accounts.json, freshest-row adoption, silent keep-alive, publishSession token rotation, boot-time platform re-verify.",
+    "notes": "Kinetrix Client 3.30.0 'Undertow II' - the updated engine modules land + the Kinetrix backend goes live. THREE NEW HUD WIDGETS: XP Tracker (Hypixel XP this game / this session / network XP, read from chat, reset button), Dreamfeast Tracker (Slumber Tickets + items + dishes this session), Challenge Helper (Bed Wars challenge state, rules, Collector wool got/missing, bed timer, lifetime + per-challenge wins). All in the Hypixel category with HUD editor support. ADD CLOAKS FROM THE CLIENT: Custom Cloak page has a dashed 'Add a cloak' card - pick a png/jpg/gif, it is imported and worn immediately; per-card trash removes cloaks (arm-then-confirm, moved to removed/). KINETRIX BACKEND UPLOADS: point kinetrix/backend.properties at your backend (baseUrl=) and cloaks you add and skins you upload in the Skin Changer are uploaded to your server (auto session claim by Minecraft UUID); the server serves the cape back to every player through the existing cape sync. Uploads are PNG-validated with a PASS/WARN/FAIL verdict. Everything from 3.28.1 is unchanged: the KinetrixSplashTweaker launch fix, msmc browser sign-in, launcher session fast path, token rotation. Kinetrix only - no other brand names.",
     "forge": {
         "tag": "forge-1.8.9-11.15.1.1764",
         "version": "11.15.1.1764+OptiFine_M5",
@@ -46,6 +46,6 @@
         "release": "minecraft-1.8.9",
         "notes": "The exact jar from the user real TLauncher ForgeOptiFine_1.8.9.zip = the official Mojang 1.8.9 client jar byte-for-byte (Mojang-signed, no OptiFine/Forge/TLauncher entries). Launcher 2.7.15+ installs THESE bytes from the minecraft-1.8.9 release asset first, .pack mirrors on this repo, Mojang CDN last."
     },
-    "timestamp": "2026-11-12T16:27:40Z",
-    "updatedAt": "2026-11-12T16:27:40Z"
+    "timestamp": "2026-11-17T13:05:00Z",
+    "updatedAt": "2026-11-17T13:05:00Z"
 }
