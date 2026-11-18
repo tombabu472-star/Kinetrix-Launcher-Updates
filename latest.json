@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T07:36:04Z",
+  "updated": "2026-11-18T09:50:00Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.32.0",
-    "version": "3.32.0",
-    "file": "kinetrix-3.32.0.jar",
-    "size": 21839599,
-    "sha256": "d7aee13a564f06aae79ad5a90ae986f50cf4be0d53ce6f88439ddc07b66db3f6"
+    "tag": "mod-v3.33.0",
+    "version": "3.33.0",
+    "file": "kinetrix-3.33.0.jar",
+    "size": 21910170,
+    "sha256": "f0acdc1a00e6a87e55fa770c5afba7b9497471253313d456259dd83c6cd9feb5"
   },
-  "notes": "Kinetrix Client 3.32.0 'Cosmetic Forge' - 140 brand-new free cosmetics, 20 in every category (Hats, Bandanas, Glasses, Necklaces, Wings, Watches, Bracelets): Stellar Crown, Royal Crown, Top Hat, Wizard Hat, Santa Hat, Pirate Hat, Viking Helm, Cat/Bunny/Fox Ears, spinning Angel Halo, Ice Crown; Ninja/Skull face masks and forehead wraps; Classic Shades, Aviators, Heart Eyes, chroma Rainbow Visor, Night Vision, 3D Glasses; swaying necklace pendants incl. the Kinetrix Tag; 20 animated feathered Wings (Angelica, Phoenix, Ender, Storm...); glowing watches and gem bracelets. All owned by everyone. Builtin cape pack: 24 capes (Migrator, Mojang capes, MineCon set, Founder's, Cherry Blossom, 15th Anniversary + Kinetrix originals) land in your cloak library on first run. New: accessory equips sync to the Kinetrix backend automatically so other players see your hats, wings and everything else; the client auto-connects to the backend out of the box (kinetrix/backend.properties written on first run, edit to point elsewhere). Cosmetics screen verified in-game: 140 items in the Owned grid with the 3D preview. Everything from 3.31.1 is unchanged.",
+  "notes": "Kinetrix Client 3.33.0 'Hand-Painted Capes' - 124 capes, every single one painted by hand one at a time, no generators: classic set (Migrator, Mojang, MineCon 2011-2019, Founder's, Cherry Blossom, 15th Anniversary...), legendary kx_ set (Astral, Blood, Butterfly, Crown, Demon, Dragon, Phoenix, Spectre, Void, Wolf...), cx classic set (Celestial, Eclipse, Hyperspace, Quantum, Sapphire, Zenith...), RDZ clan set (Frost, Gold, Pulse, Void...), elements (Aurora, Rainbow, Lava, Warp, Void, Frost, Glacier, Storm...) and late-found designs (Neon, Galaxy, Toxic, Snowfall, Meteor, Firefly, Bloodmoon...). The Custom Cloak tab now ships the full collection locally on first run (never-overwrite provisioning, display names auto-derived) so every cape works even offline; equips sync to the Kinetrix backend so other players see your cape in-game. Everything from 3.32.0 'Cosmetic Forge' is unchanged: 140 free cosmetics across 7 categories + accessory equip sync + auto backend connection.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
