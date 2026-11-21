@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T09:50:00Z",
+  "updated": "2026-11-21T06:59:02Z",
   "launcher": {
     "tag": "launcher-v3.0.5",
     "version": "3.0.5",
@@ -18,13 +18,13 @@
     }
   },
   "client": {
-    "tag": "mod-v3.33.0",
-    "version": "3.33.0",
-    "file": "kinetrix-3.33.0.jar",
-    "size": 21910170,
-    "sha256": "f0acdc1a00e6a87e55fa770c5afba7b9497471253313d456259dd83c6cd9feb5"
+    "tag": "mod-v3.34.0",
+    "version": "3.34.0",
+    "file": "kinetrix-3.34.0.jar",
+    "size": 24685167,
+    "sha256": "12f85a8be6eb77477a5f370920342ce95b63d9d0af16ed84067d0d130f6047e9"
   },
-  "notes": "Kinetrix Client 3.33.0 'Hand-Painted Capes' - 124 capes, every single one painted by hand one at a time, no generators: classic set (Migrator, Mojang, MineCon 2011-2019, Founder's, Cherry Blossom, 15th Anniversary...), legendary kx_ set (Astral, Blood, Butterfly, Crown, Demon, Dragon, Phoenix, Spectre, Void, Wolf...), cx classic set (Celestial, Eclipse, Hyperspace, Quantum, Sapphire, Zenith...), RDZ clan set (Frost, Gold, Pulse, Void...), elements (Aurora, Rainbow, Lava, Warp, Void, Frost, Glacier, Storm...) and late-found designs (Neon, Galaxy, Toxic, Snowfall, Meteor, Firefly, Bloodmoon...). The Custom Cloak tab now ships the full collection locally on first run (never-overwrite provisioning, display names auto-derived) so every cape works even offline; equips sync to the Kinetrix backend so other players see your cape in-game. Everything from 3.32.0 'Cosmetic Forge' is unchanged: 140 free cosmetics across 7 categories + accessory equip sync + auto backend connection.",
+  "notes": "Kinetrix Client 3.34.0 'New Base UI' - the full port of the updated base client: the whole new UI wave rebranded and integrated - new design tokens, glass menus (drawMenuGlass/button glass), Figtree font family + Lucide icon font, new main-menu panorama with the wider-FOV glass camera, Box dialog system hosting main menu / mods / settings / cosmetics / friends / HUD editor, restyled esc / pause / disconnected / world select / server browser / profiles / report / resource packs / onboarding, friends screen gains group rename + group icons + chat context menu, account dropdown box mode, settings panel box style + dense rows + fold-under-toggle + full crosshair editor (centre pixel + focus mode), HUD gains 1% / 0.1% low FPS rows + joined widget groups + a far more capable HUD editor (multi-select, band select, group drag, rename groups, conjoined groups, undo/redo), tab overlay columns follow gamemode with per-game column toggles + duels prefix per mode, cosmetics + cloak library + skin changer + accessories restyled with custom head items, and brand-new features: Texture Mix (blend resource packs live) + Mixed Pack Builder, Spin Boost, Harness Focus, Mod Guard (warns when installed mods overlap built-ins), Frame Lows, Page Snapshot, File Drop, Join World, hide leather armour (with on-self option), arrow flight facing, inventory doll clipping, stale F3 guard, toast kinds, HUD layout snapshots and profile editing. Everything from 3.33.0 'Hand-Painted Capes' (124 capes) and 3.32.0 'Cosmetic Forge' (140 free cosmetics) is unchanged.",
   "forge": {
     "tag": "forge-1.8.9-11.15.1.1764",
     "version": "11.15.1.1764+OptiFine_M5",
